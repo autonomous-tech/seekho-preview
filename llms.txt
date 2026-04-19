@@ -99,6 +99,18 @@ Faryal Farooqui founded Seekho in 2019 to address two gaps in the Karachi drivin
 - [Careers](https://seekhopakistan.com.pk/careers.html) — Hiring female driving instructors, administrative staff
 - [Press](https://seekhopakistan.com.pk/press.html) — Media coverage, press kit, founder interviews
 
+## Guides (Driver Education Content Hub)
+
+Seekho publishes six in-depth driver-education guides at https://seekhopakistan.com.pk/guides/ — each optimised for SEO, AEO, and GEO, covering the most-asked Karachi driving questions. Authoritative references used include the Directorate of Licensing Sindh (DLS Sindh) and the National Highway Safety Ordinance 2000 (NHSO-2000).
+
+- [Driving Guides Hub](https://seekhopakistan.com.pk/guides/) — Index of all six guides with teasers and a popular-questions cluster.
+- [How to Get a Driving Licence in Karachi (2026 DLS Sindh Guide)](https://seekhopakistan.com.pk/guides/how-to-get-driving-license-karachi.html) — Step-by-step DLS Sindh process: learner's permit Rs 100, 42-day waiting period, 25-question theory test, permanent licence Rs 1,410 (5-year) or Rs 1,860 (10-year), documents, DLS office locations in Karachi (Garden / Clifton / Gulshan / Malir / North Nazimabad).
+- [Karachi Driving Test: What to Expect & How to Pass](https://seekhopakistan.com.pk/guides/karachi-driving-test-what-to-expect.html) — Complete breakdown of the DLS Sindh Test of Competence: theory (25 MCQs, 17 to pass) + practical (controls demo, hill start, parallel parking, 3-point turn, on-road drive); examiner criteria, common failure reasons, test-day plan.
+- [Parallel Parking in Karachi: Step-by-Step Guide](https://seekhopakistan.com.pk/guides/parallel-parking-karachi-guide.html) — The six-step reference-point method taught by Seekho instructors for narrow DHA, Clifton, and PECHS streets. Includes CSS-rendered parking diagrams and DLS practical-test specifics (5.5–6 m bay, 1 correction allowed).
+- [Car Dashboard Warning Lights: Meaning, Severity, Action](https://seekhopakistan.com.pk/guides/dashboard-warning-lights-explained.html) — 20+ dashboard icons across Suzuki Swift, Alto, Cultus, Toyota Corolla, Honda City. Red / amber / green severity, correct action, and Roman Urdu names (e.g., "engine check ki warning", "tyre mein hawa kam hai").
+- [Pakistan Road Signs Complete Guide](https://seekhopakistan.com.pk/guides/pakistan-road-signs-complete-guide.html) — 40+ Pakistani road signs across the four Vienna Convention categories: mandatory (blue circle), prohibitory (red circle), warning (red triangle), informative (blue rectangle). With Urdu translations, Karachi-specific signs, and DLS theory-test prep focus.
+- [Pakistan Driving Fines: NHSO-2000 Complete Guide](https://seekhopakistan.com.pk/guides/pakistan-driving-fines-nhso-2000.html) — 30+ common traffic violations grouped by severity tier (minor Rs 200–500, major Rs 500–2,000, severe Rs 2,000+). Covers how to pay a challan online via ePay Sindh / NBP / Sindh Bank / HBL, and how to contest via the Traffic Magistrate within 15 days.
+
 ## FAQ Summary
 
 - **What is Seekho?** Seekho is Karachi's award-winning driver's education academy, founded in 2019 by Faryal Farooqui, known for its majority-female instructor team and transparent online pricing.

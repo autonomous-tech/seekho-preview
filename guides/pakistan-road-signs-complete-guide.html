@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://seekhopakistan.com.pk/guides/pakistan-road-signs-complete-guide.html">
+  <meta name="description" content="Pakistan road signs complete guide: mandatory, prohibitory, warning, informative. 40+ signs with Urdu translations and DLS Sindh theory-test relevance. Karachi edition.">
+  <title>Pakistan Road Signs Complete Guide: Meanings + Urdu (2026)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .nav-links.open{display:flex!important;position:absolute;top:64px;left:0;right:0;background:#FBF8F3;flex-direction:column;padding:16px 24px;gap:12px;border-bottom:3px solid #4E0CB9;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+    .nav-links.open a{font-size:1rem;padding:8px 0}
+    .guide-hero{padding:128px 0 64px;background:#4E0CB9;color:#FBF8F3;position:relative;overflow:hidden}
+    .guide-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 40%,rgba(255,201,60,.08) 0%,transparent 60%);pointer-events:none}
+    .guide-hero .crumbs{font-size:.82rem;color:rgba(251,248,243,.7);margin-bottom:18px;font-family:'Space Grotesk',sans-serif}
+    .guide-hero .crumbs a{color:#FFC93C;border-bottom:1px solid rgba(255,201,60,.4);padding-bottom:1px}
+    .guide-hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.7rem,4vw,2.7rem);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:20px;max-width:860px}
+    .guide-hero .lede{font-size:1.05rem;color:rgba(251,248,243,.88);line-height:1.7;max-width:780px;margin-bottom:18px}
+    .guide-hero .meta-row{display:flex;flex-wrap:wrap;gap:14px;font-size:.85rem;color:rgba(251,248,243,.65);font-family:'Space Grotesk',sans-serif;margin-top:18px}
+    .guide-hero .meta-row span{padding:5px 12px;border:1px solid rgba(255,201,60,.35);border-radius:4px}
+
+    .guide-body{padding:48px 0 72px;background:#FBF8F3}
+    .guide-wrap{max-width:960px;margin:0 auto;padding:0 24px}
+    .guide-wrap h2{font-family:'Space Grotesk',sans-serif;color:#4E0CB9;font-size:clamp(1.3rem,2.3vw,1.7rem);font-weight:700;line-height:1.25;margin:40px 0 14px;scroll-margin-top:80px;letter-spacing:-.01em}
+    .guide-wrap h2:first-child{margin-top:0}
+    .guide-wrap h3{font-family:'Space Grotesk',sans-serif;color:#4E0CB9;font-size:1.1rem;font-weight:700;margin:28px 0 10px}
+    .guide-wrap p{color:#1A1A1A;font-size:1rem;line-height:1.75;margin-bottom:16px}
+    .guide-wrap ul, .guide-wrap ol{margin:0 0 20px 24px;padding:0}
+    .guide-wrap li{color:#1A1A1A;font-size:1rem;line-height:1.7;margin-bottom:8px}
+    .guide-wrap strong{color:#4E0CB9;font-weight:700}
+    .guide-wrap a.inline{color:#4E0CB9;font-weight:700;border-bottom:2px solid #FFC93C;padding-bottom:1px}
+
+    .toc{background:white;border:3px solid #4E0CB9;border-radius:10px;padding:22px 26px;margin:32px 0 40px}
+    .toc h3{font-family:'Space Grotesk',sans-serif;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#4E0CB9;margin:0 0 10px;font-weight:700}
+    .toc ol{margin:0 0 0 20px;padding:0}
+    .toc li{font-size:.92rem;margin-bottom:5px}
+    .toc a{color:#4E0CB9;border-bottom:1px dashed rgba(78,12,185,.35)}
+
+    /* Category banner */
+    .cat-banner{background:white;border:3px solid #4E0CB9;border-radius:10px;padding:18px 22px;margin:24px 0 16px;display:flex;gap:14px;align-items:center}
+    .cat-banner .shape{width:56px;height:56px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+    .cat-banner h3{margin:0 0 3px;font-family:'Space Grotesk',sans-serif;color:#4E0CB9;font-size:1.05rem}
+    .cat-banner p{margin:0;color:#6B7280;font-size:.88rem}
+
+    /* Sign grid */
+    .sign-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:18px 0 32px}
+    .sign-card{background:white;border:3px solid #4E0CB9;border-radius:8px;padding:16px;display:flex;gap:14px;transition:all .15s}
+    .sign-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(78,12,185,.08)}
+    .sign-card .vis{width:60px;height:60px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+    .sign-card h4{margin:0 0 3px;font-family:'Space Grotesk',sans-serif;color:#4E0CB9;font-size:.94rem;line-height:1.2}
+    .sign-card .ur{margin:0 0 6px;font-style:italic;color:#6B7280;font-size:.78rem}
+    .sign-card p{margin:0;font-size:.82rem;color:#1A1A1A;line-height:1.5}
+
+    /* SVG sign shapes */
+    .sign-mandatory{width:50px;height:50px;border-radius:50%;background:#1E40AF;color:white;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.3rem}
+    .sign-prohibit{width:50px;height:50px;border-radius:50%;background:white;border:5px solid #DC2626;position:relative;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;color:#1A1A1A}
+    .sign-prohibit.slashed::after{content:'';position:absolute;left:-2px;right:-2px;top:48%;height:5px;background:#DC2626;transform:rotate(-45deg);transform-origin:center}
+    .sign-warning{width:0;height:0;border-left:30px solid transparent;border-right:30px solid transparent;border-bottom:54px solid #DC2626;position:relative}
+    .sign-warning::after{content:attr(data-sym);position:absolute;left:-14px;top:16px;width:28px;height:28px;background:#FBF8F3;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.85rem;color:#1A1A1A}
+    .sign-info{width:56px;height:42px;background:#1E40AF;color:white;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.85rem;border-radius:3px;padding:4px;text-align:center;line-height:1.1}
+    .sign-stop{width:52px;height:52px;background:#DC2626;color:white;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.8rem;clip-path:polygon(30% 0,70% 0,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%)}
+    .sign-yield{width:0;height:0;border-left:30px solid transparent;border-right:30px solid transparent;border-top:52px solid #DC2626;position:relative}
+    .sign-yield::before{content:'';position:absolute;left:-22px;top:-48px;width:44px;height:38px;border-left:22px solid transparent;border-right:22px solid transparent;border-top:38px solid white}
+
+    .callout{background:white;border-left:4px solid #FFC93C;border-radius:6px;padding:18px 22px;margin:22px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+    .callout.warn{border-left-color:#DC2626}
+    .callout h4{font-family:'Space Grotesk',sans-serif;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:#4E0CB9;margin:0 0 6px;font-weight:700}
+    .callout p{margin-bottom:0;font-size:.95rem}
+    .bilingual{background:white;border:3px solid #4E0CB9;border-radius:8px;padding:18px 22px;margin:22px 0}
+    .bilingual p{margin:0 0 6px;font-size:.95rem}
+    .bilingual .ur{color:#6B7280;font-style:italic;font-size:.9rem;margin:0}
+    .mid-cta{background:#4E0CB9;color:#FBF8F3;border-radius:10px;padding:24px 28px;margin:36px 0;display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+    .mid-cta .text{flex:1;min-width:260px}
+    .mid-cta h3{font-family:'Space Grotesk',sans-serif;color:#FBF8F3;font-size:1.1rem;margin:0 0 4px}
+    .mid-cta p{color:rgba(251,248,243,.8);font-size:.92rem;margin:0}
+
+    .end-cta{padding:72px 0;background:#FFC93C;text-align:center;border-top:4px solid #4E0CB9}
+    .end-cta h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.4rem,3vw,2.2rem);font-weight:700;color:#4E0CB9;margin-bottom:10px}
+    .end-cta p{color:#4E0CB9;font-size:1rem;margin-bottom:24px;font-weight:500}
+    .end-cta .hero-ctas{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+    .end-cta .btn-lime{background:#4E0CB9;color:#FFC93C;border-color:#4E0CB9}
+    .end-cta .btn-ghost{border-color:#4E0CB9;color:#4E0CB9}
+    .related{padding:64px 0;background:#FBF8F3;border-top:3px solid #4E0CB9}
+    .related-inner{max-width:1100px;margin:0 auto;padding:0 24px}
+    .related h2{font-family:'Space Grotesk',sans-serif;color:#4E0CB9;font-size:1.5rem;text-align:center;margin-bottom:28px}
+    .related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    @media (max-width:767px){.related-grid{grid-template-columns:1fr}}
+    .related-card{background:white;border:3px solid #4E0CB9;border-radius:8px;padding:22px;transition:all .15s;color:#4E0CB9}
+    .related-card:hover{border-color:#FFC93C;transform:translateY(-3px)}
+    .related-card h3{font-family:'Space Grotesk',sans-serif;font-size:1rem;margin-bottom:6px;color:#4E0CB9}
+    .related-card p{font-size:.85rem;color:#6B7280;line-height:1.5}
+    .guide-faq{padding:56px 0;background:white;border-top:3px solid #4E0CB9}
+    .guide-faq-inner{max-width:820px;margin:0 auto;padding:0 24px}
+    .guide-faq h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.4rem,3vw,2rem);color:#4E0CB9;text-align:center;margin-bottom:28px}
+    .faq-list{display:grid;gap:10px}
+    .faq-item{background:#FBF8F3;border:3px solid #4E0CB9;border-radius:8px;overflow:hidden}
+    .faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 20px;background:transparent;border:none;text-align:left;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.98rem;color:#4E0CB9;cursor:pointer}
+    .faq-q:hover{background:rgba(255,201,60,.15)}
+    .faq-q .chevron{width:20px;height:20px;color:#4E0CB9;flex-shrink:0;transition:transform .2s}
+    .faq-item.open .faq-q .chevron{transform:rotate(180deg)}
+    .faq-a{display:none;padding:0 20px 18px;font-size:.95rem;line-height:1.7;color:#1A1A1A}
+    .faq-item.open .faq-a{display:block}
+    .section-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+  </style>
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Seekho">
+  <meta property="og:title" content="Pakistan Road Signs Complete Guide (Urdu Included)">
+  <meta property="og:description" content="Every common Pakistani road sign — mandatory, prohibitory, warning, informative — with Urdu translations. Karachi edition for DLS Sindh theory test prep.">
+  <meta property="og:image" content="https://seekhopakistan.com.pk/images/og-guides-road-signs.jpg">
+  <meta property="og:url" content="https://seekhopakistan.com.pk/guides/pakistan-road-signs-complete-guide.html">
+  <meta property="og:locale" content="en_PK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pakistan Road Signs Guide">
+  <meta name="twitter:description" content="40+ Pakistani road signs with Urdu — mandatory, prohibitory, warning, informative.">
+  <meta name="twitter:image" content="https://seekhopakistan.com.pk/images/og-guides-road-signs.jpg">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Pakistan Road Signs Complete Guide: Meanings + Urdu","description":"A complete reference to Pakistani road signs across all four categories — mandatory (blue circles), prohibitory (red circles), warning (red triangles), informative (blue rectangles). Includes Urdu translations and DLS Sindh theory-test relevance.","image":"https://seekhopakistan.com.pk/images/og-guides-road-signs.jpg","datePublished":"2026-04-19","dateModified":"2026-04-19","author":{"@type":"Organization","name":"Seekho Pakistan","url":"https://seekhopakistan.com.pk"},"publisher":{"@type":"Organization","name":"Seekho Pakistan","logo":{"@type":"ImageObject","url":"https://seekhopakistan.com.pk/images/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://seekhopakistan.com.pk/guides/pakistan-road-signs-complete-guide.html"},"provider":{"@id":"https://seekhopakistan.com.pk/#business"}}
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":["LocalBusiness","AutoSchool","DrivingSchool"],"@id":"https://seekhopakistan.com.pk/#business","name":"Seekho Pakistan","legalName":"Seekho (Pvt.) Ltd.","url":"https://seekhopakistan.com.pk","telephone":"+923202733546","email":"info@seekhopakistan.com.pk","address":{"@type":"PostalAddress","streetAddress":"67-E/1, 7th Jami Commercial St, Phase 7 Ext","addressLocality":"Karachi","addressRegion":"Sindh","postalCode":"75500","addressCountry":"PK"},"priceRange":"Rs 15,000 - Rs 40,000","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"82","bestRating":"5"}}
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seekhopakistan.com.pk/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://seekhopakistan.com.pk/guides/"},{"@type":"ListItem","position":3,"name":"Pakistan Road Signs Complete Guide","item":"https://seekhopakistan.com.pk/guides/pakistan-road-signs-complete-guide.html"}]}
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How many categories of road signs are there in Pakistan?","acceptedAnswer":{"@type":"Answer","text":"Pakistan follows the Vienna Convention on Road Signs and Signals. Signs are divided into four main categories: mandatory (blue circles), prohibitory (red-bordered circles), warning (red-bordered triangles), and informative (blue rectangles). Urban signage in Karachi also includes supplementary plates in Urdu for clarity."}},
+    {"@type":"Question","name":"What does a red circle with a diagonal line mean?","acceptedAnswer":{"@type":"Answer","text":"A red circle with a diagonal red line is a prohibitory sign — it means the activity or vehicle shown is not allowed. Common examples include No Entry, No Parking, No U-Turn, No Horn, and No Overtaking. Ignoring them is a citable offence under the National Highway Safety Ordinance 2000."}},
+    {"@type":"Question","name":"What is the difference between a warning sign and a prohibitory sign?","acceptedAnswer":{"@type":"Answer","text":"A warning sign is a red-bordered triangle alerting you to a hazard ahead — sharp bend, school zone, speed bump, steep incline. A prohibitory sign is a red-bordered circle banning an action — no entry, no overtaking, no horn. Triangles warn; circles forbid. Memorise this and half of road-sign interpretation follows."}},
+    {"@type":"Question","name":"Are road signs in Urdu in Pakistan?","acceptedAnswer":{"@type":"Answer","text":"Primary signs use standardised international symbols without text. Supplementary plates below main signs often carry both Urdu and English captions — for example, 'No Horn / Horn Bajana Mana Hai'. Highway signs (motorway exits, city names) are bilingual. DLS Sindh theory-test questions are available in both English and Urdu."}},
+    {"@type":"Question","name":"What does a STOP sign in Pakistan mean?","acceptedAnswer":{"@type":"Answer","text":"The red octagonal STOP sign requires a full, complete stop — wheels must come to zero speed before proceeding. The car must pause for at least 2 seconds and the driver must verify the intersection is clear. A rolling stop is a common reason for failing the Karachi DLS practical test."}},
+    {"@type":"Question","name":"What speed limits apply on Karachi roads?","acceptedAnswer":{"@type":"Answer","text":"Urban Karachi limit is 50 km/h unless signposted otherwise. School zones drop to 25 km/h. Shahrah-e-Faisal and Korangi Road have 60–80 km/h zones. The M-9 Motorway limit is 120 km/h. All signposted limits override the default. Fines for overspeeding under NHSO-2000 start around Rs 750."}},
+    {"@type":"Question","name":"Do I need to memorise every road sign for the DLS theory test?","acceptedAnswer":{"@type":"Answer","text":"Not every one — but you should comfortably recognise the 30 to 40 most common signs. The 25-question DLS Sindh theory test dedicates about 10 questions to signs. Focus on mandatory / prohibitory / warning categories; informative signs are usually self-explanatory and less tested."}}
+  ]}
+  </script>
+
+  <script>
+  !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+  posthog.init('TBD-posthog-key',{api_host:'https://us.i.posthog.com',defaults:'2026-01-30'});
+  </script>
+</head>
+<body>
+
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="logo">Seekho</a>
+    <div class="nav-links" id="navLinks">
+      <a href="/packages.html">Packages</a>
+      <a href="/programs/drivers-education.html">Programme</a>
+      <a href="/guides/">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+    </div>
+    <a href="/book.html" class="btn-lime nav-cta" data-ph-event="hero_cta_click" onclick="posthog.capture('hero_cta_click',{page:'guide-road-signs',location:'nav'})">Book My First Lesson</a>
+    <button class="hamburger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')">&#9776;</button>
+  </div>
+</nav>
+
+<section class="guide-hero">
+  <div class="section-inner">
+    <p class="crumbs"><a href="/">Home</a> &rsaquo; <a href="/guides/">Guides</a> &rsaquo; Pakistan Road Signs Complete Guide</p>
+    <h1>Pakistan road signs: complete guide with Urdu translations.</h1>
+    <p class="lede"><strong>Quick answer:</strong> Pakistani road signs follow four categories from the Vienna Convention — <strong>mandatory (blue circles)</strong> tell you what you <em>must</em> do, <strong>prohibitory (red circles)</strong> tell you what you <em>cannot</em> do, <strong>warning (red triangles)</strong> flag hazards ahead, and <strong>informative (blue rectangles)</strong> give guidance like hospitals, petrol pumps, and exits. This guide covers 40+ commonly encountered signs on Karachi, Sindh, and motorway roads — with their meanings, Urdu names, and what they cost you in fines if ignored.</p>
+    <div class="meta-row">
+      <span>Updated April 2026</span>
+      <span>Reading time ~11 min</span>
+      <span>By Seekho Pakistan</span>
+    </div>
+  </div>
+</section>
+
+<section class="guide-body">
+  <div class="guide-wrap">
+
+    <div class="toc" aria-label="Table of contents">
+      <h3>On this page</h3>
+      <ol>
+        <li><a href="#categories">The 4 categories of Pakistani road signs</a></li>
+        <li><a href="#mandatory">Mandatory signs (blue circles)</a></li>
+        <li><a href="#prohibitory">Prohibitory signs (red circles)</a></li>
+        <li><a href="#warning">Warning signs (red triangles)</a></li>
+        <li><a href="#informative">Informative signs (blue rectangles)</a></li>
+        <li><a href="#regulatory">Special regulatory signs (Stop, Yield)</a></li>
+        <li><a href="#lane-markings">Lane markings and painted signs</a></li>
+        <li><a href="#karachi-local">Karachi-specific signs you'll see</a></li>
+        <li><a href="#dls-prep">DLS Sindh theory test preparation</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+      </ol>
+    </div>
+
+    <h2 id="categories">The 4 categories of Pakistani road signs</h2>
+    <p>Pakistan is a signatory to the 1968 <strong>Vienna Convention on Road Signs and Signals</strong>, which standardises shapes and colours across countries. If you've driven in the UAE, Turkey, or Malaysia, the signs in Karachi will feel familiar. The categories:</p>
+    <div class="bilingual">
+      <p><strong>Shape tells you the category:</strong></p>
+      <p class="ur">Circle (blue) = MUST · Circle (red) = DO NOT · Triangle (red) = CAREFUL · Rectangle (blue/green) = INFO</p>
+    </div>
+
+    <h2 id="mandatory">Mandatory signs (blue circles)</h2>
+    <div class="cat-banner">
+      <div class="shape"><div class="sign-mandatory">&uarr;</div></div>
+      <div>
+        <h3>Blue circle — "you must"</h3>
+        <p>Instructs you to perform the indicated action (direction, minimum speed, required lane).</p>
+      </div>
+    </div>
+    <div class="sign-grid">
+      <div class="sign-card"><div class="vis"><div class="sign-mandatory">&uarr;</div></div><div><h4>Go Straight Ahead</h4><p class="ur">Seedha jao</p><p>Proceed only straight at this point — no turning.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-mandatory">&rarr;</div></div><div><h4>Turn Right</h4><p class="ur">Right mor lein</p><p>Must turn right — no straight through.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-mandatory">&larr;</div></div><div><h4>Turn Left</h4><p class="ur">Left mor lein</p><p>Must turn left — no straight or right.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-mandatory">↱</div></div><div><h4>Turn Right Ahead</h4><p class="ur">Aagay right mor</p><p>Next available turn must be right.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-mandatory">↶</div></div><div><h4>Roundabout / Keep Left</h4><p class="ur">Circle mein left side rakho</p><p>Follow roundabout direction counter-clockwise.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-mandatory">50</div></div><div><h4>Minimum Speed 50 km/h</h4><p class="ur">Kam az kam 50 km/h</p><p>Motorway and highway — must maintain at least this speed.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-mandatory">🚲</div></div><div><h4>Cyclists Only Route</h4><p class="ur">Sirf cycle ke liye</p><p>Rare in Karachi. Common on university campuses.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-mandatory">🚶</div></div><div><h4>Pedestrian Crossing Required</h4><p class="ur">Pedal ghaadi aur paidal ke liye</p><p>Shared footway — drive slowly and give way.</p></div></div>
+    </div>
+
+    <h2 id="prohibitory">Prohibitory signs (red circles)</h2>
+    <div class="cat-banner">
+      <div class="shape"><div class="sign-prohibit slashed">P</div></div>
+      <div>
+        <h3>Red circle — "you must not"</h3>
+        <p>Bans a specific action or vehicle class. Often with a diagonal red line across.</p>
+      </div>
+    </div>
+    <div class="sign-grid">
+      <div class="sign-card"><div class="vis"><div class="sign-prohibit" style="background:#DC2626;color:white;font-size:.8rem">NO<br>ENTRY</div></div><div><h4>No Entry</h4><p class="ur">Andar jana mana hai</p><p>Solid red circle with horizontal white bar. Common on Karachi one-way streets.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-prohibit slashed">P</div></div><div><h4>No Parking</h4><p class="ur">Parking mana hai</p><p>Parking forbidden at any time.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-prohibit slashed">U</div></div><div><h4>No U-Turn</h4><p class="ur">U-turn mana hai</p><p>U-turns banned. Frequent on Shahrah-e-Faisal segments.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-prohibit slashed">📯</div></div><div><h4>No Horn / Silent Zone</h4><p class="ur">Horn bajana mana hai</p><p>Near hospitals, schools, residential colonies.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-prohibit slashed">🚛</div></div><div><h4>No Heavy Vehicles</h4><p class="ur">Bari gaari ki entry mana</p><p>HTVs barred. Common on DHA internal roads.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-prohibit" style="color:#1A1A1A">50</div></div><div><h4>Maximum Speed 50 km/h</h4><p class="ur">50 se tez na chalaiye</p><p>Urban default. Always obeyed in school zones.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-prohibit slashed" style="color:#1A1A1A">↻</div></div><div><h4>No Overtaking</h4><p class="ur">Overtake mana hai</p><p>Both cars — two-car icon with left-car red. Common on narrow bends.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-prohibit slashed" style="color:#1A1A1A">🏍</div></div><div><h4>No Motorcycles</h4><p class="ur">Motorcycle mana hai</p><p>Motorways and some overpasses.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-prohibit slashed" style="color:#1A1A1A">🛺</div></div><div><h4>No Rickshaws</h4><p class="ur">Rickshaw mana hai</p><p>Expressway sections — e.g. parts of Lyari Expressway.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-prohibit slashed" style="color:#1A1A1A">🚶</div></div><div><h4>No Pedestrians</h4><p class="ur">Paidal chalna mana hai</p><p>Motorways and some flyovers.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-prohibit" style="color:#1A1A1A;font-size:.85rem">END</div></div><div><h4>End of Restriction</h4><p class="ur">Pabandi khatam</p><p>Grey diagonal lines — the previous prohibition ends here.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-prohibit slashed" style="color:#1A1A1A">↔</div></div><div><h4>No Stopping</h4><p class="ur">Rukna mana hai</p><p>Red cross inside. No stopping even briefly.</p></div></div>
+    </div>
+
+    <div class="mid-cta">
+      <div class="text">
+        <h3>Master road signs the easy way.</h3>
+        <p>Seekho's Saturday theory workshop covers all 40+ signs with live flashcards. Included in every package.</p>
+      </div>
+      <a href="/book.html" class="btn-lime" data-ph-event="hero_cta_click" onclick="posthog.capture('hero_cta_click',{page:'guide-road-signs',location:'mid_cta'})">Book My First Lesson &rarr;</a>
+    </div>
+
+    <h2 id="warning">Warning signs (red triangles)</h2>
+    <div class="cat-banner">
+      <div class="shape"><div class="sign-warning" data-sym="!"></div></div>
+      <div>
+        <h3>Red triangle — "hazard ahead"</h3>
+        <p>Alerts you to something on the road you need to prepare for — rarely a ban, always a reduction in confidence.</p>
+      </div>
+    </div>
+    <div class="sign-grid">
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="↶"></div></div><div><h4>Sharp Left Bend</h4><p class="ur">Aagay tez left mor</p><p>Slow down — a sharp left turn approaches.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="↷"></div></div><div><h4>Sharp Right Bend</h4><p class="ur">Aagay tez right mor</p><p>Slow down — a sharp right turn approaches.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="⇵"></div></div><div><h4>Double Bend</h4><p class="ur">Do mor aagay</p><p>Common on Clifton Drive and Mai Kolachi curves.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="🚸"></div></div><div><h4>School Ahead</h4><p class="ur">School ke paas</p><p>Children likely. Reduce speed to 25 km/h.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="≈"></div></div><div><h4>Speed Bump / Hump</h4><p class="ur">Speed breaker aa raha</p><p>Frequent on Karachi residential streets.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="%"></div></div><div><h4>Steep Descent</h4><p class="ur">Utarai aa rahi</p><p>Downhill gradient — check brakes, use lower gear.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="▲"></div></div><div><h4>Steep Climb</h4><p class="ur">Charhai aa rahi</p><p>Uphill — rare in flat Karachi; seen near Northern Bypass.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="+"></div></div><div><h4>Crossroads Ahead</h4><p class="ur">Chauraha aa raha</p><p>Uncontrolled intersection — yield to right.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="T"></div></div><div><h4>T-Junction Ahead</h4><p class="ur">T-junction aa raha</p><p>Road ends in a T-shape — prepare to turn left or right.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="⌘"></div></div><div><h4>Roundabout Ahead</h4><p class="ur">Circle aa raha</p><p>Approach slowly, yield to traffic in the circle.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="⚠"></div></div><div><h4>Other Danger</h4><p class="ur">Khatra — aram se chalaiye</p><p>Generic hazard — examine what's ahead.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="✕"></div></div><div><h4>Level Crossing</h4><p class="ur">Train ki line</p><p>Railway crossing. Stop if barrier is down.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="Ⅱ"></div></div><div><h4>Road Narrows</h4><p class="ur">Road tang ho rahi</p><p>Common on DHA residential streets.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-warning" data-sym="⛲"></div></div><div><h4>Slippery Road</h4><p class="ur">Phisalti hui road</p><p>Wet road, oil spill, or loose surface ahead.</p></div></div>
+    </div>
+
+    <h2 id="informative">Informative signs (blue rectangles)</h2>
+    <div class="cat-banner">
+      <div class="shape"><div class="sign-info">INFO</div></div>
+      <div>
+        <h3>Blue/green rectangle — "this way to…"</h3>
+        <p>Guidance. Motorway exits, city names, hospitals, petrol pumps, parking, telephone.</p>
+      </div>
+    </div>
+    <div class="sign-grid">
+      <div class="sign-card"><div class="vis"><div class="sign-info">H</div></div><div><h4>Hospital</h4><p class="ur">Hospital ka rasta</p><p>Sometimes with red cross. Common near Liaquat National, AKUH.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-info">⛽</div></div><div><h4>Petrol Station</h4><p class="ur">Petrol pump</p><p>Distance often on supplementary plate.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-info">P</div></div><div><h4>Parking</h4><p class="ur">Parking yahan</p><p>Authorised parking zone.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-info">📞</div></div><div><h4>Emergency Phone</h4><p class="ur">Emergency phone</p><p>Motorway helpbox.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-info">EXIT</div></div><div><h4>Motorway Exit</h4><p class="ur">Motorway ka exit</p><p>Typically lists city name (Hyderabad, Nooriabad).</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-info">✈</div></div><div><h4>Airport</h4><p class="ur">Airport ka rasta</p><p>Jinnah International near Star Gate.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-info">🚶</div></div><div><h4>Pedestrian Crossing</h4><p class="ur">Paidal crossing</p><p>Zebra crossing — drivers must yield.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-info">🏪</div></div><div><h4>Services / Rest Area</h4><p class="ur">Rest area</p><p>Food, fuel, rest. Common on M-9.</p></div></div>
+    </div>
+
+    <h2 id="regulatory">Special regulatory signs (Stop, Yield)</h2>
+    <div class="sign-grid">
+      <div class="sign-card"><div class="vis"><div class="sign-stop">STOP</div></div><div><h4>Stop Sign (Octagon)</h4><p class="ur">Rukiye — full stop</p><p>Red octagon. <strong>Full 2-second stop required.</strong> Rolling stop = DLS test fail. Usually written in English + Urdu.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-yield"></div></div><div><h4>Yield / Give Way</h4><p class="ur">Rasta do</p><p>Inverted red triangle. Slow down and give way to cross traffic. You don't have to stop if the road is clear.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-info" style="background:#0D4A2F">GREEN</div></div><div><h4>Traffic Signal</h4><p class="ur">Green light = jao</p><p>Standard red/amber/green. Running a red is a major fine under NHSO-2000.</p></div></div>
+      <div class="sign-card"><div class="vis"><div class="sign-info" style="background:#F59E0B;color:#1A1A1A">!</div></div><div><h4>Flashing Amber</h4><p class="ur">Amber light = dekhke jao</p><p>Proceed with caution. Signal not in operation.</p></div></div>
+    </div>
+
+    <h2 id="lane-markings">Lane markings and painted signs</h2>
+    <p>Not every instruction is on a post. Much of Karachi driving comes from what's painted on the road itself:</p>
+    <ul>
+      <li><strong>Solid white line:</strong> Do not cross. Usually on motorways or near bends.</li>
+      <li><strong>Broken white line:</strong> Safe to change lanes. Karachi's default.</li>
+      <li><strong>Double yellow lines:</strong> No overtaking. Rare but present on winding stretches of the M-9.</li>
+      <li><strong>Yellow kerb paint:</strong> No parking. DHA commercial streets.</li>
+      <li><strong>Zebra crossing (thick white stripes):</strong> Pedestrians have priority.</li>
+      <li><strong>Painted arrows in lanes:</strong> That lane must go in that direction at the next intersection.</li>
+      <li><strong>Red-painted kerb:</strong> Bus/emergency-service zone — no parking, no stopping.</li>
+    </ul>
+
+    <h2 id="karachi-local">Karachi-specific signs you'll see</h2>
+    <p>Outside the national standard set, there are a few Karachi-specific signs and markings worth knowing:</p>
+    <ul>
+      <li><strong>DHA entry gates:</strong> Speed-humped approaches with "Welcome to Phase X — Speed limit 40 km/h" boards. Strictly enforced.</li>
+      <li><strong>Sindh Police check-posts:</strong> Flashing amber beacons and "SLOW" painted on road. Reduce to 20 km/h.</li>
+      <li><strong>"Speed Breaker Ahead" yellow boards</strong> on residential streets — often without a warning triangle.</li>
+      <li><strong>"One Way" painted arrows</strong> on Clifton and PECHS narrow streets — check direction before turning.</li>
+      <li><strong>Hospital silent-zone boards</strong> near AKUH, Liaquat National, Indus Hospital. No horn.</li>
+      <li><strong>"School Ahead" yellow boards</strong> near St Patrick's, Habib Public, BVS, Foundation schools.</li>
+    </ul>
+
+    <h2 id="dls-prep">DLS Sindh theory test preparation</h2>
+    <p>The 25-question DLS Sindh theory test dedicates roughly <strong>10 of 25 questions to road signs</strong>. Focus your drill on the <strong>prohibitory</strong> and <strong>warning</strong> categories — they carry the most test weight because a wrong interpretation on a real road causes most accidents.</p>
+    <ol>
+      <li>Learn the <strong>shape → category</strong> rule first. Everything else follows.</li>
+      <li>For prohibitory signs, memorise: <strong>No Entry, No Parking, No U-Turn, No Horn, No Overtaking, Speed Limit, End of Restriction, No Stopping.</strong></li>
+      <li>For warning signs: <strong>Sharp Bend, School, Speed Bump, Roundabout Ahead, Level Crossing, Road Narrows.</strong></li>
+      <li>Practise with Seekho's <em>Practice Test — 100 Q True/False</em> download — it mirrors the DLS test format.</li>
+      <li>Attend the Saturday theory workshop. Live flashcards, group quizzes, mock test at the end.</li>
+    </ol>
+    <p>Full test prep workflow is in our <a class="inline" href="/guides/karachi-driving-test-what-to-expect.html">Karachi Driving Test guide</a>.</p>
+
+  </div>
+</section>
+
+<section class="guide-faq" id="faqs">
+  <div class="guide-faq-inner">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">How many categories of road signs are there in Pakistan? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a">Four: mandatory (blue circles), prohibitory (red circles), warning (red triangles), informative (blue/green rectangles). Based on the Vienna Convention on Road Signs and Signals (1968).</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What does a red circle with a diagonal line mean? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a">Prohibitory — the activity or vehicle shown is banned. No Entry, No Parking, No U-Turn, No Horn, No Overtaking. Ignoring = NHSO-2000 fine.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What's the difference between warning and prohibitory? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a">Warning (red triangle) = hazard ahead, prepare. Prohibitory (red circle) = action banned, stop doing it. <strong>Triangles warn; circles forbid.</strong></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Are road signs in Urdu in Pakistan? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a">Main signs use international symbols — no text. Supplementary plates carry Urdu and English (e.g. "No Horn / Horn Bajana Mana Hai"). DLS theory test is available in both languages.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What does a STOP sign mean? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a">Red octagon, full 2-second stop required — wheels must come to zero speed. Rolling stop = DLS practical test failure.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What speed limits apply on Karachi roads? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a">Urban default 50 km/h; school zones 25 km/h; Shahrah-e-Faisal 60–80; M-9 Motorway 120. Signposted limits override default. Overspeeding fine starts ~Rs 750 under NHSO-2000.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do I need to memorise every sign for the theory test? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a">Recognise ~30–40 common signs. ~10 of 25 theory questions are on signs. Focus on prohibitory and warning — highest test weight.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="end-cta">
+  <div class="section-inner">
+    <h2>Ready to learn properly? Book your first lesson.</h2>
+    <p>First lesson pasand nahi ayi? Full refund, no questions. 1,000+ drivers trained since 2019.</p>
+    <div class="hero-ctas">
+      <a href="/book.html" class="btn-lime" data-ph-event="hero_cta_click" onclick="posthog.capture('hero_cta_click',{page:'guide-road-signs',location:'end_cta'})">Book My First Lesson &rarr;</a>
+      <a href="/packages.html" class="btn-ghost" data-ph-event="packages_click" onclick="posthog.capture('packages_click',{page:'guide-road-signs'})">See Packages &amp; Pricing</a>
+    </div>
+  </div>
+</section>
+
+<section class="related">
+  <div class="related-inner">
+    <h2>Related guides</h2>
+    <div class="related-grid">
+      <a href="/guides/karachi-driving-test-what-to-expect.html" class="related-card"><h3>Karachi Driving Test Guide</h3><p>Theory + practical, examiner criteria, passing first time.</p></a>
+      <a href="/guides/dashboard-warning-lights-explained.html" class="related-card"><h3>Dashboard Warning Lights</h3><p>Every icon explained — red / amber / green, with Urdu.</p></a>
+      <a href="/guides/pakistan-driving-fines-nhso-2000.html" class="related-card"><h3>Pakistan Driving Fines Guide</h3><p>NHSO-2000 violations, amounts, how to pay or contest.</p></a>
+      <a href="/packages.html" class="related-card"><h3>Seekho Packages &amp; Pricing</h3><p>Rs 15,000 – Rs 40,000. Transparent online.</p></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo">Seekho</a>
+      <p>Karachi's award-winning driver's education programme. Founded 2019.</p>
+      <a href="https://wa.me/923202733546" class="footer-wa" data-ph-event="whatsapp_click" onclick="posthog.capture('whatsapp_click',{page:'guide-road-signs',location:'footer'})">WhatsApp: +92 320 2733546</a>
+    </div>
+    <div class="footer-links">
+      <h4>Learn</h4>
+      <a href="/programs/drivers-education.html">Driver's Education</a>
+      <a href="/packages.html">Packages &amp; Pricing</a>
+      <a href="/guides/">Guides</a>
+      <a href="/ladies-driving-school-karachi.html">Ladies-only lessons</a>
+    </div>
+    <div class="footer-links">
+      <h4>Areas</h4>
+      <a href="/driving-school-dha-karachi.html">DHA Karachi</a>
+      <a href="/driving-school-clifton-karachi.html">Clifton</a>
+      <a href="/driving-school-dha-karachi.html#pechs">PECHS</a>
+      <a href="/driving-school-dha-karachi.html#gulshan">Gulshan</a>
+    </div>
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="/about.html">About Faryal</a>
+      <a href="/faq.html">FAQs</a>
+      <a href="/careers.html">Careers</a>
+      <p>67-E/1, 7th Jami Commercial St, Phase 7 Ext, DHA Karachi</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; Seekho (Pvt.) Ltd. 2026. All rights reserved.</div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="https://wa.me/923202733546?text=Hi%20Seekho%2C%20help%20me%20prep%20for%20the%20theory%20test" data-ph-event="whatsapp_click" onclick="posthog.capture('whatsapp_click',{page:'guide-road-signs',location:'sticky_mobile'})"><span style="color:white;font-size:0.875rem">&#128241; WhatsApp Karo</span></a>
+  <a href="/book.html" class="btn-lime" data-ph-event="hero_cta_click" onclick="posthog.capture('hero_cta_click',{page:'guide-road-signs',location:'sticky_mobile'})">Book</a>
+</div>
+
+<script>
+window.addEventListener('scroll',function(){document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>10)},{passive:true});
+document.querySelectorAll('.faq-q').forEach(function(b){b.addEventListener('click',function(){var item=this.closest('.faq-item'),wasOpen=item.classList.contains('open');if(wasOpen){item.classList.remove('open');this.setAttribute('aria-expanded','false')}else{item.classList.add('open');this.setAttribute('aria-expanded','true');posthog.capture('faq_expand',{page:'guide-road-signs',question:this.textContent.trim().slice(0,80)})}})});
+</script>
+</body>
+</html>

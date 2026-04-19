@@ -76,6 +76,50 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Guides (SEO content hub) -->
+  <url>
+    <loc>https://seekhopakistan.com.pk/guides/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seekhopakistan.com.pk/guides/how-to-get-driving-license-karachi.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seekhopakistan.com.pk/guides/karachi-driving-test-what-to-expect.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seekhopakistan.com.pk/guides/parallel-parking-karachi-guide.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seekhopakistan.com.pk/guides/dashboard-warning-lights-explained.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seekhopakistan.com.pk/guides/pakistan-road-signs-complete-guide.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seekhopakistan.com.pk/guides/pakistan-driving-fines-nhso-2000.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Community & corporate -->
   <url>
     <loc>https://seekhopakistan.com.pk/traffic-club.html</loc>

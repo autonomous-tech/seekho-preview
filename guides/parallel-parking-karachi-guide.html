@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://seekhopakistan.com.pk/guides/parallel-parking-karachi-guide.html">
+  <meta name="description" content="Parallel parking Karachi guide: step-by-step reference-point method for narrow DHA, Clifton, and PECHS streets. 6 steps, diagrams, common mistakes, test-day tips.">
+  <title>Parallel Parking in Karachi: Step-by-Step Guide (Narrow Streets)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .nav-links.open{display:flex!important;position:absolute;top:64px;left:0;right:0;background:#FBF8F3;flex-direction:column;padding:16px 24px;gap:12px;border-bottom:3px solid #4E0CB9;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+    .nav-links.open a{font-size:1rem;padding:8px 0}
+    .guide-hero{padding:128px 0 64px;background:#4E0CB9;color:#FBF8F3;position:relative;overflow:hidden}
+    .guide-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 40%,rgba(110,224,134,.08) 0%,transparent 60%);pointer-events:none}
+    .guide-hero .crumbs{font-size:.82rem;color:rgba(249,248,244,.7);margin-bottom:18px;font-family:'Space Grotesk',sans-serif}
+    .guide-hero .crumbs a{color:#FFC93C;border-bottom:1px solid rgba(110,224,134,.4);padding-bottom:1px}
+    .guide-hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.7rem,4vw,2.7rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:20px;max-width:860px}
+    .guide-hero .lede{font-size:1.05rem;color:rgba(249,248,244,.88);line-height:1.7;max-width:780px;margin-bottom:18px}
+    .guide-hero .meta-row{display:flex;flex-wrap:wrap;gap:14px;font-size:.85rem;color:rgba(249,248,244,.65);font-family:'Space Grotesk',sans-serif;margin-top:18px}
+    .guide-hero .meta-row span{padding:5px 12px;border:1px solid rgba(110,224,134,.35);border-radius:4px}
+    .guide-body{padding:48px 0 72px;background:#FBF8F3}
+    .guide-wrap{max-width:820px;margin:0 auto;padding:0 24px}
+    .guide-wrap h2{font-family:'Space Grotesk',sans-serif;color:#4E0CB9;font-size:clamp(1.3rem,2.3vw,1.7rem);font-weight:800;line-height:1.25;margin:40px 0 14px;scroll-margin-top:80px;letter-spacing:-.01em}
+    .guide-wrap h2:first-child{margin-top:0}
+    .guide-wrap h3{font-family:'Space Grotesk',sans-serif;color:#4E0CB9;font-size:1.1rem;font-weight:700;margin:28px 0 10px}
+    .guide-wrap p{color:#1A1A1A;font-size:1rem;line-height:1.75;margin-bottom:16px}
+    .guide-wrap ul, .guide-wrap ol{margin:0 0 20px 24px;padding:0}
+    .guide-wrap li{color:#1A1A1A;font-size:1rem;line-height:1.7;margin-bottom:8px}
+    .guide-wrap strong{color:#4E0CB9;font-weight:700}
+    .guide-wrap a.inline{color:#4E0CB9;font-weight:700;border-bottom:2px solid #FFC93C;padding-bottom:1px}
+
+    .toc{background:white;border:3px solid #4E0CB9;border-radius:10px;padding:22px 26px;margin:32px 0 40px}
+    .toc h3{font-family:'Space Grotesk',sans-serif;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:#4E0CB9;margin:0 0 10px;font-weight:700}
+    .toc ol{margin:0 0 0 20px;padding:0}
+    .toc li{font-size:.92rem;margin-bottom:5px}
+    .toc a{color:#4E0CB9;border-bottom:1px dashed rgba(13,74,47,.35)}
+
+    .callout{background:white;border-left:4px solid #FFC93C;border-radius:6px;padding:18px 22px;margin:22px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+    .callout.warn{border-left-color:#DC2626}
+    .callout h4{font-family:'Space Grotesk',sans-serif;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:#4E0CB9;margin:0 0 6px;font-weight:700}
+    .callout.warn h4{color:#991B1B}
+    .callout p{margin-bottom:0;font-size:.95rem}
+
+    .mid-cta{background:#4E0CB9;color:#FBF8F3;border-radius:10px;padding:24px 28px;margin:36px 0;display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+    .mid-cta .text{flex:1;min-width:260px}
+    .mid-cta h3{font-family:'Space Grotesk',sans-serif;color:#FBF8F3;font-size:1.1rem;margin:0 0 4px}
+    .mid-cta p{color:rgba(249,248,244,.8);font-size:.92rem;margin:0}
+
+    /* CSS parking diagram */
+    .park-diagram{background:white;border:3px solid #4E0CB9;border-radius:10px;padding:20px;margin:22px 0}
+    .park-diagram h4{font-family:'Space Grotesk',sans-serif;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:#4E0CB9;margin:0 0 12px;font-weight:700}
+    .park-caption{font-size:.82rem;color:#6B7280;margin-top:10px;font-style:italic}
+    .park-stage{position:relative;background:#E8E9E4;border-radius:6px;padding:26px 16px;overflow:hidden}
+    .road-line{position:absolute;left:0;right:0;height:2px;background:repeating-linear-gradient(90deg,#FBF8F3 0 14px,transparent 14px 26px)}
+    .road-line.top{top:0}
+    .road-line.bottom{bottom:0}
+    .curb{position:absolute;left:0;right:0;bottom:0;height:10px;background:#9CA3AF;border-top:2px solid #4B5563}
+    .car{position:absolute;border-radius:5px;font-family:'Space Grotesk',sans-serif;font-size:.65rem;color:white;display:flex;align-items:center;justify-content:center;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,.2)}
+    .car-parked{background:#6B7280;width:76px;height:32px}
+    .car-yours{background:#FFC93C;color:#4E0CB9;width:76px;height:32px;border:2px solid #4E0CB9}
+    .ref-dot{position:absolute;width:10px;height:10px;border-radius:50%;background:#DC2626;border:2px solid white}
+    .ref-label{position:absolute;font-family:'Space Grotesk',sans-serif;font-size:.65rem;color:#991B1B;background:white;padding:2px 6px;border-radius:3px;border:1px solid #DC2626;font-weight:700;white-space:nowrap}
+    .arrow{position:absolute;font-size:1.1rem;color:#4E0CB9;font-weight:800}
+
+    .end-cta{padding:72px 0;background:#FFC93C;text-align:center;border-top:4px solid #4E0CB9}
+    .end-cta h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.4rem,3vw,2.2rem);font-weight:800;color:#4E0CB9;margin-bottom:10px}
+    .end-cta p{color:#4E0CB9;font-size:1rem;margin-bottom:24px;font-weight:500}
+    .end-cta .hero-ctas{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+    .end-cta .btn-lime{background:#4E0CB9;color:#FFC93C;border-color:#4E0CB9}
+    .end-cta .btn-ghost{border-color:#4E0CB9;color:#4E0CB9}
+    .related{padding:64px 0;background:#FBF8F3;border-top:3px solid #4E0CB9}
+    .related-inner{max-width:1100px;margin:0 auto;padding:0 24px}
+    .related h2{font-family:'Space Grotesk',sans-serif;color:#4E0CB9;font-size:1.5rem;text-align:center;margin-bottom:28px}
+    .related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    @media (max-width:767px){.related-grid{grid-template-columns:1fr}}
+    .related-card{background:white;border:3px solid #4E0CB9;border-radius:8px;padding:22px;transition:all .15s;color:#4E0CB9}
+    .related-card:hover{border-color:#FFC93C;transform:translateY(-3px)}
+    .related-card h3{font-family:'Space Grotesk',sans-serif;font-size:1rem;margin-bottom:6px;color:#4E0CB9}
+    .related-card p{font-size:.85rem;color:#6B7280;line-height:1.5}
+    .guide-faq{padding:56px 0;background:white;border-top:3px solid #4E0CB9}
+    .guide-faq-inner{max-width:820px;margin:0 auto;padding:0 24px}
+    .guide-faq h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.4rem,3vw,2rem);color:#4E0CB9;text-align:center;margin-bottom:28px}
+    .faq-list{display:grid;gap:10px}
+    .faq-item{background:#FBF8F3;border:3px solid #4E0CB9;border-radius:8px;overflow:hidden}
+    .faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 20px;background:transparent;border:none;text-align:left;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.98rem;color:#4E0CB9;cursor:pointer}
+    .faq-q:hover{background:rgba(110,224,134,.15)}
+    .faq-q .chevron{width:20px;height:20px;color:#4E0CB9;flex-shrink:0;transition:transform .2s}
+    .faq-item.open .faq-q .chevron{transform:rotate(180deg)}
+    .faq-a{display:none;padding:0 20px 18px;font-size:.95rem;line-height:1.7;color:#1A1A1A}
+    .faq-item.open .faq-a{display:block}
+    .section-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+    .bilingual{background:white;border:3px solid #4E0CB9;border-radius:8px;padding:18px 22px;margin:22px 0}
+    .bilingual p{margin:0 0 6px;font-size:.95rem}
+    .bilingual .ur{color:#6B7280;font-style:italic;font-size:.9rem;margin:0}
+  </style>
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Seekho">
+  <meta property="og:title" content="Parallel Parking in Karachi: Step-by-Step Guide">
+  <meta property="og:description" content="Six-step reference-point method for parallel parking on narrow DHA, Clifton, and PECHS streets. Diagrams, common mistakes, DLS test tips.">
+  <meta property="og:image" content="https://seekhopakistan.com.pk/images/og-guides-parallel-parking.jpg">
+  <meta property="og:url" content="https://seekhopakistan.com.pk/guides/parallel-parking-karachi-guide.html">
+  <meta property="og:locale" content="en_PK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Parallel Parking in Karachi">
+  <meta name="twitter:description" content="Step-by-step method for narrow Karachi streets + DLS practical test.">
+  <meta name="twitter:image" content="https://seekhopakistan.com.pk/images/og-guides-parallel-parking.jpg">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Parallel Parking in Karachi: Step-by-Step Guide","description":"A six-step reference-point method for parallel parking on narrow DHA, Clifton, and PECHS streets — plus how it's tested at the DLS Sindh practical.","image":"https://seekhopakistan.com.pk/images/og-guides-parallel-parking.jpg","datePublished":"2026-04-19","dateModified":"2026-04-19","author":{"@type":"Organization","name":"Seekho Pakistan","url":"https://seekhopakistan.com.pk"},"publisher":{"@type":"Organization","name":"Seekho Pakistan","logo":{"@type":"ImageObject","url":"https://seekhopakistan.com.pk/images/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://seekhopakistan.com.pk/guides/parallel-parking-karachi-guide.html"},"provider":{"@id":"https://seekhopakistan.com.pk/#business"}}
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HowTo","name":"How to parallel park on narrow Karachi streets","description":"A precise six-step reference-point parallel parking procedure for Karachi's DHA, Clifton, and PECHS streets, and for the DLS Sindh practical driving test.","totalTime":"PT2M","supply":[{"@type":"HowToSupply","name":"Car with working mirrors and indicators"},{"@type":"HowToSupply","name":"A gap at least 1.5x your car's length"}],"tool":[{"@type":"HowToTool","name":"Side mirror alignment"},{"@type":"HowToTool","name":"Rear-view mirror"}],"step":[
+    {"@type":"HowToStep","name":"Find a gap 1.5x your car length","text":"For a Suzuki Swift or Alto, look for a gap of at least 5.5 to 6 metres. Smaller is possible with experience but risky on the test.","image":"https://seekhopakistan.com.pk/images/og-guides-parallel-parking.jpg"},
+    {"@type":"HowToStep","name":"Pull alongside the front car","text":"Stop with your side mirrors level with the front car's side mirrors. Leave about 2 feet (60 cm) of lateral gap.","image":"https://seekhopakistan.com.pk/images/og-guides-parallel-parking.jpg"},
+    {"@type":"HowToStep","name":"Reverse slowly, wheels straight","text":"Put the car in reverse. Look over your left shoulder. Start rolling back slowly with the steering wheel perfectly straight."},
+    {"@type":"HowToStep","name":"Turn the wheel fully right at your reference point","text":"When your rear bumper aligns with the front car's rear bumper, turn the steering wheel fully right (clockwise). Keep reversing."},
+    {"@type":"HowToStep","name":"Straighten as your car enters the gap","text":"When your car is at a 45-degree angle to the curb, straighten the steering wheel and continue reversing."},
+    {"@type":"HowToStep","name":"Turn fully left to finish","text":"When your front bumper clears the front car, turn the steering wheel fully left (counter-clockwise). Roll back until parallel to the curb. Straighten, stop, engage handbrake."}
+  ]}
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":["LocalBusiness","AutoSchool","DrivingSchool"],"@id":"https://seekhopakistan.com.pk/#business","name":"Seekho Pakistan","legalName":"Seekho (Pvt.) Ltd.","url":"https://seekhopakistan.com.pk","telephone":"+923202733546","email":"info@seekhopakistan.com.pk","address":{"@type":"PostalAddress","streetAddress":"67-E/1, 7th Jami Commercial St, Phase 7 Ext","addressLocality":"Karachi","addressRegion":"Sindh","postalCode":"75500","addressCountry":"PK"},"priceRange":"Rs 15,000 - Rs 40,000","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"82","bestRating":"5"}}
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seekhopakistan.com.pk/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://seekhopakistan.com.pk/guides/"},{"@type":"ListItem","position":3,"name":"Parallel Parking in Karachi","item":"https://seekhopakistan.com.pk/guides/parallel-parking-karachi-guide.html"}]}
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How big should the parking gap be?","acceptedAnswer":{"@type":"Answer","text":"For a standard Karachi learner car — Suzuki Swift, Alto, Cultus — aim for a gap of at least 5.5 to 6 metres, which is about 1.5 times the length of the car. With practice you can park in 4.5 metres, but on the DLS test and on DHA streets with close-packed cars, err on the side of the bigger gap."}},
+    {"@type":"Question","name":"Why do I always end up crooked?","acceptedAnswer":{"@type":"Answer","text":"The most common reason is starting the reverse from the wrong distance — usually too far from the front car. Your side mirrors should be level with the parked car's side mirrors, and your lateral gap should be about 60 cm (roughly two feet). If you start further out, your final angle will be wrong and you'll end up pointing toward the curb."}},
+    {"@type":"Question","name":"How is parallel parking tested at the DLS practical in Karachi?","acceptedAnswer":{"@type":"Answer","text":"At most Karachi DLS centres the practical uses two cones or a simulated car placed 5.5 to 6 metres apart. You are allowed two attempts with one correction (one reverse-forward-reverse). Hitting a cone, going over the curb, or requiring more than one correction is marked as a failure. It is the single most-failed task on the Karachi practical."}},
+    {"@type":"Question","name":"Should I learn parallel parking in manual or automatic?","acceptedAnswer":{"@type":"Answer","text":"Automatic is easier to learn parallel parking in because you can focus entirely on steering and mirrors without juggling the clutch. Many Seekho students learn the technique in our Alto first, then transfer it to manual. If your test will be on manual, do your last 3 practice sessions on manual."}},
+    {"@type":"Question","name":"Where in Karachi can I safely practise parallel parking?","acceptedAnswer":{"@type":"Answer","text":"Quieter DHA streets early morning — Phase 6 internal lanes, Phase 8 commercial streets before 9am. The empty lot behind Seaview on a Sunday. The wide stretches of Khayaban-e-Muslim. Avoid peak traffic zones like Tariq Road, Zamzama, or Ittehad Commercial until you are confident on quieter roads."}},
+    {"@type":"Question","name":"Can I use a reverse camera during the test?","acceptedAnswer":{"@type":"Answer","text":"You can, but examiners mainly watch your head movement and mirror checks. Don't stare only at the camera screen. Alternate camera, left side mirror, and over-the-shoulder glances. Seekho's Suzuki Alto is equipped with a rear camera and the Swift is not — we teach the camera-free method first so you're not dependent on it."}}
+  ]}
+  </script>
+
+  <script>
+  !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+  posthog.init('TBD-posthog-key',{api_host:'https://us.i.posthog.com',defaults:'2026-01-30'});
+  </script>
+</head>
+<body>
+
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="logo">Seekho</a>
+    <div class="nav-links" id="navLinks">
+      <a href="/packages.html">Packages</a>
+      <a href="/programs/drivers-education.html">Programme</a>
+      <a href="/guides/">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+    </div>
+    <a href="/book.html" class="btn-lime nav-cta" data-ph-event="hero_cta_click" onclick="posthog.capture('hero_cta_click',{page:'guide-parallel-parking',location:'nav'})">Book My First Lesson</a>
+    <button class="hamburger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')">&#9776;</button>
+  </div>
+</nav>
+
+<section class="guide-hero">
+  <div class="section-inner">
+    <p class="crumbs"><a href="/">Home</a> &rsaquo; <a href="/guides/">Guides</a> &rsaquo; Parallel Parking in Karachi</p>
+    <h1>Parallel parking in Karachi: the 6-step method for narrow streets.</h1>
+    <p class="lede"><strong>Quick answer:</strong> To parallel park on a narrow Karachi street or at the DLS practical test, find a gap at least <strong>1.5 times your car's length</strong>, pull up <strong>alongside the front car with side mirrors level</strong> and a 60 cm lateral gap, then reverse in <strong>three steering movements</strong> — wheel fully right, straighten at 45°, wheel fully left. With the reference-point method our instructors teach, you'll fit into a 5.5-metre gap on Jami Commercial or Khayaban-e-Shamsheer in under 30 seconds.</p>
+    <div class="meta-row">
+      <span>Updated April 2026</span>
+      <span>Reading time ~7 min</span>
+      <span>By Seekho Pakistan</span>
+    </div>
+  </div>
+</section>
+
+<section class="guide-body">
+  <div class="guide-wrap">
+
+    <div class="toc" aria-label="Table of contents">
+      <h3>On this page</h3>
+      <ol>
+        <li><a href="#why-hard">Why parallel parking is hard in Karachi</a></li>
+        <li><a href="#gap">Finding the right gap</a></li>
+        <li><a href="#six-steps">The 6-step reference-point method</a></li>
+        <li><a href="#diagram">Full parking sequence (diagrams)</a></li>
+        <li><a href="#mistakes">Top 7 mistakes to avoid</a></li>
+        <li><a href="#practice-spots">Where to practise in Karachi</a></li>
+        <li><a href="#dls-test">How it's tested at the DLS practical</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+      </ol>
+    </div>
+
+    <h2 id="why-hard">Why parallel parking is hard in Karachi</h2>
+    <p>Karachi streets were not designed for the density of cars that now park on them. A DHA Phase 5 internal lane nominally has room for two lanes plus parking — but parked Corollas, Fortuners, and the occasional Hiace squeeze the driving lane to under 3 metres. That means your parallel parking gap is often <strong>the exact length of your car plus 40 cm</strong>, with a rickshaw threading through behind you.</p>
+    <p>Add narrow Clifton commercial streets (Sehar, Bukhari, Khayaban-e-Shahbaz), PECHS side-lanes with no curb markings, and the occasional storm drain, and you understand why parallel parking is the single biggest confidence gap we see in new Karachi drivers — and the single most-failed task on the DLS practical.</p>
+    <div class="bilingual">
+      <p><strong>Instructor line:</strong> "Parallel parking is geometry, not courage. Reference points work every time."</p>
+      <p class="ur"><strong>Roman Urdu:</strong> "Parallel parking koi himmat ka kaam nahi. Reference points yaad rakho, har baar fit ho gi."</p>
+    </div>
+
+    <h2 id="gap">Finding the right gap</h2>
+    <p>You need a gap at least <strong>1.5 times the length of your car</strong>. In practical terms:</p>
+    <ul>
+      <li><strong>Suzuki Alto (3.4m):</strong> need about 5.1m gap — 5.5m ideal</li>
+      <li><strong>Suzuki Swift (3.85m):</strong> need about 5.8m — 6m ideal</li>
+      <li><strong>Toyota Corolla (4.6m):</strong> need about 6.9m — 7m ideal</li>
+      <li><strong>Toyota Fortuner (4.8m):</strong> need about 7.2m — 7.5m ideal</li>
+    </ul>
+    <p>On the DLS test, the bay is standardised at roughly <strong>5.5 to 6 metres</strong>, sized for a Swift/Alto/Mehran learner car.</p>
+
+    <h2 id="six-steps">The 6-step reference-point method</h2>
+    <p>This is the technique Seekho instructors Omaima, Farkhanda, and Zainab teach. It works the same whether you're in a Phase 7 street at midnight or at the Clifton DLS test bay at 9am.</p>
+    <h3>Step 1 — Signal + position</h3>
+    <p>Signal right (toward the parking gap). Pull past the gap and stop <strong>alongside the front car</strong>, with your side mirrors level with theirs. Lateral gap: about 60 cm (roughly two feet).</p>
+
+    <h3>Step 2 — Prepare to reverse</h3>
+    <p>Put the car in reverse. Both hands on the wheel, <strong>completely straight</strong>. Look over your left shoulder. Check your right side mirror briefly for approaching traffic.</p>
+
+    <h3>Step 3 — Reverse to your reference point</h3>
+    <p>Start rolling back <em>slowly</em>. Your first reference point: when your <strong>rear bumper is level with the front car's rear bumper</strong>, stop mentally — this is where steering begins.</p>
+
+    <h3>Step 4 — Full lock right</h3>
+    <p>Keeping the car rolling slowly backward, turn the steering wheel <strong>fully right</strong> (clockwise). Your nose pivots out, your tail swings in. Continue until the car is at a <strong>45-degree angle</strong> to the curb.</p>
+
+    <h3>Step 5 — Straighten</h3>
+    <p>Straighten the steering wheel (the car is still moving backward). Continue rolling straight into the gap until your <strong>front bumper clears the front car's rear bumper</strong>.</p>
+
+    <h3>Step 6 — Full lock left, straighten, stop</h3>
+    <p>Turn the steering wheel <strong>fully left</strong> (counter-clockwise). Your tail tucks in, your nose aligns with the curb. When you're parallel to the kerb, straighten the wheel, stop, engage the handbrake. Car in neutral (manual) or Park (auto).</p>
+
+    <div class="callout">
+      <h4>Karachi-specific adjustment</h4>
+      <p>On very narrow DHA streets, you may not have room to pull forward after the reverse. The reference-point method should land you within 15 cm of the curb — if you're further, one small correction (forward + reverse) is fine. More than one, and you're doing too much counter-steering.</p>
+    </div>
+
+    <h2 id="diagram">Full parking sequence (diagrams)</h2>
+
+    <div class="park-diagram">
+      <h4>Stage A — Position alongside the front car</h4>
+      <div class="park-stage" style="height:130px">
+        <div class="road-line top" style="top:8px"></div>
+        <div class="curb"></div>
+        <div class="car car-parked" style="left:40px;bottom:16px">Front car</div>
+        <div class="car car-parked" style="right:40px;bottom:16px">Back car</div>
+        <div class="car car-yours" style="left:40px;top:30px">You</div>
+        <div class="ref-label" style="top:72px;left:120px">← mirrors level · 60 cm lateral gap →</div>
+      </div>
+      <p class="park-caption">You are parked alongside the front car, mirrors level with theirs. Car in reverse. Steering straight.</p>
+    </div>
+
+    <div class="park-diagram">
+      <h4>Stage B — Reverse, then full right-lock at the reference point</h4>
+      <div class="park-stage" style="height:130px">
+        <div class="road-line top" style="top:8px"></div>
+        <div class="curb"></div>
+        <div class="car car-parked" style="left:40px;bottom:16px">Front car</div>
+        <div class="car car-parked" style="right:40px;bottom:16px">Back car</div>
+        <div class="car car-yours" style="left:80px;top:36px;transform:rotate(25deg);transform-origin:left">You</div>
+        <div class="ref-dot" style="left:116px;bottom:48px"></div>
+        <div class="ref-label" style="left:66px;top:6px">Ref: rear bumper = front car's rear bumper → full right lock</div>
+        <span class="arrow" style="top:46px;left:210px">&larr;</span>
+      </div>
+      <p class="park-caption">Reverse slowly. When your rear bumper aligns with the front car's rear bumper, turn the wheel fully right.</p>
+    </div>
+
+    <div class="park-diagram">
+      <h4>Stage C — 45 degrees, straighten the wheel</h4>
+      <div class="park-stage" style="height:130px">
+        <div class="road-line top" style="top:8px"></div>
+        <div class="curb"></div>
+        <div class="car car-parked" style="left:40px;bottom:16px">Front car</div>
+        <div class="car car-parked" style="right:40px;bottom:16px">Back car</div>
+        <div class="car car-yours" style="left:150px;top:42px;transform:rotate(40deg);transform-origin:left">You</div>
+        <div class="ref-label" style="left:60px;top:6px">45° angle to the curb → straighten the wheel</div>
+        <span class="arrow" style="top:56px;left:260px">&larr;</span>
+      </div>
+      <p class="park-caption">At 45 degrees, your car is halfway into the gap. Straighten the wheel and keep reversing slowly.</p>
+    </div>
+
+    <div class="park-diagram">
+      <h4>Stage D — Full left lock, finish parallel to the curb</h4>
+      <div class="park-stage" style="height:130px">
+        <div class="road-line top" style="top:8px"></div>
+        <div class="curb"></div>
+        <div class="car car-parked" style="left:40px;bottom:16px">Front car</div>
+        <div class="car car-parked" style="right:40px;bottom:16px">Back car</div>
+        <div class="car car-yours" style="left:140px;bottom:16px">You</div>
+        <div class="ref-label" style="left:60px;top:6px">Full left lock → straighten → stop → handbrake</div>
+      </div>
+      <p class="park-caption">Parallel to the curb, about 15 cm out. Straighten the wheel, handbrake up, gear in neutral or Park.</p>
+    </div>
+
+    <div class="mid-cta">
+      <div class="text">
+        <h3>Nail parallel parking with live coaching.</h3>
+        <p>Our instructors run a parking-dedicated session in every 12-lesson package. Rs 15,000 onwards.</p>
+      </div>
+      <a href="/book.html" class="btn-lime" data-ph-event="hero_cta_click" onclick="posthog.capture('hero_cta_click',{page:'guide-parallel-parking',location:'mid_cta'})">Book My First Lesson &rarr;</a>
+    </div>
+
+    <h2 id="mistakes">Top 7 mistakes to avoid</h2>
+    <ol>
+      <li><strong>Starting too far from the front car.</strong> More than 1 metre of lateral gap means your final position is too far from the curb. Keep it at 60 cm.</li>
+      <li><strong>Not stopping at the reference point.</strong> If you keep reversing without turning right at the rear-bumper alignment, you'll overshoot and end up pointing toward the curb.</li>
+      <li><strong>Half-turns on the steering wheel.</strong> The method needs <em>full</em> lock, not partial. Practice the full-turn muscle memory.</li>
+      <li><strong>Going too fast.</strong> Parallel parking is a 0.5 km/h manoeuvre. Walking pace. On the test, rushing triggers cone-clipping and immediate failure.</li>
+      <li><strong>Not checking mirrors during the reverse.</strong> Left mirror, over-the-shoulder, right mirror. Examiners note this.</li>
+      <li><strong>Forgetting to signal.</strong> Signal right before you pull alongside the front car. It's both courteous and a test-scoring criterion.</li>
+      <li><strong>Over-correcting.</strong> One correction (forward + back) is fine. Two or more and you've failed the DLS parking task.</li>
+    </ol>
+
+    <h2 id="practice-spots">Where to practise parallel parking in Karachi</h2>
+    <p>Our instructors recommend these practice spots, roughly sorted from safest (start here) to most realistic:</p>
+    <ol>
+      <li><strong>Empty school parking lots on weekends.</strong> DHA Phase 6 schools, Clifton Beach View Apartments' visitor area (Sunday morning). Use cones or water bottles for reference.</li>
+      <li><strong>Phase 8 commercial streets before 8:30am.</strong> Quiet, wide, forgiving.</li>
+      <li><strong>Seaview Road east-end before 9am.</strong> Wide curb, low traffic, straight kerbside.</li>
+      <li><strong>Khayaban-e-Muslim and Khayaban-e-Shaheen.</strong> Low density, real parked cars.</li>
+      <li><strong>Jami Commercial 7th Street (our own street).</strong> Narrow, busy, realistic — practise here once confident.</li>
+      <li><strong>Zamzama off-peak (after 10pm) or Clifton Block 5 side-streets.</strong> Final stage — if you can park here, you can park anywhere in Karachi.</li>
+    </ol>
+
+    <h2 id="dls-test">How it's tested at the DLS practical</h2>
+    <p>At the Karachi DLS practical the parallel-parking bay is marked with cones or a simulated car. Rules typically applied (confirm with your branch — <em>TBD-faryal-verify per latest DLS Sindh memo</em>):</p>
+    <ul>
+      <li>Gap size: <strong>5.5 to 6 metres</strong></li>
+      <li>Allowed attempts: <strong>1 with 1 permitted correction</strong> (some branches allow 2 attempts)</li>
+      <li>Hitting a cone / kerb: <strong>automatic fail</strong></li>
+      <li>Time limit: none, but visibly stalling leads to examiner intervention</li>
+      <li>Final position: <strong>within 30 cm of the curb</strong>, parallel (within 10 degrees)</li>
+    </ul>
+    <p>Our <a class="inline" href="/guides/karachi-driving-test-what-to-expect.html">Karachi Driving Test guide</a> covers what to do on test day before and after the parking task.</p>
+
+  </div>
+</section>
+
+<section class="guide-faq" id="faqs">
+  <div class="guide-faq-inner">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">How big should the parking gap be? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a">For a Swift, Alto, Cultus, or Mehran, at least <strong>5.5–6 metres</strong> — about 1.5x the car's length. With practice, 4.5m is possible, but on the DLS test and on dense DHA streets, always err bigger.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Why do I always end up crooked? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a">Most often: you started too far laterally (more than 60 cm from the front car), or you began your right-lock before reaching the reference point. Fix both and the geometry corrects itself.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">How is parallel parking tested at the Karachi DLS practical? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a">In a marked bay ~5.5–6 metres with 2 cones or a dummy car. You get <strong>1–2 attempts with 1 correction</strong>. Hitting a cone or kerb = fail. Single most-failed element on the Karachi practical.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Should I learn it in manual or automatic? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a"><strong>Automatic first</strong> — you can focus entirely on steering and mirrors. Transfer to manual for your last 3 practice runs if that's what your test will be on.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Where in Karachi can I safely practise? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a">DHA Phase 6 internal lanes early morning. Empty Seaview stretch on Sundays. Khayaban-e-Muslim. Phase 8 commercial streets before 9am. Graduate to Jami Commercial and Zamzama once confident.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can I use a reverse camera? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button><div class="faq-a">You can, but don't depend on it. Examiners look for head movement and mirror checks. Seekho's Alto has a rear camera; the Swift doesn't. We teach the camera-free method first.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="end-cta">
+  <div class="section-inner">
+    <h2>Ready to learn properly? Book your first lesson.</h2>
+    <p>First lesson pasand nahi ayi? Full refund, no questions. 1,000+ drivers trained since 2019.</p>
+    <div class="hero-ctas">
+      <a href="/book.html" class="btn-lime" data-ph-event="hero_cta_click" onclick="posthog.capture('hero_cta_click',{page:'guide-parallel-parking',location:'end_cta'})">Book My First Lesson &rarr;</a>
+      <a href="/packages.html" class="btn-ghost" data-ph-event="packages_click" onclick="posthog.capture('packages_click',{page:'guide-parallel-parking'})">See Packages &amp; Pricing</a>
+    </div>
+  </div>
+</section>
+
+<section class="related">
+  <div class="related-inner">
+    <h2>Related guides</h2>
+    <div class="related-grid">
+      <a href="/guides/karachi-driving-test-what-to-expect.html" class="related-card"><h3>Karachi Driving Test Guide</h3><p>25-Q theory + practical, examiner criteria, how to pass first time.</p></a>
+      <a href="/guides/how-to-get-driving-license-karachi.html" class="related-card"><h3>Karachi Driving Licence Guide</h3><p>DLS Sindh process, fees, documents, 42-day wait.</p></a>
+      <a href="/guides/dashboard-warning-lights-explained.html" class="related-card"><h3>Dashboard Warning Lights</h3><p>Every icon explained, severity, action — Roman Urdu included.</p></a>
+      <a href="/packages.html" class="related-card"><h3>Seekho Packages &amp; Pricing</h3><p>Rs 15,000 – Rs 40,000. Transparent online.</p></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo">Seekho</a>
+      <p>Karachi's award-winning driver's education programme. Founded 2019.</p>
+      <a href="https://wa.me/923202733546" class="footer-wa" data-ph-event="whatsapp_click" onclick="posthog.capture('whatsapp_click',{page:'guide-parallel-parking',location:'footer'})">WhatsApp: +92 320 2733546</a>
+    </div>
+    <div class="footer-links">
+      <h4>Learn</h4>
+      <a href="/programs/drivers-education.html">Driver's Education</a>
+      <a href="/packages.html">Packages &amp; Pricing</a>
+      <a href="/guides/">Guides</a>
+      <a href="/ladies-driving-school-karachi.html">Ladies-only lessons</a>
+    </div>
+    <div class="footer-links">
+      <h4>Areas</h4>
+      <a href="/driving-school-dha-karachi.html">DHA Karachi</a>
+      <a href="/driving-school-clifton-karachi.html">Clifton</a>
+      <a href="/driving-school-dha-karachi.html#pechs">PECHS</a>
+      <a href="/driving-school-dha-karachi.html#gulshan">Gulshan</a>
+    </div>
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="/about.html">About Faryal</a>
+      <a href="/faq.html">FAQs</a>
+      <a href="/careers.html">Careers</a>
+      <p>67-E/1, 7th Jami Commercial St, Phase 7 Ext, DHA Karachi</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; Seekho (Pvt.) Ltd. 2026. All rights reserved.</div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="https://wa.me/923202733546?text=Hi%20Seekho%2C%20I%20need%20help%20with%20parallel%20parking" data-ph-event="whatsapp_click" onclick="posthog.capture('whatsapp_click',{page:'guide-parallel-parking',location:'sticky_mobile'})"><span style="color:white;font-size:0.875rem">&#128241; WhatsApp Karo</span></a>
+  <a href="/book.html" class="btn-lime" data-ph-event="hero_cta_click" onclick="posthog.capture('hero_cta_click',{page:'guide-parallel-parking',location:'sticky_mobile'})">Book</a>
+</div>
+
+<script>
+window.addEventListener('scroll',function(){document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>10)},{passive:true});
+document.querySelectorAll('.faq-q').forEach(function(b){b.addEventListener('click',function(){var item=this.closest('.faq-item'),wasOpen=item.classList.contains('open');if(wasOpen){item.classList.remove('open');this.setAttribute('aria-expanded','false')}else{item.classList.add('open');this.setAttribute('aria-expanded','true');posthog.capture('faq_expand',{page:'guide-parallel-parking',question:this.textContent.trim().slice(0,80)})}})});
+</script>
+</body>
+</html>
