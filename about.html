@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://seekhopakistan.com.pk/about">
+  <meta name="description" content="Seekho is Karachi's award-winning driving academy, founded by Faryal Farooqui in 2019. 1,000+ students trained. Majority-female instructor team. Theoretical + behind-the-wheel curriculum.">
+  <title>About Seekho | Founded by Faryal Farooqui, Karachi 2019</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .nav-links.open{display:flex!important;position:absolute;top:64px;left:0;right:0;background:#FBF8F3;flex-direction:column;padding:16px 24px;gap:12px;border-bottom:3px solid #4E0CB9;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+    .nav-links.open a{font-size:1rem;padding:8px 0}
+
+    /* Compact hero */
+    .about-hero{padding:120px 0 64px;background:#4E0CB9;text-align:center;position:relative;overflow:hidden}
+    .about-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 40%,rgba(255,201,60,.08) 0%,transparent 60%);pointer-events:none}
+    .about-hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,4.5vw,3.2rem);font-weight:800;color:#FBF8F3;line-height:1.15;letter-spacing:-.02em;max-width:880px;margin:0 auto 18px;position:relative;z-index:1}
+    .about-hero-sub{font-size:1.1rem;color:rgba(249,248,244,.75);max-width:680px;margin:0 auto 32px;line-height:1.6;position:relative;z-index:1}
+    .about-hero .hero-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+
+    /* Founder story */
+    .founder-section{padding:80px 0;background:#FBF8F3}
+    .founder-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center;margin-top:32px}
+    @media (max-width:767px){.founder-grid{grid-template-columns:1fr;gap:32px}}
+    .founder-photo{border:3px solid #4E0CB9;border-radius:8px;overflow:hidden;background:#E5E7EB;aspect-ratio:4/5}
+    .founder-photo img{width:100%;height:100%;object-fit:cover}
+    .founder-body h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#4E0CB9;margin-bottom:20px;line-height:1.2}
+    .founder-body p{margin-bottom:16px;color:#1A1A1A;font-size:1rem;line-height:1.7}
+    .founder-body .signature{font-family:'Space Grotesk',sans-serif;font-weight:700;color:#4E0CB9;margin-top:20px;padding-top:20px;border-top:3px solid #FFC93C;display:inline-block}
+
+    /* Mission pillars */
+    .mission-section{padding:80px 0;background:white;border-top:3px solid #4E0CB9;border-bottom:3px solid #4E0CB9}
+    .mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+    @media (max-width:767px){.mission-grid{grid-template-columns:1fr}}
+    .mission-card{background:#FBF8F3;border:3px solid #4E0CB9;border-radius:8px;padding:32px 28px;text-align:center;transition:all .15s}
+    .mission-card:hover{border-color:#FFC93C;transform:translateY(-3px);box-shadow:0 8px 32px rgba(78,12,185,.12)}
+    .mission-card .num{font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:2.4rem;color:#FFC93C;line-height:1;margin-bottom:12px;display:block}
+    .mission-card h3{font-family:'Space Grotesk',sans-serif;font-size:1.25rem;font-weight:700;color:#4E0CB9;margin-bottom:10px}
+    .mission-card p{font-size:.95rem;color:#6B6385;line-height:1.6}
+
+    /* By the numbers */
+    .stats-section{padding:80px 0;background:#4E0CB9;border-top:4px solid #FFC93C}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+    @media (max-width:767px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+    .stat-tile{background:rgba(255,255,255,.04);border:3px solid #FFC93C;border-radius:8px;padding:28px 20px;text-align:center}
+    .stat-num{font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:clamp(1.8rem,3.5vw,2.6rem);color:#FFC93C;line-height:1;margin-bottom:8px;display:block}
+    .stat-label{color:rgba(249,248,244,.85);font-size:.9rem;font-weight:500;line-height:1.4}
+
+    /* Instructor grid */
+    .team-section{padding:80px 0;background:#FBF8F3}
+    .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+    @media (max-width:1023px){.team-grid{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:767px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:479px){.team-grid{grid-template-columns:1fr}}
+    .team-card{background:white;border:3px solid #4E0CB9;border-radius:8px;overflow:hidden;transition:all .15s}
+    .team-card:hover{transform:translateY(-3px);border-color:#FFC93C;box-shadow:0 8px 32px rgba(78,12,185,.12)}
+    .team-photo{background:#E5E7EB;aspect-ratio:1/1;width:100%}
+    .team-photo img{width:100%;height:100%;object-fit:cover}
+    .team-body{padding:18px 18px 20px}
+    .team-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;color:#4E0CB9;margin-bottom:4px}
+    .team-role{font-size:.82rem;color:#6B6385;font-weight:500;margin-bottom:10px;text-transform:uppercase;letter-spacing:.04em}
+    .team-specialty{font-size:.9rem;color:#1A1A1A;line-height:1.5;font-style:italic}
+
+    /* Awards timeline */
+    .awards-section{padding:80px 0;background:white;border-top:3px solid #4E0CB9;border-bottom:3px solid #4E0CB9}
+    .awards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+    @media (max-width:767px){.awards-grid{grid-template-columns:1fr}}
+    .award-card{background:#FBF8F3;border:3px solid #4E0CB9;border-radius:8px;padding:28px 24px;text-align:center}
+    .award-year{font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:2rem;color:#FFC93C;margin-bottom:10px;display:block}
+    .award-card h3{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;color:#4E0CB9;margin-bottom:8px}
+    .award-card p{font-size:.9rem;color:#6B6385;line-height:1.5}
+    .press-row{margin-top:48px;padding-top:40px;border-top:2px dashed #4E0CB9}
+    .press-row h3{font-family:'Space Grotesk',sans-serif;text-align:center;color:#4E0CB9;margin-bottom:24px;font-size:1.1rem;text-transform:uppercase;letter-spacing:.06em}
+    .press-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:16px}
+    .press-item{display:block;padding:16px 18px;border:2px solid #E5E7EB;border-radius:8px;background:white;text-decoration:none;transition:border-color .15s,transform .15s}
+    .press-item:hover{border-color:#4E0CB9;transform:translateY(-2px)}
+    .press-item .outlet{font-family:'Space Grotesk',sans-serif;font-weight:700;color:#4E0CB9;font-size:.95rem;margin-bottom:4px}
+    .press-item .title{font-size:.88rem;color:#1A1A1A;line-height:1.35;margin-bottom:6px}
+    .press-item .date{font-size:.78rem;color:#6B6385;font-weight:600}
+    .press-read-more{text-align:center;margin-top:20px}
+    .press-read-more a{color:#4E0CB9;font-weight:600;font-size:.9rem;text-decoration:underline}
+    .partners-row{margin-top:32px}
+    .partners-row h4{font-family:'Space Grotesk',sans-serif;text-align:center;color:#6B6385;margin-bottom:16px;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}
+    .partners-logos{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 28px;align-items:center}
+    .partner-logo{font-family:'Space Grotesk',sans-serif;font-weight:600;color:#6B6385;font-size:.85rem;padding:8px 14px;border:1px solid #E5E7EB;border-radius:6px;background:white}
+
+    /* Approach split */
+    .approach-section{padding:80px 0;background:#FBF8F3}
+    .approach-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+    @media (max-width:767px){.approach-grid{grid-template-columns:1fr}}
+    .approach-card{background:white;border:3px solid #4E0CB9;border-radius:8px;padding:32px 28px}
+    .approach-card h3{font-family:'Space Grotesk',sans-serif;color:#4E0CB9;font-size:1.25rem;margin-bottom:16px}
+    .approach-card ul{list-style:none;padding:0}
+    .approach-card li{padding:8px 0;font-size:.95rem;color:#1A1A1A;padding-left:28px;position:relative;line-height:1.5}
+    .approach-card li::before{content:'\2713';position:absolute;left:0;top:8px;color:#FFC93C;font-weight:800;font-size:1.1rem}
+    .approach-link{display:inline-block;margin-top:18px;color:#4E0CB9;font-weight:700;border-bottom:2px solid #FFC93C;padding-bottom:2px}
+
+    /* Community band */
+    .community-section{padding:72px 0;background:#4E0CB9;text-align:center}
+    .community-section h2{font-family:'Space Grotesk',sans-serif;color:#FBF8F3;font-size:clamp(1.5rem,3vw,2.2rem);margin-bottom:16px}
+    .community-section p{color:rgba(249,248,244,.8);max-width:680px;margin:0 auto 28px;line-height:1.7}
+
+    /* Bottom CTA */
+    .about-cta{padding:80px 0;background:#FFC93C;text-align:center;border-top:4px solid #4E0CB9}
+    .about-cta h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,3vw,2.4rem);font-weight:800;color:#4E0CB9;margin-bottom:12px}
+    .about-cta p{color:#4E0CB9;font-size:1rem;margin-bottom:28px;font-weight:500}
+    .about-cta .hero-ctas{justify-content:center}
+    .about-cta .btn-lime{background:#4E0CB9;color:#FFC93C;border-color:#4E0CB9}
+    .about-cta .btn-ghost{border-color:#4E0CB9;color:#4E0CB9}
+
+    /* Internal link cluster */
+    .linkcluster{padding:48px 0;background:#FBF8F3;border-top:2px solid #E5E7EB}
+    .linkcluster-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+    .linkcluster a{display:inline-block;padding:10px 18px;border:2px solid #4E0CB9;border-radius:6px;font-weight:600;font-size:.9rem;color:#4E0CB9;background:white;transition:all .15s}
+    .linkcluster a:hover{background:#FFC93C;transform:translateY(-2px)}
+
+    .section-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+    .section-label{font-family:'Space Grotesk',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;color:#FFC93C;font-weight:700;margin-bottom:8px;text-align:center}
+    .section-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;color:#4E0CB9;line-height:1.2;text-align:center;max-width:720px;margin:0 auto 12px}
+    .section-sub{text-align:center;color:#6B6385;max-width:640px;margin:0 auto;font-size:1rem;line-height:1.6}
+  </style>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Seekho">
+  <meta property="og:title" content="About Seekho | Founded by Faryal Farooqui, Karachi 2019">
+  <meta property="og:description" content="Karachi's award-winning driving academy. Founded 2019 by Faryal Farooqui. Majority-female instructor team. 1,000+ students trained. Theoretical + practical curriculum.">
+  <meta property="og:image" content="https://seekhopakistan.com.pk/images/og-about.jpg">
+  <meta property="og:url" content="https://seekhopakistan.com.pk/about">
+  <meta property="og:locale" content="en_PK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Seekho | Founded by Faryal Farooqui, Karachi 2019">
+  <meta name="twitter:description" content="Pakistan's award-winning driving academy. Majority-female team. 1,000+ students trained since 2019.">
+  <meta name="twitter:image" content="https://seekhopakistan.com.pk/images/og-about.jpg">
+
+  <!-- Schema: LocalBusiness / AutoSchool / DrivingSchool -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":["LocalBusiness","AutoSchool","DrivingSchool"],
+    "@id":"https://seekhopakistan.com.pk/#business",
+    "name":"Seekho Pakistan",
+    "alternateName":["Seekho","Seekho Driving School"],
+    "legalName":"Seekho (Pvt.) Ltd.",
+    "foundingDate":"2019-09",
+    "founders":[{"@type":"Person","name":"Faryal Farooqui","jobTitle":"Founder & CEO"}],
+    "description":"Karachi's award-winning driver's education academy. Theoretical and behind-the-wheel curriculum. Majority-female instructor team.",
+    "url":"https://seekhopakistan.com.pk/about",
+    "logo":"https://seekhopakistan.com.pk/images/logo.png",
+    "image":["https://seekhopakistan.com.pk/images/og-about.jpg"],
+    "telephone":"+923202733546",
+    "email":"info@seekhopakistan.com.pk",
+    "address":{"@type":"PostalAddress","streetAddress":"67-E/1, 7th Jami Commercial Street","addressLocality":"Karachi","addressRegion":"Sindh","postalCode":"75500","addressCountry":"PK"},
+    "geo":{"@type":"GeoCoordinates","latitude":24.7969,"longitude":67.0461},
+    "areaServed":["DHA Karachi","Clifton","PECHS","Gulshan"],
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"10:00","closes":"15:00"}
+    ],
+    "priceRange":"Rs 15,000 - Rs 40,000",
+    "currenciesAccepted":"PKR",
+    "paymentAccepted":"Cash, Easypaisa, JazzCash, Bank Transfer",
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"82","bestRating":"5"},
+    "sameAs":[
+      "https://www.facebook.com/Seekho.org",
+      "https://www.instagram.com/seekho.pk/",
+      "https://twitter.com/seekhoorg",
+      "https://www.linkedin.com/in/seekho-pakistan-191759191/"
+    ]
+  }
+  </script>
+
+  <!-- Schema: Person (Faryal) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Faryal Farooqui",
+    "jobTitle":"Founder & CEO, Seekho Pakistan",
+    "worksFor":{"@type":"Organization","name":"Seekho Pakistan"},
+    "description":"Founder of Seekho, Karachi's award-winning driver's education academy. Former marketing professional at Aman Foundation, Barclays, Hascol and GSK.",
+    "url":"https://seekhopakistan.com.pk/about",
+    "image":"https://seekhopakistan.com.pk/images/faryal-portrait.jpg"
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://seekhopakistan.com.pk/"},
+      {"@type":"ListItem","position":2,"name":"About","item":"https://seekhopakistan.com.pk/about"}
+    ]
+  }
+  </script>
+
+  <!-- PostHog + CRO event delegation -->
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="logo">Seekho</a>
+    <div class="nav-links" id="navLinks">
+      <a href="/packages.html">Packages</a>
+      <a href="/programs/drivers-education.html">Programme</a>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/traffic-club.html">Traffic Club</a>
+    </div>
+    <a href="/book.html" class="btn-lime nav-cta" onclick="posthog.capture('nav_book_click',{page:'about'})">Book My First Lesson</a>
+    <button class="hamburger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')">&#9776;</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="section-inner">
+    <h1>Seekho — Pakistan's award-winning driving academy, founded by Faryal Farooqui.</h1>
+    <p class="about-hero-sub">1,000+ drivers trained since 2019. Majority-female instructor team. A proper curriculum — not just "uncle teaching in an empty plot".</p>
+    <div class="hero-ctas">
+      <a href="/book.html" class="btn-lime" onclick="posthog.capture('about_hero_book_click')">Book My First Lesson &rarr;</a>
+      <a href="#team" class="btn-ghost" style="color:#FBF8F3;border-color:#FBF8F3">Meet the Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER STORY -->
+<section class="founder-section">
+  <div class="section-inner">
+    <p class="section-label">Founder Story</p>
+    <h2 class="section-title">Why Faryal started Seekho.</h2>
+    <div class="founder-grid">
+      <div class="founder-photo">
+        <!-- TBD-faryal-real-photo: replace with actual portrait -->
+        <img src="images/faryal-portrait.jpg" alt="Faryal Farooqui, founder and CEO of Seekho Pakistan" loading="lazy">
+      </div>
+      <div class="founder-body">
+        <p>In 2019, after years in corporate marketing — Aman Foundation, Barclays, Hascol, GSK — Faryal Farooqui went looking for a driving school in Karachi that her female relatives would actually feel safe in. She couldn't find one.</p>
+        <p>Every option was the same story: a nervous learner paired with an impatient male instructor in a strange car in unfamiliar neighbourhoods. No theory. No structure. No sense of care. Just "steering wheel pakro aur chalao".</p>
+        <p>So she built the school she wanted to exist. A proper Driver's Education Programme — behind-the-wheel training combined with classroom sessions on vehicle anatomy, road safety, emergency handling. Female instructors for female learners who want them. Completion certificates. Dual-brake cars. Dashcams. Air-conditioning. All the things a 2019 driving school should have had and didn't.</p>
+        <p>Seekho was inaugurated in September 2019 by the Commissioner of Karachi, Iftikhar Ali Shallwani. Since then, 1,000+ students have learned to drive with us — most of them nervous, most of them now confident, and a lot of them women who had been told they'd never be "the driver" in their family.</p>
+        <span class="signature">— Faryal Farooqui, Founder &amp; CEO</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION PILLARS -->
+<section class="mission-section">
+  <div class="section-inner">
+    <p class="section-label">Our Mission</p>
+    <h2 class="section-title">Three things we teach every student. In that order.</h2>
+    <div class="mission-grid">
+      <div class="mission-card">
+        <span class="num">1</span>
+        <h3>Confidence</h3>
+        <p>Fear of driving is the real problem — not gear-shifts. We build confidence first. Skills follow naturally. Patient instructors, calm cars, your pace.</p>
+      </div>
+      <div class="mission-card">
+        <span class="num">2</span>
+        <h3>Safety</h3>
+        <p>Dual-brake cars, dashcams, insured vehicles. Theoretical sessions on vehicle anatomy and emergencies — the things most schools skip. You leave knowing how to change a tyre and jump-start a car.</p>
+      </div>
+      <div class="mission-card">
+        <span class="num">3</span>
+        <h3>Courtesy</h3>
+        <p>Karachi roads work when drivers respect each other. We teach road manners alongside road rules. Good drivers make better roads.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BY THE NUMBERS -->
+<section class="stats-section">
+  <div class="section-inner">
+    <p class="section-label" style="color:#FFC93C">By the Numbers</p>
+    <h2 class="section-title" style="color:#FBF8F3">Six years. 1,000+ drivers. One mission.</h2>
+    <div class="stats-grid">
+      <div class="stat-tile"><span class="stat-num">1,000+</span><span class="stat-label">Drivers trained since 2019</span></div>
+      <div class="stat-tile"><span class="stat-num">6</span><span class="stat-label">Years teaching in Karachi</span></div>
+      <div class="stat-tile"><span class="stat-num">80%</span><span class="stat-label">Female-instructor team</span></div>
+      <div class="stat-tile"><span class="stat-num">82</span><span class="stat-label">Verified student reviews</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUCTOR GRID -->
+<section class="team-section" id="team">
+  <div class="section-inner">
+    <p class="section-label">Our Team</p>
+    <h2 class="section-title">Meet your instructors.</h2>
+    <p class="section-sub">Every Seekho instructor is university-educated, has 5+ years of driving experience, and is certified to teach. We call them Training Officers — not "ustads".</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-photo"><img src="images/instructor-omaima.jpg" alt="Omaima, Seekho Driving Training Officer" loading="lazy"></div>
+        <div class="team-body">
+          <div class="team-name">Omaima</div>
+          <div class="team-role">Driving Training Officer</div>
+          <p class="team-specialty">"Road anxiety ka sab se acha ilaj slow start hai. Pehle parking lot, phir phase ke aasan roads, phir main road."</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="images/instructor-farkhanda.jpg" alt="Farkhanda, Seekho Driving Training Officer" loading="lazy"></div>
+        <div class="team-body">
+          <div class="team-name">Farkhanda</div>
+          <div class="team-role">Driving Training Officer</div>
+          <p class="team-specialty">"Confidence building specialist. I teach new drivers and nervous returners — mostly women who were told they couldn't."</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="images/instructor-zainab.jpg" alt="Zainab, Seekho Driving Training Officer" loading="lazy"></div>
+        <div class="team-body">
+          <div class="team-name">Zainab</div>
+          <div class="team-role">Driving Training Officer</div>
+          <p class="team-specialty">"Manual transmission specialist. Hill starts and stop-and-go traffic without stalling."</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="images/instructor-tehreem.jpg" alt="Tehreem, Seekho Driving Training Officer" loading="lazy"></div>
+        <div class="team-body">
+          <div class="team-name">Tehreem</div>
+          <div class="team-role">Driving Training Officer</div>
+          <p class="team-specialty">"Parking is where most students lose their nerve. Bukhari, Ittehad, Jami — I know every tight spot in DHA."</p>
+        </div>
+      </div>
+      <!-- TBD-faryal-verify: names below are placeholders until we confirm the full roster -->
+      <div class="team-card">
+        <div class="team-photo"><img src="images/instructor-muzaffar.jpg" alt="Muzaffar, Seekho Driving Training Officer" loading="lazy"></div>
+        <div class="team-body">
+          <div class="team-name">Muzaffar</div>
+          <div class="team-role">Driving Training Officer</div>
+          <p class="team-specialty">"For students who prefer a male instructor. Calm, structured, zero judgment."</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="images/instructor-placeholder-a.jpg" alt="TBD-faryal-real-photo: Seekho driving training officer" loading="lazy"></div>
+        <div class="team-body">
+          <div class="team-name">TBD-faryal-verify</div>
+          <div class="team-role">Driving Training Officer</div>
+          <p class="team-specialty">Instructor profile pending confirmation from founder.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="images/instructor-placeholder-b.jpg" alt="TBD-faryal-real-photo: Seekho theory instructor" loading="lazy"></div>
+        <div class="team-body">
+          <div class="team-name">TBD-faryal-verify</div>
+          <div class="team-role">Theory Instructor</div>
+          <p class="team-specialty">Theoretical lessons led by Motorway &amp; National Highway officials (per Aurora 2019 — confirm current).</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="images/instructor-placeholder-d.jpg" alt="TBD-faryal-real-photo: Seekho programme coordinator" loading="lazy"></div>
+        <div class="team-body">
+          <div class="team-name">TBD-faryal-verify</div>
+          <div class="team-role">Programme Coordinator</div>
+          <p class="team-specialty">Handles scheduling, pickup logistics, and student welcome calls.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS + PRESS -->
+<section class="awards-section">
+  <div class="section-inner">
+    <p class="section-label">Awards &amp; Press</p>
+    <h2 class="section-title">Award-winning — since day one.</h2>
+    <p class="section-sub">Inaugurated by the Commissioner of Karachi, Iftikhar Ali Shallwani, in September 2019. Featured in Aurora Magazine (Dawn), The Nation, Biz Today.</p>
+    <div class="awards-grid">
+      <div class="award-card">
+        <span class="award-year">2022</span>
+        <h3>Driver's Education Excellence</h3>
+        <p>TBD-faryal-verify — awarding body and full award title.</p>
+      </div>
+      <div class="award-card">
+        <span class="award-year">2023</span>
+        <h3>Women-Led Enterprise Recognition</h3>
+        <p>TBD-faryal-verify — awarding body and full award title.</p>
+      </div>
+      <div class="award-card">
+        <span class="award-year">2024</span>
+        <h3>Road Safety Contribution Award</h3>
+        <p>TBD-faryal-verify — awarding body and full award title.</p>
+      </div>
+    </div>
+    <div class="press-row">
+      <h3>Seekho in the press</h3>
+      <p class="section-sub" style="text-align:center;margin-bottom:24px">Inaugurated by the Commissioner of Karachi, Iftikhar Ali Shallwani, in September 2019.</p>
+      <div class="press-grid">
+        <a href="https://aurora.dawn.com/news/1143603/seekho-the-right-way" class="press-item" target="_blank" rel="noopener" data-ph-event="press_click" data-ph-outlet="aurora">
+          <div class="outlet">Aurora Magazine (Dawn)</div>
+          <div class="title">"Seekho the right way" &mdash; by Anusha Zahid</div>
+          <div class="date">Nov&ndash;Dec 2019</div>
+        </a>
+        <a href="https://www.biztoday.news/2019/10/02/seekho-opens-its-doors-for-learners/" class="press-item" target="_blank" rel="noopener" data-ph-event="press_click" data-ph-outlet="biztoday">
+          <div class="outlet">Biz Today</div>
+          <div class="title">"Seekho opens its doors for learners"</div>
+          <div class="date">October 2, 2019</div>
+        </a>
+        <a href="https://www.nation.com.pk/29-Sep-2019/seekho-opens-its-doors-for-learners" class="press-item" target="_blank" rel="noopener" data-ph-event="press_click" data-ph-outlet="nation">
+          <div class="outlet">The Nation</div>
+          <div class="title">"Seekho opens its doors for learners"</div>
+          <div class="date">September 29, 2019</div>
+        </a>
+        <a href="https://blogpakistan.pk/driving-schools-in-karachi/" class="press-item" target="_blank" rel="noopener" data-ph-event="press_click" data-ph-outlet="blogpakistan">
+          <div class="outlet">Blog Pakistan</div>
+          <div class="title">"11 Best Driving Schools in Karachi"</div>
+          <div class="date">2023</div>
+        </a>
+      </div>
+      <p class="press-read-more"><a href="/press.html">See full press coverage &rarr;</a></p>
+
+      <div class="partners-row">
+        <h4>Partners &amp; collaborators</h4>
+        <div class="partners-logos">
+          <span class="partner-logo">FM 89</span>
+          <span class="partner-logo">Dolmen Cares</span>
+          <span class="partner-logo">SIUT</span>
+          <span class="partner-logo">SZABIST</span>
+          <span class="partner-logo">Southshore College</span>
+          <span class="partner-logo">Carnelian</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="approach-section">
+  <div class="section-inner">
+    <p class="section-label">Our Approach</p>
+    <h2 class="section-title">Theoretical + practical. Not one without the other.</h2>
+    <p class="section-sub">Most driving schools in Karachi hand you keys and point at the road. We teach you what's under the hood, what the dashboard signs mean, and what to do when things go wrong — before you start the engine.</p>
+    <div class="approach-grid">
+      <div class="approach-card">
+        <h3>Theoretical curriculum</h3>
+        <ul>
+          <li>Introduction to Driver's Education (60-min online/on-site)</li>
+          <li>Vehicle anatomy — under the hood walkthrough</li>
+          <li>Dashboard signs + engine checks</li>
+          <li>Road safety signs + rules</li>
+          <li>Emergency protocols — tyre change, jump-start, accident</li>
+          <li>Defensive and distracted driving</li>
+          <li>Fire &amp; safety information</li>
+          <li>Saturday group workshop (120 min) — theory test + certificate</li>
+        </ul>
+      </div>
+      <div class="approach-card">
+        <h3>Behind-the-wheel (BTW)</h3>
+        <ul>
+          <li>Start in a quiet area close to home</li>
+          <li>Full-talk &rarr; prompted &rarr; independent progression</li>
+          <li>City streets + Phase commercials</li>
+          <li>Main road + highway driving</li>
+          <li>Parallel parking in narrow DHA lanes</li>
+          <li>Night driving + rain conditions</li>
+          <li>45-minute sessions, dual-brake vehicles</li>
+          <li>Dashcam-recorded for feedback</li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:32px">
+      <a href="/programs/drivers-education.html" class="approach-link">See the full Driver's Education Programme &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY BAND -->
+<section class="community-section">
+  <div class="section-inner">
+    <h2>More than a driving school — Seekho Traffic Club.</h2>
+    <p>Seekho Traffic Club (STC) is our road-safety programme for children. We run entertaining, educational sessions in schools across Karachi — because the best drivers start learning about the road long before they touch a steering wheel.</p>
+    <a href="/traffic-club.html" class="btn-lime" style="background:#FFC93C;color:#4E0CB9">Learn about Traffic Club &rarr;</a>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="about-cta">
+  <div class="section-inner">
+    <h2>Ready to learn? First lesson pasand nahi ayi? Full refund.</h2>
+    <p>Book a lesson in 60 seconds. WhatsApp us if you have a question first.</p>
+    <div class="hero-ctas">
+      <a href="/book.html" class="btn-lime" onclick="posthog.capture('about_footer_book_click')">Book My First Lesson &rarr;</a>
+      <a href="https://wa.me/923202733546?text=Hi%20Seekho%2C%20I%20want%20to%20know%20more%20about%20your%20driving%20academy" class="btn-ghost" target="_blank" rel="noopener" onclick="posthog.capture('about_whatsapp_click')">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- LINK CLUSTER -->
+<section class="linkcluster">
+  <div class="linkcluster-inner">
+    <a href="/programs/drivers-education.html">Driver's Education Programme</a>
+    <a href="/packages.html">Packages &amp; Pricing</a>
+    <a href="/faq.html">FAQs</a>
+    <a href="/traffic-club.html">Traffic Club</a>
+    <a href="/driving-school-dha-karachi.html">Lessons in DHA</a>
+    <a href="/driving-school-clifton-karachi.html">Lessons in Clifton</a>
+    <a href="/ladies-driving-school-karachi.html">Ladies-only lessons</a>
+    <a href="/book.html">Book Now</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo">Seekho</a>
+      <p>Karachi's award-winning driver's education programme. Founded 2019.</p>
+      <a href="https://wa.me/923202733546" class="footer-wa">WhatsApp: +92 320 2733546</a>
+    </div>
+    <div class="footer-links">
+      <h4>Learn</h4>
+      <a href="/programs/drivers-education.html">Driver's Education</a>
+      <a href="/packages.html">Packages &amp; Pricing</a>
+      <a href="/ladies-driving-school-karachi.html">Ladies-only lessons</a>
+      <a href="/traffic-club.html">Traffic Club (kids)</a>
+    </div>
+    <div class="footer-links">
+      <h4>Areas</h4>
+      <a href="/driving-school-dha-karachi.html">DHA Karachi</a>
+      <a href="/driving-school-clifton-karachi.html">Clifton</a>
+      <a href="/driving-school-dha-karachi.html#pechs">PECHS</a>
+      <a href="/driving-school-dha-karachi.html#gulshan">Gulshan</a>
+    </div>
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="/about.html">About Faryal</a>
+      <a href="/faq.html">FAQs</a>
+      <a href="/careers.html">Careers</a>
+      <p>67-E/1, 7th Jami Commercial St, Phase 7 Ext, DHA Karachi</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; Seekho (Pvt.) Ltd. 2026. All rights reserved.</div>
+</footer>
+
+<!-- MOBILE STICKY BAR -->
+<div class="mobile-bar">
+  <a href="https://wa.me/923202733546?text=Hi%20Seekho%2C%20I%27m%20interested%20in%20learning%20to%20drive" onclick="posthog.capture('mobile_sticky_whatsapp_click',{page:'about'})"><span style="color:white;font-size:0.875rem">&#128241; WhatsApp Karo</span></a>
+  <a href="/book.html" class="btn-lime" onclick="posthog.capture('mobile_sticky_book_click',{page:'about'})">Book</a>
+</div>
+
+<!-- SCRIPTS -->
+<script>
+window.addEventListener('scroll',function(){document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>10)},{passive:true});
+</script>
+<script src="/prices.js"></script>
+</body>
+</html>

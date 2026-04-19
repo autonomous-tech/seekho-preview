@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://seekhopakistan.com.pk/traffic-club.html">
+  <meta name="description" content="Seekho Traffic Club — Faryal Farooqui's road-safety programme teaching Karachi kids (ages 6–14) pedestrian safety, road rules, bicycle safety, and bystander responsibility. Invite us to your school.">
+  <meta name="keywords" content="traffic club Karachi, road safety programme Karachi, kids road safety Pakistan, school road safety workshop, pedestrian safety children Karachi, Seekho Traffic Club">
+  <title>Traffic Club | Seekho's Road Safety Programme for Karachi Kids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .nav-links.open{display:flex!important;position:absolute;top:64px;left:0;right:0;background:#FBF8F3;flex-direction:column;padding:16px 24px;gap:12px;border-bottom:3px solid #4E0CB9;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+    .nav-links.open a{font-size:1rem;padding:8px 0}
+
+    /* Traffic Club specific */
+    .tc-hero{padding:120px 0 72px;background:#4E0CB9;position:relative;overflow:hidden}
+    .tc-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 40%,rgba(255,201,60,0.08) 0%,transparent 60%);pointer-events:none}
+    .tc-hero-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;position:relative;z-index:1}
+    @media (max-width:767px){.tc-hero-inner{grid-template-columns:1fr;gap:28px}}
+    .tc-hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,4.5vw,3rem);font-weight:800;color:#FBF8F3;line-height:1.15;letter-spacing:-0.02em}
+    .tc-hero-kicker{font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#FFC93C;margin-bottom:12px}
+    .tc-founder-quote{font-size:1.05rem;color:rgba(249,248,244,0.88);line-height:1.7;margin:20px 0 28px;border-left:3px solid #FFC93C;padding-left:16px;font-style:italic}
+    .tc-founder-attr{display:block;font-size:0.9rem;color:rgba(249,248,244,0.6);margin-top:8px;font-style:normal}
+    .tc-hero-img{position:relative;background:#FFC93C;border:3px solid #FFC93C;border-radius:8px;min-height:320px;overflow:hidden}
+    .tc-hero-img img{width:100%;height:100%;object-fit:cover;position:relative;z-index:1}
+    .tc-hero-img .placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#4E0CB9;font-family:'Space Grotesk',sans-serif;font-weight:700;padding:20px;text-align:center;font-size:0.9rem;z-index:0}
+
+    .tc-about{padding:72px 0;background:#FBF8F3}
+    .tc-about-inner{max-width:820px;margin:0 auto;padding:0 24px}
+    .tc-about p{font-size:1.05rem;line-height:1.8;color:#374151;margin-bottom:20px}
+    .tc-about p:first-of-type::first-letter{font-family:'Space Grotesk',sans-serif;font-size:3.2rem;font-weight:800;float:left;line-height:1;padding:4px 10px 0 0;color:#4E0CB9}
+
+    .tc-activities{padding:72px 0;background:white;border-top:3px solid #4E0CB9;border-bottom:3px solid #4E0CB9}
+    .tc-wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+    .tc-activities-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:32px}
+    @media (max-width:767px){.tc-activities-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:479px){.tc-activities-grid{grid-template-columns:1fr}}
+    .tc-activity-card{background:#FBF8F3;border:3px solid #4E0CB9;border-radius:8px;padding:24px 20px;transition:all 0.15s}
+    .tc-activity-card:hover{transform:translateY(-4px);border-color:#FFC93C;box-shadow:0 8px 32px rgba(78,12,185,0.12)}
+    .tc-activity-icon{font-size:2rem;margin-bottom:12px;display:block}
+    .tc-activity-card h3{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:700;color:#4E0CB9;margin-bottom:8px}
+    .tc-activity-card p{font-size:0.875rem;color:#6B6385;line-height:1.6}
+
+    .tc-impact{padding:64px 0;background:#4E0CB9;text-align:center}
+    .tc-impact-grid{margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    @media (max-width:479px){.tc-impact-grid{grid-template-columns:1fr}}
+    .tc-impact-stat{padding:28px 20px;background:rgba(255,201,60,0.08);border:3px solid #FFC93C;border-radius:8px}
+    .tc-impact-num{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,5vw,3rem);font-weight:800;color:#FFC93C;line-height:1;margin-bottom:8px}
+    .tc-impact-label{font-size:0.9rem;color:rgba(249,248,244,0.85)}
+    .tc-impact-tbd{display:inline-block;font-size:0.55rem;background:#FEF3C7;color:#92400E;padding:2px 6px;border-radius:4px;font-weight:700;margin-left:6px;vertical-align:middle;letter-spacing:0.05em}
+
+    .tc-gallery{padding:72px 0;background:#FBF8F3}
+    .tc-gallery-grid{margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    @media (max-width:767px){.tc-gallery-grid{grid-template-columns:repeat(2,1fr)}}
+    .tc-gallery-tile{aspect-ratio:1/1;background:linear-gradient(135deg,#FFC93C 0%,#4E0CB9 100%);border:3px solid #4E0CB9;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#FBF8F3;font-family:'Space Grotesk',sans-serif;font-size:0.85rem;font-weight:700;text-align:center;padding:16px}
+
+    .tc-invite{padding:72px 0;background:#093D26;border-top:4px solid #FFC93C;text-align:center}
+    .tc-invite-inner{max-width:720px;margin:0 auto;padding:0 24px}
+    .tc-invite h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;color:#FBF8F3;margin-bottom:12px}
+    .tc-invite p{color:rgba(249,248,244,0.72);font-size:1rem;margin-bottom:28px;line-height:1.7}
+    .tc-invite-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn-wa{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:white;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;border:3px solid rgba(255,255,255,0.2);border-radius:8px;padding:14px 28px;transition:all 0.15s;text-decoration:none;min-height:48px}
+    .btn-wa:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,0.4)}
+    .btn-wa svg{width:20px;height:20px;flex-shrink:0}
+    .btn-email-dark{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#FBF8F3;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;border:3px solid rgba(249,248,244,0.5);border-radius:8px;padding:14px 28px;min-height:48px;text-decoration:none;transition:all 0.15s}
+    .btn-email-dark:hover{background:rgba(249,248,244,0.08);border-color:#FBF8F3}
+  </style>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Seekho">
+  <meta property="og:title" content="Traffic Club | Seekho's Road Safety Programme for Karachi Kids">
+  <meta property="og:description" content="Faryal Farooqui's passion project: teaching Karachi's kids to respect the road. School workshops, community days, teacher training, printed materials for ages 6–14.">
+  <meta property="og:image" content="https://seekhopakistan.com.pk/images/og-traffic-club.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Seekho Traffic Club — road safety programme for Karachi kids">
+  <meta property="og:url" content="https://seekhopakistan.com.pk/traffic-club.html">
+  <meta property="og:locale" content="en_PK">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Traffic Club | Seekho's Road Safety Programme for Karachi Kids">
+  <meta name="twitter:description" content="Faryal Farooqui's passion project: teaching Karachi's kids to respect the road.">
+  <meta name="twitter:image" content="https://seekhopakistan.com.pk/images/og-traffic-club.jpg">
+
+  <!-- PostHog + CRO event delegation -->
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="logo">Seekho</a>
+    <div class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/packages.html">Packages</a>
+      <a href="/driving-school-dha-karachi.html">Areas</a>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/book.html">Contact</a>
+    </div>
+    <a href="/book.html" class="btn-lime nav-cta" data-ph-event="nav_cta_click">Book Now</a>
+    <button class="hamburger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')">&#9776;</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="tc-hero">
+  <div class="tc-hero-inner">
+    <div>
+      <p class="tc-hero-kicker">Seekho Traffic Club · Since 2019</p>
+      <h1>Traffic Club &mdash; teaching Karachi's kids to respect the road.</h1>
+      <p class="tc-founder-quote">
+        "Har saal Karachi mein bachhay road accidents mein zakhmi hotay hain &mdash; aur most of them are preventable. Agar hum bachpan se sikhayein &mdash; look left, look right, seatbelt pehno, helmet lagao &mdash; tou next generation of drivers alag hogi. Yeh mera passion project hai."
+        <span class="tc-founder-attr">&mdash; Faryal Farooqui, Founder</span>
+      </p>
+      <a href="#invite" class="btn-lime" data-ph-event="tc_hero_cta_click">Bring Traffic Club to your school &rarr;</a>
+    </div>
+    <div class="tc-hero-img">
+      <span class="placeholder">images/traffic-club-hero.jpg<br>TBD-faryal</span>
+      <img src="images/traffic-club-hero.jpg" alt="Seekho Traffic Club session with Karachi schoolchildren learning road safety">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="tc-about">
+  <div class="tc-about-inner">
+    <p class="section-label">What is Traffic Club</p>
+    <h2 class="section-title" style="margin-bottom:20px">A road-safety classroom &mdash; run by people who drive for a living.</h2>
+    <p>
+      Seekho Traffic Club (STC) is an initiative by Seekho to create awareness regarding road safety amongst children. Inspiring young minds to learn all about road safety is key to preventing accidents later on in life and helping them make better choices. Road safety is something that needs to be done continuously &mdash; and even subtly at times.
+    </p>
+    <p>
+      We run STC at schools, community centres, and neighbourhood societies across Karachi. The programme is built for children aged 6&ndash;14 and tailored to age group &mdash; younger kids focus on pedestrian safety and recognising signs; older kids go deeper into bicycle safety, emergency response, and what to do if you witness an accident. Every session is interactive, bilingual (Urdu + English), and taught by Seekho instructors who spend their days on Karachi's roads.
+    </p>
+    <p>
+      We cover basic road rules, pedestrian safety, bicycle safety, what to do in an emergency, and &mdash; the one most programmes skip &mdash; bystander responsibility. Kids need to know that if they see something unsafe, they can speak up. Teacher se bolo, parent ko bolo, 1122 call karo. Yeh cheezein bachpan se aati hain.
+    </p>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section class="tc-activities">
+  <div class="tc-wrap">
+    <p class="section-label" style="color:#4E0CB9">How We Teach</p>
+    <h2 class="section-title">Four ways Traffic Club shows up.</h2>
+    <p class="section-sub">Each format is free for partner schools &mdash; we cover costs through the Seekho main business.</p>
+
+    <div class="tc-activities-grid">
+      <div class="tc-activity-card">
+        <span class="tc-activity-icon" aria-hidden="true">&#127979;</span>
+        <h3>School Workshops</h3>
+        <p>Single-session or multi-week workshops inside the classroom or assembly hall. Age-appropriate slides, role-play, and take-home worksheets. Runs 45&ndash;90 minutes.</p>
+      </div>
+      <div class="tc-activity-card">
+        <span class="tc-activity-icon" aria-hidden="true">&#127961;</span>
+        <h3>Community Days</h3>
+        <p>Neighbourhood pop-ups in DHA, Clifton, and partner society spaces. Mock crossings, traffic-sign scavenger hunts, safety games &mdash; parents welcome.</p>
+      </div>
+      <div class="tc-activity-card">
+        <span class="tc-activity-icon" aria-hidden="true">&#128105;&#8205;&#127979;</span>
+        <h3>Teacher Training</h3>
+        <p>Half-day trainer-of-trainers session. We teach your staff to run the STC curriculum year-round &mdash; so road safety stops being a one-off assembly.</p>
+      </div>
+      <div class="tc-activity-card">
+        <span class="tc-activity-icon" aria-hidden="true">&#128214;</span>
+        <h3>Printed Materials</h3>
+        <p>Colouring books with road rules, safety-sign flash cards, pedestrian-crossing posters. Free to partner schools. Useful well after the workshop ends.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="tc-impact">
+  <div class="tc-wrap">
+    <p class="section-label">Impact so far</p>
+    <h2 class="section-title" style="color:#FBF8F3">The numbers Traffic Club is proud of.</h2>
+
+    <div class="tc-impact-grid">
+      <div class="tc-impact-stat">
+        <div class="tc-impact-num">TBD<span class="tc-impact-tbd">faryal</span></div>
+        <div class="tc-impact-label">Schools reached in Karachi</div>
+      </div>
+      <div class="tc-impact-stat">
+        <div class="tc-impact-num">TBD<span class="tc-impact-tbd">faryal</span></div>
+        <div class="tc-impact-label">Children participated</div>
+      </div>
+      <div class="tc-impact-stat">
+        <div class="tc-impact-num">6+</div>
+        <div class="tc-impact-label">Years running (since 2019)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="tc-gallery">
+  <div class="tc-wrap">
+    <p class="section-label">From the field</p>
+    <h2 class="section-title">Traffic Club in action.</h2>
+    <p class="section-sub">Moments from school visits, community days, and teacher training sessions.</p>
+
+    <div class="tc-gallery-grid">
+      <div class="tc-gallery-tile">School workshop<br>TBD-faryal</div>
+      <div class="tc-gallery-tile">Community day<br>TBD-faryal</div>
+      <div class="tc-gallery-tile">Teacher training<br>TBD-faryal</div>
+      <div class="tc-gallery-tile">Road-safety games<br>TBD-faryal</div>
+      <div class="tc-gallery-tile">Colouring book launch<br>TBD-faryal</div>
+      <div class="tc-gallery-tile">Partner school visit<br>TBD-faryal</div>
+    </div>
+  </div>
+</section>
+
+<!-- INVITE CTA -->
+<section class="tc-invite" id="invite">
+  <div class="tc-invite-inner">
+    <h2>Bring Traffic Club to your school.</h2>
+    <p>
+      Principal ho, PTA member ho, ya teacher &mdash; agar aap chahte hain keh aapke bachhon ko road safety seekhaayi jaaye, we'll come. Workshops free hain for partner schools. WhatsApp karein ya email &mdash; hum 48 hours mein respond karte hain.
+    </p>
+    <div class="tc-invite-ctas">
+      <a href="https://wa.me/923202733546?text=Hi%20Seekho%2C%20I%27d%20like%20to%20invite%20Traffic%20Club%20to%20our%20school" class="btn-wa" target="_blank" rel="noopener" data-ph-event="tc_invite_whatsapp">
+        <svg viewBox="0 0 32 32" fill="white"><path d="M16 0C7.16 0 0 7.16 0 16c0 2.83.74 5.48 2.03 7.78L.07 31.93l8.36-2.19A15.9 15.9 0 0016 32c8.84 0 16-7.16 16-16S24.84 0 16 0zm8.16 22.56c-.34 1-2.02 1.88-2.78 2-.74.12-1.44.18-4.62-1-4.06-1.5-6.66-5.64-6.86-5.9-.2-.26-1.62-2.16-1.62-4.12s1.02-2.92 1.38-3.32c.36-.4.78-.5 1.04-.5.26 0 .52 0 .74.02.24.02.56-.08.88.68.32.78 1.1 2.7 1.2 2.9s.16.44.02.7c-.14.28-.2.44-.4.68-.2.24-.42.54-.6.72-.2.2-.4.42-.18.82.24.4.84 1.38 1.8 2.24 1.22 1.1 2.26 1.44 2.58 1.6.32.16.5.14.7-.08.18-.22.8-.94 1.02-1.26.22-.32.44-.28.74-.16.3.1 1.9.9 2.22 1.06.32.16.54.24.62.38.08.14.08.78-.26 1.54z"/></svg>
+        WhatsApp 0320-2733546
+      </a>
+      <a href="mailto:info@seekhopakistan.com.pk?subject=Traffic%20Club%20school%20invite" class="btn-email-dark" data-ph-event="tc_invite_email">Email info@seekhopakistan.com.pk</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo">Seekho</a>
+      <p>Karachi ka driving school &mdash; jahan women women ko sikhati hain.</p>
+      <a href="https://wa.me/923202733546" class="footer-wa">WhatsApp: +92 320 2733546</a>
+    </div>
+    <div class="footer-links">
+      <h4>Packages</h4>
+      <a href="/packages.html#student-bundle">Student Bundle</a>
+      <a href="/packages.html#enhance-my-skills">Enhance My Skills</a>
+      <a href="/packages.html#teach-me-everything">Teach Me Everything</a>
+      <a href="/packages.html">See all prices</a>
+    </div>
+    <div class="footer-links">
+      <h4>Areas</h4>
+      <a href="/driving-school-dha-karachi.html">DHA Karachi</a>
+      <a href="/driving-school-clifton-karachi.html">Clifton Karachi</a>
+      <a href="/ladies-driving-school-karachi.html">Ladies Driving</a>
+      <a href="/automatic-car-driving-lessons-karachi.html">Automatic Lessons</a>
+    </div>
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/careers.html">Careers</a>
+      <a href="/press.html">Press</a>
+      <a href="/traffic-club.html">Traffic Club</a>
+      <a href="/book.html">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; Seekho Pakistan 2026. All rights reserved. &middot; 67-E/1, 7th Jami Commercial St, Phase 7 Ext, DHA Karachi</div>
+</footer>
+
+<a href="https://wa.me/923202733546?text=Hi+I%27d+like+to+invite+Traffic+Club+to+our+school" class="wa-float" aria-label="WhatsApp" target="_blank" rel="noopener" data-ph-event="whatsapp_float_click">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16 0C7.16 0 0 7.16 0 16c0 2.83.74 5.48 2.03 7.78L.07 31.93l8.36-2.19A15.9 15.9 0 0016 32c8.84 0 16-7.16 16-16S24.84 0 16 0zm8.16 22.56c-.34 1-2.02 1.88-2.78 2-.74.12-1.44.18-4.62-1-4.06-1.5-6.66-5.64-6.86-5.9-.2-.26-1.62-2.16-1.62-4.12s1.02-2.92 1.38-3.32c.36-.4.78-.5 1.04-.5.26 0 .52 0 .74.02.24.02.56-.08.88.68.32.78 1.1 2.7 1.2 2.9s.16.44.02.7c-.14.28-.2.44-.4.68-.2.24-.42.54-.6.72-.2.2-.4.42-.18.82.24.4.84 1.38 1.8 2.24 1.22 1.1 2.26 1.44 2.58 1.6.32.16.5.14.7-.08.18-.22.8-.94 1.02-1.26.22-.32.44-.28.74-.16.3.1 1.9.9 2.22 1.06.32.16.54.24.62.38.08.14.08.78-.26 1.54z"/></svg>
+</a>
+
+<div class="mobile-bar">
+  <a href="https://wa.me/923202733546?text=Hi+I%27d+like+to+invite+Traffic+Club+to+our+school" data-ph-event="mobile_bar_whatsapp" target="_blank" rel="noopener"><span style="color:white;font-size:0.875rem">&#127979; Invite Traffic Club</span></a>
+  <a href="#invite" class="btn-lime" data-ph-event="mobile_bar_invite">Invite Us</a>
+</div>
+
+<script>
+window.addEventListener('scroll',function(){document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>10)},{passive:true});
+</script>
+
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seekhopakistan.com.pk/"},{"@type":"ListItem","position":2,"name":"Traffic Club","item":"https://seekhopakistan.com.pk/traffic-club.html"}]}
+</script>
+
+<!-- Schema: LocalBusiness / AutoSchool / Organization (shared @id) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["LocalBusiness","AutoSchool","Organization"],"@id":"https://seekhopakistan.com.pk/#business","name":"Seekho","alternateName":["Seekho Pakistan","Seekho Driving School"],"legalName":"Seekho (Pvt.) Ltd.","description":"Karachi's driving school where women teach women. Traffic Club is our community road-safety programme for children.","url":"https://seekhopakistan.com.pk/","logo":"https://seekhopakistan.com.pk/images/logo.png","image":["https://seekhopakistan.com.pk/images/og-traffic-club.jpg"],"telephone":"+923202733546","email":"info@seekhopakistan.com.pk","address":{"@type":"PostalAddress","streetAddress":"67-E/1, 7th Jami Commercial St, Phase 7 Ext","addressLocality":"Karachi","addressRegion":"Sindh","postalCode":"75500","addressCountry":"PK"},"geo":{"@type":"GeoCoordinates","latitude":24.7969,"longitude":67.0461},"priceRange":"Rs 15,000 - Rs 40,000","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"82","bestRating":"5"},"founder":{"@type":"Person","name":"Faryal Farooqui"},"foundingDate":"2019-09","sameAs":["https://www.facebook.com/Seekho.org","https://www.instagram.com/seekho.pk/","https://twitter.com/seekhoorg","https://www.linkedin.com/in/seekho-pakistan-191759191/"]}
+</script>
+
+<!-- Schema: EducationalProgram -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EducationalOccupationalProgram","name":"Seekho Traffic Club","description":"Road safety awareness programme for Karachi children ages 6-14. Covers road rules, pedestrian safety, bicycle safety, emergency response, and bystander responsibility.","provider":{"@id":"https://seekhopakistan.com.pk/#business"},"educationalLevel":"Primary and Middle School","occupationalCategory":"Road Safety Education","url":"https://seekhopakistan.com.pk/traffic-club.html","audience":{"@type":"PeopleAudience","suggestedMinAge":6,"suggestedMaxAge":14}}
+</script>
+
+<script src="prices.js" defer></script>
+</body>
+</html>

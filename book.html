@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://seekhopakistan.com.pk/book">
+  <title>Book your first Seekho driving lesson — Rs 500 deposit</title>
+  <meta name="description" content="Book your first driving lesson in Karachi. Rs 500 to reserve your slot — instructor calls within 2 hours. Manual ya auto. DHA, Clifton, PECHS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Seekho Pakistan">
+  <meta property="og:title" content="Book your first Seekho driving lesson — Rs 500 deposit">
+  <meta property="og:description" content="Reserve your slot for Rs 500. Instructor calls you within 2 hours. Manual ya auto, DHA / Clifton / PECHS. 1000+ drivers trained since 2019.">
+  <meta property="og:image" content="https://seekhopakistan.com.pk/images/og-default.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://seekhopakistan.com.pk/book">
+  <meta property="og:locale" content="en_PK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Book your first Seekho driving lesson — Rs 500 deposit">
+  <meta name="twitter:description" content="Reserve your slot for Rs 500. Instructor calls within 2 hours. Manual ya auto. Award-winning Karachi driving academy.">
+  <meta name="twitter:image" content="https://seekhopakistan.com.pk/images/og-default.jpg">
+
+<style>
+.nav-links.open{display:flex!important;position:absolute;top:64px;left:0;right:0;background:#FBF8F3;flex-direction:column;padding:16px 24px;gap:12px;border-bottom:3px solid #4E0CB9;box-shadow:0 8px 24px rgba(0,0,0,.1)}.nav-links.open a{font-size:1rem;padding:8px 0}
+
+/* ── Page-level book header (compact hero) ── */
+.book-header {
+  background: #4E0CB9;
+  padding: 100px 16px 48px;
+  text-align: center;
+}
+.book-header h1 {
+  font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+  color: #FBF8F3;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 800;
+  margin: 0 0 10px;
+  line-height: 1.2;
+}
+.book-header p {
+  color: rgba(249,248,244,0.8);
+  font-size: 1rem;
+  max-width: 620px;
+  margin: 0 auto 18px;
+  line-height: 1.5;
+}
+.trust-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.trust-pill {
+  background: rgba(255,201,60,0.15);
+  border: 1px solid rgba(255,201,60,0.35);
+  color: #FFC93C;
+  border-radius: 100px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ── Two-column layout ── */
+.book-columns {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 40px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .book-columns {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 16px 100px;
+  }
+}
+
+/* ── Form card ── */
+.form-card {
+  background: #fff;
+  border: 3px solid #4E0CB9;
+  border-radius: 14px;
+  padding: 28px 24px 24px;
+  box-shadow: 0 6px 20px rgba(78,12,185,0.08);
+}
+@media (max-width: 480px) {
+  .form-card { padding: 22px 18px; }
+}
+
+/* ── Progress pips ── */
+.progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 0 0 22px;
+}
+.progress-label-wrap {
+  font-size: 0.78rem;
+  color: #6B6385;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: right;
+}
+.progress-label-wrap strong { color: #4E0CB9; }
+.progress-pip {
+  flex: 1;
+  height: 6px;
+  background: #E5E7EB;
+  border-radius: 3px;
+  margin-right: 6px;
+  transition: background 0.2s;
+}
+.progress-pip:last-child { margin-right: 0; }
+.progress-pip.active { background: #FFC93C; }
+.progress-pip.done { background: #4E0CB9; }
+
+/* ── Step panels ── */
+.step { display: none; }
+.step.active { display: block; }
+.step h2 {
+  font-size: 1.2rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  color: #4E0CB9;
+  margin: 0 0 6px;
+}
+.step-intro {
+  font-size: 0.9rem;
+  color: #6B6385;
+  margin: 0 0 20px;
+}
+
+/* ── Form fields ── */
+.field { margin-bottom: 16px; }
+.field label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+.field input, .field select, .field textarea {
+  width: 100%;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #1A1A1A;
+  background: white;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none;
+  border-color: #4E0CB9;
+}
+.field textarea { resize: vertical; min-height: 80px; }
+.field .hint {
+  font-size: 0.78rem;
+  color: #6B6385;
+  margin-top: 6px;
+}
+
+/* Honeypot — hidden from users, bots fill it */
+.honey {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ── Phone input ── */
+.phone-wrap { display: flex; gap: 0; }
+.phone-prefix {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  background: #F3F4F6;
+  border: 2px solid #E5E7EB;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #374151;
+  white-space: nowrap;
+}
+.phone-wrap input {
+  border-radius: 0 8px 8px 0;
+  border-left: none;
+}
+
+/* ── Package radio cards ── */
+.pkg-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.pkg-card {
+  border: 2px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 14px 16px;
+  cursor: pointer;
+  background: white;
+  transition: border-color 0.15s, background 0.15s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.pkg-card:hover { border-color: #4E0CB9; }
+.pkg-card.selected {
+  border-color: #4E0CB9;
+  background: #F0FDF4;
+}
+.pkg-card__body { flex: 1; min-width: 0; }
+.pkg-card__name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: #1A1A1A;
+  margin: 0 0 3px;
+}
+.pkg-card__desc {
+  font-size: 0.8rem;
+  color: #6B6385;
+  margin: 0;
+  line-height: 1.35;
+}
+.pkg-card__price {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #4E0CB9;
+  white-space: nowrap;
+}
+.pkg-card__price small { display: block; font-size: 0.7rem; font-weight: 500; color: #6B6385; margin-top: 2px; }
+.pkg-card input[type="radio"] { display: none; }
+.pkg-card__badge {
+  display: inline-block;
+  background: #FFC93C;
+  color: #4E0CB9;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ── Transmission toggle ── */
+.transmission-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 4px;
+  background: #F9FAFB;
+  margin-bottom: 4px;
+}
+.transmission-toggle button {
+  border: none;
+  background: transparent;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6B6385;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+.transmission-toggle button.selected {
+  background: #4E0CB9;
+  color: #FFC93C;
+}
+
+/* ── Checkbox row ── */
+.checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  background: #F9FAFB;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.checkbox-row input[type="checkbox"] {
+  margin-top: 2px;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  accent-color: #4E0CB9;
+}
+.checkbox-row label {
+  font-size: 0.85rem;
+  color: #374151;
+  margin: 0;
+  cursor: pointer;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.checkbox-row label strong { color: #4E0CB9; }
+
+/* ── Step buttons ── */
+.step-nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+.btn-back {
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 13px 18px;
+  background: white;
+  color: #4B5563;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s;
+}
+.btn-back:hover { border-color: #9CA3AF; }
+.btn-next {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  background: #4E0CB9;
+  color: #FFC93C;
+  font-size: 0.98rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-next:hover { background: #0a3a24; }
+.btn-submit {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 20px;
+  background: #FFC93C;
+  color: #4E0CB9;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+.btn-submit:hover { background: #5cd075; }
+.btn-submit:disabled { background: #D1D5DB; color: #6B6385; cursor: not-allowed; }
+
+.field-error {
+  color: #DC2626;
+  font-size: 0.82rem;
+  margin-top: 4px;
+  display: none;
+  font-weight: 500;
+}
+.field-error.show { display: block; }
+
+.privacy-line {
+  font-size: 0.78rem;
+  color: #6B6385;
+  text-align: center;
+  margin: 12px 0 0;
+}
+.privacy-line strong { color: #4E0CB9; }
+
+/* ── Right sidebar ── */
+.help-panel {
+  position: sticky;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 900px) {
+  .help-panel { position: static; }
+}
+.help-card {
+  background: #fff;
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px 18px;
+}
+.help-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4E0CB9;
+  margin: 0 0 12px;
+}
+.team-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, #4E0CB9 0%, #166b43 100%);
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0;
+}
+.help-card p.caption {
+  font-size: 0.82rem;
+  color: #6B6385;
+  margin: 10px 0 0;
+  line-height: 1.45;
+}
+.btn-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px;
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.98rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  transition: background 0.15s;
+  box-sizing: border-box;
+}
+.btn-whatsapp:hover { background: #1ebe5d; }
+.btn-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  background: #FBF8F3;
+  color: #4E0CB9;
+  border: 2px solid #4E0CB9;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  transition: background 0.15s;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+.btn-call:hover { background: #E8F5E9; }
+
+.reassure-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.reassure-list li {
+  font-size: 0.88rem;
+  color: #374151;
+  padding: 8px 0 8px 26px;
+  position: relative;
+  line-height: 1.45;
+}
+.reassure-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: #4E0CB9;
+  font-weight: 800;
+  background: #FFC93C;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
+.mini-testimonial {
+  background: #FBF8F3;
+  border-left: 3px solid #FFC93C;
+  padding: 12px 14px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 10px;
+}
+.mini-testimonial:last-child { margin-bottom: 0; }
+.mini-testimonial p {
+  font-size: 0.86rem;
+  color: #1A1A1A;
+  font-style: italic;
+  margin: 0 0 6px;
+  line-height: 1.45;
+}
+.mini-testimonial cite {
+  font-size: 0.78rem;
+  color: #6B6385;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* ── Next steps timeline ── */
+.next-steps {
+  background: #FBF8F3;
+  padding: 56px 20px;
+}
+.next-steps-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.next-steps h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #4E0CB9;
+  margin: 0 0 8px;
+}
+.next-steps p.lead {
+  color: #6B6385;
+  font-size: 0.95rem;
+  max-width: 520px;
+  margin: 0 auto 36px;
+}
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media (max-width: 760px) {
+  .timeline-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 420px) {
+  .timeline-grid { grid-template-columns: 1fr; }
+}
+.timeline-card {
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 22px 16px;
+  text-align: center;
+  position: relative;
+}
+.timeline-num {
+  display: inline-block;
+  background: #4E0CB9;
+  color: #FFC93C;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 800;
+  line-height: 36px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.timeline-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin: 0 0 6px;
+}
+.timeline-card p {
+  font-size: 0.85rem;
+  color: #6B6385;
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* ── Trust band ── */
+.trust-band {
+  background: #4E0CB9;
+  padding: 36px 20px;
+}
+.trust-band-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+@media (max-width: 760px) {
+  .trust-band-inner { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+}
+.trust-band-item {
+  color: #FBF8F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.trust-band-item svg { width: 34px; height: 34px; }
+.trust-band-item strong {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.92rem;
+  color: #FFC93C;
+  font-weight: 700;
+}
+.trust-band-item span {
+  font-size: 0.78rem;
+  color: rgba(249,248,244,0.75);
+  line-height: 1.4;
+}
+
+/* ── FAQ (booking-specific) ── */
+.faq-book {
+  padding: 56px 20px;
+  background: #FBF8F3;
+}
+.faq-book-inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.faq-book h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #4E0CB9;
+  margin: 0 0 28px;
+  text-align: center;
+}
+.faq-item-b {
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.faq-item-b.open { border-color: #4E0CB9; }
+.faq-q-b {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 16px 18px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.faq-q-b .chev { color: #4E0CB9; font-size: 1.2rem; transition: transform 0.2s; flex-shrink: 0; }
+.faq-item-b.open .chev { transform: rotate(45deg); }
+.faq-a-b {
+  display: none;
+  padding: 0 18px 16px;
+  font-size: 0.92rem;
+  color: #4B5563;
+  line-height: 1.6;
+}
+.faq-item-b.open .faq-a-b { display: block; }
+
+/* ── Final CTA ── */
+.final-cta {
+  background: #FFC93C;
+  padding: 48px 20px;
+  text-align: center;
+}
+.final-cta h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.3rem, 2.8vw, 1.8rem);
+  font-weight: 800;
+  color: #4E0CB9;
+  margin: 0 0 10px;
+}
+.final-cta p { color: #4E0CB9; font-size: 0.95rem; margin: 0 0 20px; opacity: 0.85; }
+
+/* ── Mobile sticky bar (WhatsApp-only since already on /book) ── */
+.mobile-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #4E0CB9;
+  padding: 10px 16px;
+  z-index: 150;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid #FFC93C;
+}
+@media (max-width: 767px) {
+  .mobile-bar { display: flex; }
+}
+.mobile-bar a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #FFC93C;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+/* ── WhatsApp float (above mobile-bar on small screens) ── */
+.wa-float-book {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  z-index: 200;
+  border: 3px solid white;
+}
+@media (min-width: 768px) {
+  .wa-float-book { bottom: 24px; }
+}
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 20px 0;
+}
+.form-success.show { display: block; }
+.form-success .tick {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #FFC93C;
+  color: #4E0CB9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+.form-success h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  color: #4E0CB9;
+  margin: 0 0 8px;
+}
+.form-success p {
+  color: #374151;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+</style>
+
+<!-- PostHog + CRO event delegation -->
+<script src="/analytics.js" defer></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="/index.html" class="logo">Seekho</a>
+    <div class="nav-links" id="navLinks">
+      <a href="/index.html">Home</a>
+      <a href="/packages.html">Packages</a>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+    </div>
+    <a href="/book.html" class="btn-lime nav-cta">Book Now</a>
+    <button class="hamburger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')">&#9776;</button>
+  </div>
+</nav>
+
+<!-- Compact hero -->
+<div class="book-header">
+  <h1>Book your first lesson. Rs 500 to reserve your slot.</h1>
+  <p>Name, WhatsApp, area — that's it. Your instructor will call you within 2 hours.</p>
+  <div class="trust-pills">
+    <span class="trust-pill">1000+ drivers trained</span>
+    <span class="trust-pill">4.9&#9733; Google reviews</span>
+    <span class="trust-pill">60-second booking</span>
+    <span class="trust-pill">Refund if unhappy</span>
+  </div>
+</div>
+
+<!-- Two-column layout -->
+<div class="book-columns">
+
+  <!-- LEFT: booking form -->
+  <div class="form-card">
+
+    <div class="progress-label-wrap">Step <strong id="stepLabel">1</strong> of 3</div>
+    <div class="progress-bar" id="progressBar">
+      <div class="progress-pip active" data-pip="1"></div>
+      <div class="progress-pip" data-pip="2"></div>
+      <div class="progress-pip" data-pip="3"></div>
+    </div>
+
+    <form id="bookingForm" novalidate>
+
+      <!-- Honeypot (hidden) -->
+      <div class="honey" aria-hidden="true">
+        <label for="_honey">Leave this empty</label>
+        <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off">
+      </div>
+
+      <!-- Step 1: basics -->
+      <div class="step active" id="step1">
+        <h2>Step 1 — The basics</h2>
+        <p class="step-intro">We only need three things to reserve your slot.</p>
+
+        <div class="field">
+          <label for="bName">Your name</label>
+          <input type="text" id="bName" name="name" placeholder="e.g. Ayesha Khan" autocomplete="name" required>
+          <p class="field-error" id="err-name">Please enter your name.</p>
+        </div>
+
+        <div class="field">
+          <label for="bPhone">WhatsApp number</label>
+          <div class="phone-wrap">
+            <span class="phone-prefix">+92</span>
+            <input type="tel" id="bPhone" name="phone" inputmode="tel" autocomplete="tel" placeholder="3XX XXXXXXX" required>
+          </div>
+          <p class="field-error" id="err-phone">Please enter a valid Pakistan WhatsApp number (10 digits starting with 3).</p>
+        </div>
+
+        <div class="field">
+          <label for="bArea">Your area</label>
+          <select id="bArea" name="area" required>
+            <option value="">Select your area</option>
+            <optgroup label="DHA">
+              <option value="DHA Phase 1">DHA Phase 1</option>
+              <option value="DHA Phase 2">DHA Phase 2</option>
+              <option value="DHA Phase 4">DHA Phase 4</option>
+              <option value="DHA Phase 5">DHA Phase 5</option>
+              <option value="DHA Phase 6">DHA Phase 6</option>
+              <option value="DHA Phase 7">DHA Phase 7</option>
+              <option value="DHA Phase 7 Ext">DHA Phase 7 Ext</option>
+              <option value="DHA Phase 8">DHA Phase 8</option>
+            </optgroup>
+            <optgroup label="Clifton">
+              <option value="Clifton Block 1">Clifton Block 1</option>
+              <option value="Clifton Block 2">Clifton Block 2</option>
+              <option value="Clifton Block 3">Clifton Block 3</option>
+              <option value="Clifton Block 4">Clifton Block 4</option>
+              <option value="Clifton Block 5">Clifton Block 5</option>
+              <option value="Clifton Block 6">Clifton Block 6</option>
+              <option value="Clifton Block 7">Clifton Block 7</option>
+              <option value="Clifton Block 8">Clifton Block 8</option>
+              <option value="Clifton Block 9">Clifton Block 9</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="PECHS">PECHS</option>
+              <option value="Gulshan">Gulshan</option>
+              <option value="Other">Other — I'll tell you on WhatsApp</option>
+            </optgroup>
+          </select>
+          <p class="field-error" id="err-area">Please pick your area.</p>
+        </div>
+
+        <p class="privacy-line"><strong>We never share your number.</strong> Used only to call you back.</p>
+
+        <div class="step-nav" style="margin-top: 14px;">
+          <button type="button" class="btn-next" onclick="goNext(1)">Continue &rarr;</button>
+        </div>
+      </div>
+
+      <!-- Step 2: package + transmission + age -->
+      <div class="step" id="step2">
+        <h2>Step 2 — What do you want to learn?</h2>
+        <p class="step-intro">Pick a package. You can change it later if needed.</p>
+
+        <div class="field">
+          <label>Transmission</label>
+          <div class="transmission-toggle" id="txToggle">
+            <button type="button" class="selected" data-tx="Manual" onclick="selectTx(this)">Manual</button>
+            <button type="button" data-tx="Automatic" onclick="selectTx(this)">Automatic</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Package</label>
+          <div class="pkg-grid" id="pkgGrid" role="radiogroup" aria-label="Choose your package">
+
+            <label class="pkg-card" data-pkg="Student Bundle" data-key-manual="student-bundle-manual" data-key-auto="student-bundle-auto" onclick="selectPkg(this)">
+              <input type="radio" name="package" value="Student Bundle">
+              <div class="pkg-card__body">
+                <p class="pkg-card__name">Student Bundle</p>
+                <p class="pkg-card__desc">For first-time young learners &amp; students on a budget.</p>
+              </div>
+              <div class="pkg-card__price">
+                <span data-price-manual="student-bundle-manual" data-price-auto="student-bundle-auto">Rs 15,000</span>
+                <small>package total</small>
+              </div>
+            </label>
+
+            <label class="pkg-card selected" data-pkg="Enhance My Skills" data-key-manual="enhance-my-skills-manual" data-key-auto="enhance-my-skills-auto" onclick="selectPkg(this)">
+              <input type="radio" name="package" value="Enhance My Skills" checked>
+              <div class="pkg-card__body">
+                <p class="pkg-card__name">Enhance My Skills <span class="pkg-card__badge">Most Popular</span></p>
+                <p class="pkg-card__desc">Refresher for returning drivers or confidence build.</p>
+              </div>
+              <div class="pkg-card__price">
+                <span data-price-manual="enhance-my-skills-manual" data-price-auto="enhance-my-skills-auto">Rs 22,000</span>
+                <small>package total</small>
+              </div>
+            </label>
+
+            <label class="pkg-card" data-pkg="Teach Me Everything" data-key-manual="teach-me-everything-manual" data-key-auto="teach-me-everything-auto" onclick="selectPkg(this)">
+              <input type="radio" name="package" value="Teach Me Everything">
+              <div class="pkg-card__body">
+                <p class="pkg-card__name">Teach Me Everything</p>
+                <p class="pkg-card__desc">Complete beginner — full programme with theory + BTW.</p>
+              </div>
+              <div class="pkg-card__price">
+                <span data-price-manual="teach-me-everything-manual" data-price-auto="teach-me-everything-auto">Rs 35,000</span>
+                <small>package total</small>
+              </div>
+            </label>
+
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="bAge">Your age</label>
+          <select id="bAge" name="age" required>
+            <option value="">Select age range</option>
+            <option value="18–25">18–25</option>
+            <option value="26–35">26–35</option>
+            <option value="36–50">36–50</option>
+            <option value="50+">50+</option>
+          </select>
+          <p class="field-error" id="err-age">Please pick your age range.</p>
+        </div>
+
+        <div class="step-nav">
+          <button type="button" class="btn-back" onclick="goBack(2)">&larr; Back</button>
+          <button type="button" class="btn-next" onclick="goNext(2)">Continue &rarr;</button>
+        </div>
+      </div>
+
+      <!-- Step 3: start date + notes + confirm -->
+      <div class="step" id="step3">
+        <h2>Step 3 — Last bit. Reserve your slot.</h2>
+        <p class="step-intro">Your instructor will confirm the exact time on the call.</p>
+
+        <div class="field">
+          <label for="bDate">Preferred start date</label>
+          <input type="date" id="bDate" name="date" required>
+          <p class="hint">Rough guide is fine — we'll agree the day on your confirmation call.</p>
+        </div>
+
+        <div class="field">
+          <label for="bNotes">Anything we should know? <span style="color:#9CA3AF;font-weight:400;">(optional)</span></label>
+          <textarea id="bNotes" name="notes" placeholder="e.g. I'm very nervous, haven't driven in 5 years, prefer a female instructor, etc."></textarea>
+        </div>
+
+        <label class="checkbox-row" for="bDeposit">
+          <input type="checkbox" id="bDeposit" name="deposit_ack" required>
+          <label for="bDeposit">I agree to the <strong>Rs 500 refundable deposit</strong> to reserve my slot. Deposit is credited to my first lesson or refunded if I cancel before the instructor call.</label>
+        </label>
+        <p class="field-error" id="err-deposit">Please confirm the deposit to continue.</p>
+
+        <div class="step-nav">
+          <button type="button" class="btn-back" onclick="goBack(3)">&larr; Back</button>
+          <button type="submit" class="btn-submit" id="submitBtn">Submit booking</button>
+        </div>
+      </div>
+
+      <!-- Success state -->
+      <div class="form-success" id="formSuccess">
+        <div class="tick">&#10003;</div>
+        <h3>Booking received!</h3>
+        <p>We've got your details. Your instructor will WhatsApp or call within <strong>2 hours</strong> to confirm your slot and collect the Rs 500 deposit.</p>
+        <a class="btn-whatsapp" id="successWa" href="https://wa.me/923202733546?text=Hi+I+just+submitted+a+booking+on+the+website" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Send a quick note on WhatsApp
+        </a>
+      </div>
+
+    </form>
+  </div>
+
+  <!-- RIGHT: trust / help panel -->
+  <aside class="help-panel">
+
+    <div class="help-card">
+      <img src="images/team-group.jpg" alt="Faryal Farooqui and the Seekho instructor team" class="team-img" loading="lazy" onerror="this.style.display='none'">
+      <p class="caption"><strong>Faryal &amp; the Seekho team.</strong> Majority-female instructors. 1000+ drivers trained since 2019.</p>
+    </div>
+
+    <div class="help-card">
+      <h3>Prefer WhatsApp?</h3>
+      <a class="btn-whatsapp" id="waMainBtn" href="https://wa.me/923202733546?text=Hi+I+want+to+book+a+first+lesson" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp
+      </a>
+      <a class="btn-call" id="callBtn" href="tel:+923202733546">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4E0CB9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        Call 0320-2733546
+      </a>
+    </div>
+
+    <div class="help-card">
+      <h3>What to expect</h3>
+      <ul class="reassure-list">
+        <li>No payment now — Rs 500 deposit only after we confirm your slot.</li>
+        <li>Instructor calls you to confirm before your first lesson.</li>
+        <li>Refund if you're not happy after lesson 1. No questions.</li>
+      </ul>
+    </div>
+
+    <div class="help-card">
+      <h3>From other learners</h3>
+      <div class="mini-testimonial">
+        <p>"Omaima is awesome. She is patient and an amazing driver. Also young and hip so it is fun learning from her. Thank you Seekho!"</p>
+        <cite>— Sarah, with Omaima</cite>
+      </div>
+      <div class="mini-testimonial">
+        <p>"Seekho was a good informative experience. I appreciated how convenient and easy it was to register and arrange for classes."</p>
+        <cite>— Abdul Rahman, Seekho student</cite>
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<!-- What happens next -->
+<section class="next-steps">
+  <div class="next-steps-inner">
+    <h2>What happens next</h2>
+    <p class="lead">Four steps between this page and you driving with confidence.</p>
+    <div class="timeline-grid">
+      <div class="timeline-card">
+        <span class="timeline-num">1</span>
+        <h3>You book</h3>
+        <p>Takes 60 seconds. Three fields above the fold.</p>
+      </div>
+      <div class="timeline-card">
+        <span class="timeline-num">2</span>
+        <h3>Instructor calls</h3>
+        <p>Within 2 hours on WhatsApp or phone.</p>
+      </div>
+      <div class="timeline-card">
+        <span class="timeline-num">3</span>
+        <h3>Pick day &amp; time</h3>
+        <p>Together — based on your schedule and area.</p>
+      </div>
+      <div class="timeline-card">
+        <span class="timeline-num">4</span>
+        <h3>Start driving</h3>
+        <p>Lesson 1 at your area. Pick-up/drop-off in DHA &amp; Clifton.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust band -->
+<section class="trust-band">
+  <div class="trust-band-inner">
+    <div class="trust-band-item">
+      <svg viewBox="0 0 32 32" fill="none" stroke="#FFC93C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 2l12 5v10c0 8-5 12-12 13-7-1-12-5-12-13V7l12-5z"/><path d="M11 16l4 4 7-8"/></svg>
+      <strong>Certified instructors</strong>
+      <span>Background-checked, experienced team.</span>
+    </div>
+    <div class="trust-band-item">
+      <svg viewBox="0 0 32 32" fill="none" stroke="#FFC93C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="24" height="14" rx="2"/><path d="M10 10V6a6 6 0 0112 0v4"/></svg>
+      <strong>Insured vehicles</strong>
+      <span>Modern manual &amp; auto fleet.</span>
+    </div>
+    <div class="trust-band-item">
+      <svg viewBox="0 0 32 32" fill="none" stroke="#FFC93C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="13"/><path d="M16 8v8l5 3"/></svg>
+      <strong>Transparent pricing</strong>
+      <span>No hidden fees. Price pehle dikhti hai.</span>
+    </div>
+    <div class="trust-band-item">
+      <svg viewBox="0 0 32 32" fill="none" stroke="#FFC93C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="13"/><path d="M10 17l4 4 8-10"/></svg>
+      <strong>Refund guarantee</strong>
+      <span>Not happy after lesson 1? Full refund.</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ (booking-specific) -->
+<section class="faq-book">
+  <div class="faq-book-inner">
+    <h2>Booking questions</h2>
+
+    <div class="faq-item-b">
+      <button class="faq-q-b" aria-expanded="false">Kya deposit refundable hai?
+        <span class="chev">+</span>
+      </button>
+      <div class="faq-a-b">
+        <p>Haan. Rs 500 deposit fully refundable hai agar aap instructor call se pehle cancel kar deti/karte hain. Agar aap lesson leti/lete hain, deposit pehli lesson ke cost mein adjust ho jata hai.</p>
+      </div>
+    </div>
+
+    <div class="faq-item-b">
+      <button class="faq-q-b" aria-expanded="false">Kitna waqt lagta hai instructor call tak?
+        <span class="chev">+</span>
+      </button>
+      <div class="faq-a-b">
+        <p>Usually within 2 hours during business hours (9 AM – 9 PM). Late-night bookings ka call agle din subah 10 baje tak ajata hai.</p>
+      </div>
+    </div>
+
+    <div class="faq-item-b">
+      <button class="faq-q-b" aria-expanded="false">Can I change my package later?
+        <span class="chev">+</span>
+      </button>
+      <div class="faq-a-b">
+        <p>Yes. You can upgrade or downgrade any time before or during your programme. Hum price difference adjust kar dete hain — no penalty.</p>
+      </div>
+    </div>
+
+    <div class="faq-item-b">
+      <button class="faq-q-b" aria-expanded="false">What's the cancellation policy?
+        <span class="chev">+</span>
+      </button>
+      <div class="faq-a-b">
+        <p>Cancel before your first lesson — full refund of the deposit. Cancel after lesson 1 if you're not happy — also full refund, under our first-lesson guarantee. After lesson 2+, we refund the unused portion of your package minus completed lessons.</p>
+      </div>
+    </div>
+
+    <div class="faq-item-b">
+      <button class="faq-q-b" aria-expanded="false">Can I request a different instructor?
+        <span class="chev">+</span>
+      </button>
+      <div class="faq-a-b">
+        <p>Bilkul. If you'd prefer a female instructor or someone specific (e.g. Omaima, Farkhanda, Zainab), just mention it in the booking notes or tell us on the confirmation call. Hum match kar dete hain based on availability.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta">
+  <h2>Ready? Ek first lesson. Rs 500 deposit.</h2>
+  <p>Scroll up — the form takes 60 seconds.</p>
+  <a href="#bookingForm" onclick="document.getElementById('bName').focus();return false;" class="btn-whatsapp" style="max-width: 320px; margin: 0 auto; background: #4E0CB9;">
+    Start booking &rarr;
+  </a>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="pageFooter">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/index.html" class="logo">Seekho</a>
+      <p>Karachi's award-winning driving academy. 1000+ drivers trained since 2019.</p>
+      <a href="https://wa.me/923202733546" class="footer-wa">WhatsApp: +92 320 2733546</a>
+    </div>
+    <div class="footer-links">
+      <h4>Programmes</h4>
+      <a href="/packages.html">All packages</a>
+      <a href="/packages.html#student-bundle">Student Bundle</a>
+      <a href="/packages.html#enhance">Enhance My Skills</a>
+      <a href="/packages.html#teach-everything">Teach Me Everything</a>
+    </div>
+    <div class="footer-links">
+      <h4>Areas served</h4>
+      <p>DHA Phases 1–8</p>
+      <p>Clifton Blocks 1–9</p>
+      <p>PECHS &amp; partial Gulshan</p>
+    </div>
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="/about.html">About Faryal</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/book.html">Book a lesson</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; Seekho Pakistan 2026. All rights reserved.</div>
+</footer>
+
+<!-- WhatsApp float -->
+<a href="https://wa.me/923202733546?text=Hi+I+want+to+book+a+first+lesson"
+   class="wa-float-book" aria-label="WhatsApp Seekho" target="_blank" rel="noopener" onclick="trackWa('float')">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- Mobile sticky bar — WhatsApp-only since we're on /book -->
+<div class="mobile-bar">
+  <a href="https://wa.me/923202733546?text=Hi+I+want+to+book+a+first+lesson" target="_blank" rel="noopener" onclick="trackWa('mobile_bar')">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC93C"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413A11.815 11.815 0 0012.05 0z"/></svg>
+    Prefer WhatsApp? Chat now
+  </a>
+</div>
+
+<script>
+// ── State ──
+var B = {
+  name: '', phone: '', area: '',
+  transmission: 'Manual',
+  package: 'Enhance My Skills',
+  age: '',
+  date: '', notes: '', deposit_ack: false
+};
+var currentStep = 1;
+var formStarted = false;
+
+// ── PostHog helpers (no-op if PostHog not loaded) ──
+function track(event, props) {
+  try { if (window.posthog && posthog.capture) posthog.capture(event, props || {}); } catch(e){}
+}
+function trackWa(source) { track('whatsapp_click', { source: source, page: 'book' }); }
+
+// ── Step navigation ──
+function showStep(n) {
+  document.querySelectorAll('.step').forEach(function(s){ s.classList.remove('active'); });
+  var el = document.getElementById('step'+n);
+  if (el) el.classList.add('active');
+  document.getElementById('stepLabel').textContent = n;
+  document.querySelectorAll('.progress-pip').forEach(function(p){
+    var pn = parseInt(p.getAttribute('data-pip'));
+    p.classList.remove('active','done');
+    if (pn < n) p.classList.add('done');
+    else if (pn === n) p.classList.add('active');
+  });
+  currentStep = n;
+  // Scroll the form card into view (not whole page — less jarring on desktop two-col)
+  var card = document.querySelector('.form-card');
+  if (card) card.scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+
+function goBack(fromStep) { showStep(fromStep - 1); }
+
+function goNext(fromStep) {
+  hideErrors();
+  if (fromStep === 1) {
+    B.name = document.getElementById('bName').value.trim();
+    B.phone = document.getElementById('bPhone').value.trim();
+    B.area = document.getElementById('bArea').value;
+    var ok = true;
+    if (!B.name) { showErr('err-name'); ok = false; }
+    if (!isValidPkPhone(B.phone)) { showErr('err-phone'); ok = false; }
+    if (!B.area) { showErr('err-area'); ok = false; }
+    if (!ok) return;
+    track('form_step_complete', { step: 1 });
+    showStep(2);
+  } else if (fromStep === 2) {
+    B.age = document.getElementById('bAge').value;
+    if (!B.age) { showErr('err-age'); return; }
+    track('form_step_complete', { step: 2 });
+    showStep(3);
+  }
+}
+
+function showErr(id){ var e = document.getElementById(id); if (e) e.classList.add('show'); }
+function hideErrors(){ document.querySelectorAll('.field-error').forEach(function(e){ e.classList.remove('show'); }); }
+
+// ── PK phone validation ──
+// Accept: 3XXXXXXXXX (10 digits starting with 3), with optional spaces/dashes
+function isValidPkPhone(raw) {
+  if (!raw) return false;
+  var digits = raw.replace(/[\s\-]/g, '').replace(/^(\+92|92|0)/, '');
+  return /^3\d{9}$/.test(digits);
+}
+
+// ── Package + transmission + price ──
+function selectTx(el) {
+  document.querySelectorAll('#txToggle button').forEach(function(b){ b.classList.remove('selected'); });
+  el.classList.add('selected');
+  B.transmission = el.getAttribute('data-tx');
+  refreshPkgPrices();
+}
+function selectPkg(el) {
+  document.querySelectorAll('.pkg-card').forEach(function(c){ c.classList.remove('selected'); });
+  el.classList.add('selected');
+  B.package = el.getAttribute('data-pkg');
+  var radio = el.querySelector('input[type="radio"]');
+  if (radio) radio.checked = true;
+}
+function refreshPkgPrices() {
+  // Swap each .pkg-card__price span between its manual/auto data-price attr
+  var isAuto = B.transmission === 'Automatic';
+  document.querySelectorAll('.pkg-card__price > span[data-price-manual]').forEach(function(sp){
+    var key = isAuto ? sp.getAttribute('data-price-auto') : sp.getAttribute('data-price-manual');
+    sp.setAttribute('data-price', key);
+  });
+  // Re-run prices.js populator if available
+  if (window.SEEKHO_PRICES) {
+    document.querySelectorAll('[data-price]').forEach(function(el){
+      var k = el.getAttribute('data-price');
+      if (window.SEEKHO_PRICES[k] !== undefined) {
+        el.textContent = 'Rs ' + window.SEEKHO_PRICES[k].toLocaleString('en-PK');
+      }
+    });
+  }
+}
+
+// ── URL param auto-select area ──
+function prefillArea() {
+  var params = new URLSearchParams(window.location.search);
+  var area = (params.get('area') || '').toLowerCase();
+  if (!area) return;
+  var map = {
+    'dha': 'DHA Phase 6', 'dha-1': 'DHA Phase 1', 'dha-2': 'DHA Phase 2',
+    'dha-4': 'DHA Phase 4', 'dha-5': 'DHA Phase 5', 'dha-6': 'DHA Phase 6',
+    'dha-7': 'DHA Phase 7', 'dha-7-ext': 'DHA Phase 7 Ext', 'dha-8': 'DHA Phase 8',
+    'clifton': 'Clifton Block 4', 'clifton-1': 'Clifton Block 1', 'clifton-2': 'Clifton Block 2',
+    'clifton-3': 'Clifton Block 3', 'clifton-4': 'Clifton Block 4', 'clifton-5': 'Clifton Block 5',
+    'clifton-6': 'Clifton Block 6', 'clifton-7': 'Clifton Block 7', 'clifton-8': 'Clifton Block 8',
+    'clifton-9': 'Clifton Block 9',
+    'pechs': 'PECHS', 'gulshan': 'Gulshan', 'other': 'Other'
+  };
+  var match = map[area];
+  if (match) {
+    var sel = document.getElementById('bArea');
+    for (var i = 0; i < sel.options.length; i++) {
+      if (sel.options[i].value === match) { sel.selectedIndex = i; break; }
+    }
+  }
+}
+
+// ── form_start: fire on first interaction with any field ──
+function onFirstInteraction() {
+  if (formStarted) return;
+  formStarted = true;
+  track('form_start', { page: 'book' });
+}
+
+// ── FAQ toggle ──
+function initFaq() {
+  document.querySelectorAll('.faq-q-b').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = this.closest('.faq-item-b');
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item-b.open').forEach(function(i){
+        i.classList.remove('open');
+        var q = i.querySelector('.faq-q-b');
+        if (q) q.setAttribute('aria-expanded','false');
+      });
+      if (!wasOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+}
+
+// ── Form submit ──
+function handleSubmit(e) {
+  e.preventDefault();
+  hideErrors();
+
+  // Honeypot: silently drop
+  if (document.getElementById('_honey').value) {
+    // Pretend success so bot doesn't learn
+    document.getElementById('bookingForm').querySelectorAll('.step').forEach(function(s){ s.classList.remove('active'); });
+    document.getElementById('formSuccess').classList.add('show');
+    return false;
+  }
+
+  // Collect final step
+  B.date = document.getElementById('bDate').value;
+  B.notes = document.getElementById('bNotes').value.trim();
+  B.deposit_ack = document.getElementById('bDeposit').checked;
+
+  if (!B.deposit_ack) { showErr('err-deposit'); return false; }
+
+  var btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+
+  track('form_submit', {
+    package: B.package,
+    transmission: B.transmission,
+    area: B.area,
+    age: B.age,
+    has_date: !!B.date,
+    has_notes: !!B.notes
+  });
+
+  // v1: mailto fallback. Production should point to a real endpoint.
+  var cleanPhone = B.phone.replace(/[\s\-]/g,'').replace(/^(\+92|92|0)/,'');
+  var subject = 'New Seekho booking — ' + B.name + ' (' + B.area + ')';
+  var body = [
+    'New booking from seekhopakistan.com.pk/book',
+    '',
+    'Name: ' + B.name,
+    'WhatsApp: +92' + cleanPhone,
+    'Area: ' + B.area,
+    'Package: ' + B.package,
+    'Transmission: ' + B.transmission,
+    'Age: ' + B.age,
+    'Preferred start date: ' + (B.date || 'Flexible'),
+    'Notes: ' + (B.notes || '—'),
+    '',
+    'Deposit agreed: Yes (Rs 500)'
+  ].join('\n');
+
+  var mailto = 'mailto:info@seekhopakistan.com.pk'
+    + '?subject=' + encodeURIComponent(subject)
+    + '&body=' + encodeURIComponent(body);
+
+  // Open mailto (user must confirm send in their mail client)
+  window.location.href = mailto;
+
+  // Show success state after short delay
+  setTimeout(function(){
+    document.getElementById('bookingForm').querySelectorAll('.step').forEach(function(s){ s.classList.remove('active'); });
+    document.getElementById('formSuccess').classList.add('show');
+    document.querySelector('.progress-bar').style.display = 'none';
+    document.querySelector('.progress-label-wrap').style.display = 'none';
+    btn.disabled = false;
+    btn.textContent = 'Submit booking';
+  }, 600);
+
+  return false;
+}
+
+// ── Nav scroll shadow ──
+function onScroll() {
+  var nav = document.getElementById('navbar');
+  if (nav) nav.classList.toggle('scrolled', window.scrollY > 10);
+}
+
+// ── Init ──
+document.addEventListener('DOMContentLoaded', function(){
+  // Set date input min to today
+  var dateEl = document.getElementById('bDate');
+  var today = new Date();
+  var yyyy = today.getFullYear();
+  var mm = String(today.getMonth()+1).padStart(2,'0');
+  var dd = String(today.getDate()).padStart(2,'0');
+  dateEl.min = yyyy + '-' + mm + '-' + dd;
+
+  prefillArea();
+  initFaq();
+
+  // Wire form_start on first field interaction
+  document.querySelectorAll('#bookingForm input, #bookingForm select, #bookingForm textarea').forEach(function(el){
+    el.addEventListener('focus', onFirstInteraction, { once: true });
+  });
+
+  // WhatsApp tracking
+  document.getElementById('waMainBtn').addEventListener('click', function(){ trackWa('sidebar'); });
+  document.getElementById('callBtn').addEventListener('click', function(){ track('call_click', { source: 'sidebar', page: 'book' }); });
+  document.getElementById('successWa').addEventListener('click', function(){ trackWa('post_submit'); });
+
+  // Form submit
+  document.getElementById('bookingForm').addEventListener('submit', handleSubmit);
+
+  // Scroll shadow
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Refresh prices once prices.js has run
+  setTimeout(refreshPkgPrices, 50);
+});
+</script>
+
+<!-- Schema: LocalBusiness / AutoSchool (shared @id) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness","AutoSchool"],
+  "@id": "https://seekhopakistan.com.pk/#business",
+  "name": "Seekho Pakistan",
+  "alternateName": ["Seekho","Seekho Driving School"],
+  "legalName": "Seekho (Pvt.) Ltd.",
+  "description": "Award-winning driving academy in Karachi. 1,000+ drivers trained since 2019. Majority-female instructor team. Manual and automatic.",
+  "url": "https://seekhopakistan.com.pk",
+  "logo": "https://seekhopakistan.com.pk/images/logo.png",
+  "image": ["https://seekhopakistan.com.pk/images/og-book.jpg"],
+  "telephone": "+923202733546",
+  "email": "info@seekhopakistan.com.pk",
+  "priceRange": "Rs 15,000 - Rs 40,000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "67-E/1, 7th Jami Commercial Street, Phase 7 Ext",
+    "addressLocality": "Karachi",
+    "addressRegion": "Sindh",
+    "postalCode": "75500",
+    "addressCountry": "PK"
+  },
+  "geo": {"@type":"GeoCoordinates","latitude":24.7969,"longitude":67.0461},
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"10:00","closes":"15:00"}
+  ],
+  "areaServed": [
+    "DHA Karachi", "Clifton Karachi", "PECHS Karachi", "Gulshan Karachi"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Faryal Farooqui"
+  },
+  "foundingDate": "2019-09",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "82",
+    "bestRating": "5"
+  },
+  "sameAs": [
+    "https://www.facebook.com/Seekho.org",
+    "https://www.instagram.com/seekho.pk/",
+    "https://twitter.com/seekhoorg",
+    "https://www.linkedin.com/in/seekho-pakistan-191759191/"
+  ]
+}
+</script>
+
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seekhopakistan.com.pk/" },
+    { "@type": "ListItem", "position": 2, "name": "Book a lesson", "item": "https://seekhopakistan.com.pk/book" }
+  ]
+}
+</script>
+
+<!-- Schema: ContactPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Book your first Seekho driving lesson",
+  "url": "https://seekhopakistan.com.pk/book",
+  "description": "Book your first driving lesson with Seekho Pakistan. Rs 500 to reserve your slot. Instructor calls within 2 hours.",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Seekho Pakistan",
+    "telephone": "+923202733546",
+    "email": "info@seekhopakistan.com.pk",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+923202733546",
+        "contactType": "reservations",
+        "areaServed": "PK",
+        "availableLanguage": ["en", "ur"]
+      }
+    ]
+  }
+}
+</script>
+
+<script src="/prices.js"></script>
+</body>
+</html>

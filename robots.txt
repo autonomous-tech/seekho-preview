@@ -1,0 +1,49 @@
+# Seekho Pakistan — robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /drafts/
+Disallow: /*.json$
+
+# AI search crawlers — allow for citation in AI-generated answers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Host: https://seekhopakistan.com.pk
+Sitemap: https://seekhopakistan.com.pk/sitemap.xml

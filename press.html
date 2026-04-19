@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://seekhopakistan.com.pk/press.html">
+  <meta name="description" content="Press &amp; media coverage of Seekho — Karachi's award-winning driving academy. Featured in Aurora (Dawn), Biz Today, The Nation. Inaugurated by the Commissioner of Karachi.">
+  <meta name="keywords" content="Seekho press, Seekho media coverage, driving school Karachi news, women driving school Pakistan press, Seekho awards">
+  <title>Press &amp; Media | Seekho Driving School, Karachi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .nav-links.open{display:flex!important;position:absolute;top:64px;left:0;right:0;background:#FBF8F3;flex-direction:column;padding:16px 24px;gap:12px;border-bottom:3px solid #4E0CB9;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+    .nav-links.open a{font-size:1rem;padding:8px 0}
+
+    .pr-hero{padding:120px 0 72px;background:#4E0CB9;text-align:center;position:relative;overflow:hidden}
+    .pr-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(255,201,60,0.08) 0%,transparent 60%);pointer-events:none}
+    .pr-hero-inner{max-width:820px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+    .pr-hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,5vw,3.3rem);font-weight:800;color:#FBF8F3;line-height:1.15;letter-spacing:-0.02em}
+    .pr-hero-kicker{font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#FFC93C;margin-bottom:12px}
+    .pr-hero-sub{font-size:1.1rem;color:rgba(249,248,244,0.8);line-height:1.7;margin:20px auto 0;max-width:660px}
+
+    .pr-wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+    .pr-mentions{padding:72px 0;background:#FBF8F3}
+    .pr-list{display:flex;flex-direction:column;gap:18px;margin-top:32px;max-width:900px;margin-left:auto;margin-right:auto}
+    .pr-item{background:white;border:3px solid #4E0CB9;border-radius:8px;padding:24px;display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;transition:all 0.15s}
+    .pr-item:hover{transform:translateY(-2px);border-color:#FFC93C;box-shadow:0 8px 24px rgba(78,12,185,0.1)}
+    .pr-item.pr-featured{border-color:#FFC93C;background:#E8F7EB}
+    .pr-item.pr-tbd{border-style:dashed;opacity:0.65}
+    .pr-outlet{flex:0 0 180px;font-family:'Space Grotesk',sans-serif;font-weight:700;color:#4E0CB9;font-size:1rem;line-height:1.3}
+    .pr-outlet .pr-outlet-sub{display:block;font-weight:400;color:#6B6385;font-size:0.85rem;margin-top:2px}
+    .pr-meta{flex:1;min-width:220px}
+    .pr-meta h3{font-family:'Space Grotesk',sans-serif;font-size:1.125rem;font-weight:700;color:#4E0CB9;margin-bottom:6px}
+    .pr-date{font-size:0.85rem;color:#6B6385;margin-bottom:12px}
+    .pr-meta p{font-size:0.95rem;color:#374151;line-height:1.65;margin-bottom:12px}
+    .pr-read{display:inline-flex;align-items:center;gap:6px;color:#4E0CB9;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:0.92rem;text-decoration:none;border-bottom:2px solid transparent;transition:border-color 0.15s}
+    .pr-read:hover{border-color:#4E0CB9}
+
+    .pr-awards{padding:72px 0;background:white;border-top:3px solid #4E0CB9;border-bottom:3px solid #4E0CB9}
+    .pr-awards-inner{max-width:820px;margin:0 auto;padding:0 24px}
+    .pr-timeline{margin-top:32px;position:relative;padding-left:28px;border-left:3px solid #4E0CB9}
+    .pr-timeline-item{position:relative;padding-bottom:28px}
+    .pr-timeline-item:last-child{padding-bottom:0}
+    .pr-timeline-item::before{content:'';position:absolute;left:-38px;top:4px;width:18px;height:18px;border-radius:50%;background:#FFC93C;border:3px solid #4E0CB9}
+    .pr-timeline-year{font-family:'Space Grotesk',sans-serif;font-size:1.15rem;font-weight:800;color:#4E0CB9;margin-bottom:6px}
+    .pr-timeline-item p{font-size:0.95rem;color:#374151;line-height:1.6}
+    .pr-tbd-badge{display:inline-block;font-size:0.6rem;background:#FEF3C7;color:#92400E;padding:2px 6px;border-radius:4px;font-weight:700;margin-left:6px;vertical-align:middle;letter-spacing:0.05em}
+
+    .pr-kit{padding:72px 0;background:#FBF8F3}
+    .pr-kit-inner{max-width:900px;margin:0 auto;padding:0 24px}
+    .pr-kit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
+    @media (max-width:767px){.pr-kit-grid{grid-template-columns:1fr}}
+    .pr-kit-card{background:white;border:3px solid #4E0CB9;border-radius:8px;padding:24px 20px;text-align:center}
+    .pr-kit-icon{font-size:2rem;margin-bottom:10px;display:block}
+    .pr-kit-card h3{font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;color:#4E0CB9;margin-bottom:6px}
+    .pr-kit-card p{font-size:0.85rem;color:#6B6385;line-height:1.6}
+    .pr-kit-cta{margin-top:32px;text-align:center}
+
+    .pr-partners{padding:72px 0;background:#4E0CB9;text-align:center}
+    .pr-partners .pr-wrap{color:#FBF8F3}
+    .pr-partners-grid{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+    .pr-partner-chip{background:#FBF8F3;border:2px solid #FFC93C;border-radius:24px;padding:8px 16px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:0.875rem;color:#4E0CB9}
+
+    .pr-contact{padding:72px 0;background:#093D26;border-top:4px solid #FFC93C;text-align:center}
+    .pr-contact-inner{max-width:680px;margin:0 auto;padding:0 24px}
+    .pr-contact h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;color:#FBF8F3;margin-bottom:12px}
+    .pr-contact p{color:rgba(249,248,244,0.72);font-size:1rem;margin-bottom:24px;line-height:1.7}
+    .pr-contact-email{display:inline-block;font-family:'Space Grotesk',sans-serif;font-weight:700;color:#FFC93C;font-size:1.1rem;padding:8px 16px;border:2px dashed #FFC93C;border-radius:6px;margin-bottom:16px}
+    .pr-contact-avail{font-size:0.9rem;color:rgba(249,248,244,0.6);margin-top:12px}
+  </style>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Seekho">
+  <meta property="og:title" content="Press &amp; Media | Seekho Driving School, Karachi">
+  <meta property="og:description" content="Seekho press coverage — Aurora (Dawn), Biz Today, The Nation. Inaugurated by the Commissioner of Karachi. Media kit available on request.">
+  <meta property="og:image" content="https://seekhopakistan.com.pk/images/og-press.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Seekho press and media — Karachi's driving academy">
+  <meta property="og:url" content="https://seekhopakistan.com.pk/press.html">
+  <meta property="og:locale" content="en_PK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Press &amp; Media | Seekho Driving School, Karachi">
+  <meta name="twitter:description" content="Press coverage and media kit for Seekho, Karachi's award-winning driving academy.">
+  <meta name="twitter:image" content="https://seekhopakistan.com.pk/images/og-press.jpg">
+
+  <!-- PostHog + CRO event delegation -->
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="logo">Seekho</a>
+    <div class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/packages.html">Packages</a>
+      <a href="/driving-school-dha-karachi.html">Areas</a>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/book.html">Contact</a>
+    </div>
+    <a href="/book.html" class="btn-lime nav-cta" data-ph-event="nav_cta_click">Book Now</a>
+    <button class="hamburger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')">&#9776;</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pr-hero">
+  <div class="pr-hero-inner">
+    <p class="pr-hero-kicker">Press &amp; Media</p>
+    <h1>In the news.</h1>
+    <p class="pr-hero-sub">
+      Since launching in September 2019, Seekho has been covered in national press, inaugurated by the Commissioner of Karachi, and named among the city's best driving schools. Full media kit available on request.
+    </p>
+  </div>
+</section>
+
+<!-- PRESS MENTIONS -->
+<section class="pr-mentions">
+  <div class="pr-wrap">
+    <p class="section-label" style="color:#4E0CB9">Featured coverage</p>
+    <h2 class="section-title">What they've written about Seekho.</h2>
+
+    <div class="pr-list">
+
+      <article class="pr-item pr-featured">
+        <div class="pr-outlet">Office of the Commissioner<span class="pr-outlet-sub">Karachi</span></div>
+        <div class="pr-meta">
+          <h3>Inaugurated by the Commissioner of Karachi</h3>
+          <div class="pr-date">September 2019</div>
+          <p>Seekho was formally inaugurated in September 2019 by the Commissioner of Karachi, <strong>Iftikhar Ali Shallwani</strong>, recognising the academy as a structured driver's education programme with a women-led instructor team.</p>
+        </div>
+      </article>
+
+      <article class="pr-item">
+        <div class="pr-outlet">Aurora Magazine<span class="pr-outlet-sub">Dawn</span></div>
+        <div class="pr-meta">
+          <h3>Seekho the right way</h3>
+          <div class="pr-date">By Anusha Zahid &middot; Nov&ndash;Dec 2019</div>
+          <p>Feature on Faryal Farooqui's move from corporate marketing (Aman Foundation, Barclays, Hascol, GSK) to founding a ladies-majority driving academy in Karachi.</p>
+          <a href="https://aurora.dawn.com/news/1143603/seekho-the-right-way" class="pr-read" target="_blank" rel="noopener" data-ph-event="press_click" data-ph-outlet="aurora">Read on Aurora &rarr;</a>
+        </div>
+      </article>
+
+      <article class="pr-item">
+        <div class="pr-outlet">Biz Today</div>
+        <div class="pr-meta">
+          <h3>Seekho opens its doors for learners</h3>
+          <div class="pr-date">October 2, 2019</div>
+          <p>Launch coverage: Seekho begins operations in Karachi with a structured theoretical + practical curriculum.</p>
+          <a href="https://www.biztoday.news/2019/10/02/seekho-opens-its-doors-for-learners/" class="pr-read" target="_blank" rel="noopener" data-ph-event="press_click" data-ph-outlet="biztoday">Read on Biz Today &rarr;</a>
+        </div>
+      </article>
+
+      <article class="pr-item">
+        <div class="pr-outlet">The Nation</div>
+        <div class="pr-meta">
+          <h3>Seekho opens its doors for learners</h3>
+          <div class="pr-date">September 29, 2019</div>
+          <p>National press coverage of the Seekho launch &mdash; Karachi's first driving academy with a women-led instructor team.</p>
+          <a href="https://www.nation.com.pk/29-Sep-2019/seekho-opens-its-doors-for-learners" class="pr-read" target="_blank" rel="noopener" data-ph-event="press_click" data-ph-outlet="nation">Read on The Nation &rarr;</a>
+        </div>
+      </article>
+
+      <article class="pr-item">
+        <div class="pr-outlet">Blog Pakistan</div>
+        <div class="pr-meta">
+          <h3>11 Best Driving Schools in Karachi</h3>
+          <div class="pr-date">2023</div>
+          <p>Seekho listed among Karachi's best driving schools in this industry round-up.</p>
+          <a href="https://blogpakistan.pk/driving-schools-in-karachi/" class="pr-read" target="_blank" rel="noopener" data-ph-event="press_click" data-ph-outlet="blogpakistan">Read the listicle &rarr;</a>
+        </div>
+      </article>
+
+      <article class="pr-item pr-tbd">
+        <div class="pr-outlet">Geo TV<span class="pr-outlet-sub">TBD-faryal-source</span></div>
+        <div class="pr-meta">
+          <h3>Ramazan TV show feature</h3>
+          <div class="pr-date">TBD-faryal-verify</div>
+          <p>Seekho featured on a Ramazan TV show discussing driver's education for women. Placeholder &mdash; awaiting clip link from Faryal.</p>
+        </div>
+      </article>
+
+      <article class="pr-item pr-tbd">
+        <div class="pr-outlet">Business Recorder<span class="pr-outlet-sub">TBD-faryal-source</span></div>
+        <div class="pr-meta">
+          <h3>Coverage to confirm</h3>
+          <div class="pr-date">TBD-faryal-verify</div>
+          <p>Placeholder for Business Recorder coverage &mdash; Faryal to supply article link/date.</p>
+        </div>
+      </article>
+
+      <article class="pr-item pr-tbd">
+        <div class="pr-outlet">Instagram Feature<span class="pr-outlet-sub">TBD-faryal-source</span></div>
+        <div class="pr-meta">
+          <h3>Community creator feature</h3>
+          <div class="pr-date">TBD-faryal-verify</div>
+          <p>Placeholder for Instagram creator / influencer features &mdash; Faryal to supply links.</p>
+        </div>
+      </article>
+
+      <article class="pr-item pr-tbd">
+        <div class="pr-outlet">Podcast appearance<span class="pr-outlet-sub">TBD-faryal-source</span></div>
+        <div class="pr-meta">
+          <h3>Podcast guest feature</h3>
+          <div class="pr-date">TBD-faryal-verify</div>
+          <p>Placeholder for podcast appearances &mdash; Faryal to supply episode links.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS TIMELINE -->
+<section class="pr-awards">
+  <div class="pr-awards-inner">
+    <p class="section-label" style="color:#4E0CB9">Awards</p>
+    <h2 class="section-title">Award-winning since 2022.</h2>
+    <p class="section-sub">Specific award names and granting bodies to be confirmed with Faryal &mdash; award photos currently live in the existing site's press slideshow without captions.</p>
+
+    <div class="pr-timeline">
+      <div class="pr-timeline-item">
+        <div class="pr-timeline-year">2024 <span class="pr-tbd-badge">TBD-faryal-verify</span></div>
+        <p>Award received &mdash; full name, granting organisation, and ceremony details to be supplied by Faryal.</p>
+      </div>
+      <div class="pr-timeline-item">
+        <div class="pr-timeline-year">2023 <span class="pr-tbd-badge">TBD-faryal-verify</span></div>
+        <p>Award received &mdash; full name, granting organisation, and ceremony details to be supplied by Faryal.</p>
+      </div>
+      <div class="pr-timeline-item">
+        <div class="pr-timeline-year">2022 <span class="pr-tbd-badge">TBD-faryal-verify</span></div>
+        <p>First industry recognition &mdash; full name, granting organisation, and ceremony details to be supplied by Faryal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA KIT -->
+<section class="pr-kit">
+  <div class="pr-kit-inner">
+    <p class="section-label" style="color:#4E0CB9">Media Kit</p>
+    <h2 class="section-title">Downloadable assets for editors.</h2>
+    <p class="section-sub">Reporters, bloggers, and partners writing about Seekho &mdash; email us for the full kit. We send it back within one business day.</p>
+
+    <div class="pr-kit-grid">
+      <div class="pr-kit-card">
+        <span class="pr-kit-icon" aria-hidden="true">&#127919;</span>
+        <h3>Logo pack</h3>
+        <p>SVG, PNG, and transparent variants in light &amp; dark. Brand guidelines included.</p>
+      </div>
+      <div class="pr-kit-card">
+        <span class="pr-kit-icon" aria-hidden="true">&#128247;</span>
+        <h3>Founder photos</h3>
+        <p>High-resolution headshots and working photos of Faryal Farooqui. Print-ready.</p>
+      </div>
+      <div class="pr-kit-card">
+        <span class="pr-kit-icon" aria-hidden="true">&#128218;</span>
+        <h3>Brand guide</h3>
+        <p>One-page brand sheet with colour palette, typography, and approved descriptions.</p>
+      </div>
+    </div>
+
+    <div class="pr-kit-cta">
+      <a href="mailto:press@seekhopakistan.com.pk?subject=Media%20kit%20request%20&mdash;%20Seekho" class="btn-lime" data-ph-event="pr_mediakit_email">Email us for the media kit &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="pr-partners">
+  <div class="pr-wrap">
+    <p class="section-label" style="color:#FFC93C">Partners &amp; collaborators</p>
+    <h2 class="section-title" style="color:#FBF8F3">Who we've worked with.</h2>
+    <p class="section-sub" style="color:rgba(249,248,244,0.7)">Schools, institutions, and community partners we've collaborated with for Traffic Club sessions, corporate training, and sponsored lessons.</p>
+    <div class="pr-partners-grid">
+      <span class="pr-partner-chip">Carnelian</span>
+      <span class="pr-partner-chip">Dolmen Cares</span>
+      <span class="pr-partner-chip">FM 89</span>
+      <span class="pr-partner-chip">SIUT</span>
+      <span class="pr-partner-chip">Southshore College</span>
+      <span class="pr-partner-chip">SZABIST</span>
+      <span class="pr-partner-chip">Technology Links</span>
+      <span class="pr-partner-chip">Lecole</span>
+      <span class="pr-partner-chip">Mechanic Ustaad</span>
+    </div>
+  </div>
+</section>
+
+<!-- PRESS CONTACT -->
+<section class="pr-contact" id="press-contact">
+  <div class="pr-contact-inner">
+    <h2>Press contact.</h2>
+    <p>
+      Writing about Karachi driving schools, women in transport, or road safety? Faryal is available for interviews, quotes, and on-site visits by arrangement.
+    </p>
+    <a href="mailto:press@seekhopakistan.com.pk?subject=Press%20inquiry%20&mdash;%20Seekho" class="pr-contact-email" data-ph-event="pr_contact_email">press@seekhopakistan.com.pk</a>
+    <p class="pr-contact-avail">Faryal is generally available for in-person interviews Mon&ndash;Sat at the Seekho HQ in DHA Phase 7 Ext, or remote calls with 48 hours' notice.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo">Seekho</a>
+      <p>Karachi ka driving school &mdash; jahan women women ko sikhati hain.</p>
+      <a href="https://wa.me/923202733546" class="footer-wa">WhatsApp: +92 320 2733546</a>
+    </div>
+    <div class="footer-links">
+      <h4>Packages</h4>
+      <a href="/packages.html#student-bundle">Student Bundle</a>
+      <a href="/packages.html#enhance-my-skills">Enhance My Skills</a>
+      <a href="/packages.html#teach-me-everything">Teach Me Everything</a>
+      <a href="/packages.html">See all prices</a>
+    </div>
+    <div class="footer-links">
+      <h4>Areas</h4>
+      <a href="/driving-school-dha-karachi.html">DHA Karachi</a>
+      <a href="/driving-school-clifton-karachi.html">Clifton Karachi</a>
+      <a href="/ladies-driving-school-karachi.html">Ladies Driving</a>
+      <a href="/automatic-car-driving-lessons-karachi.html">Automatic Lessons</a>
+    </div>
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/careers.html">Careers</a>
+      <a href="/press.html">Press</a>
+      <a href="/traffic-club.html">Traffic Club</a>
+      <a href="/book.html">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; Seekho Pakistan 2026. All rights reserved. &middot; 67-E/1, 7th Jami Commercial St, Phase 7 Ext, DHA Karachi</div>
+</footer>
+
+<a href="https://wa.me/923202733546?text=Hi+Seekho%2C+press+inquiry" class="wa-float" aria-label="WhatsApp" target="_blank" rel="noopener" data-ph-event="whatsapp_float_click">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16 0C7.16 0 0 7.16 0 16c0 2.83.74 5.48 2.03 7.78L.07 31.93l8.36-2.19A15.9 15.9 0 0016 32c8.84 0 16-7.16 16-16S24.84 0 16 0zm8.16 22.56c-.34 1-2.02 1.88-2.78 2-.74.12-1.44.18-4.62-1-4.06-1.5-6.66-5.64-6.86-5.9-.2-.26-1.62-2.16-1.62-4.12s1.02-2.92 1.38-3.32c.36-.4.78-.5 1.04-.5.26 0 .52 0 .74.02.24.02.56-.08.88.68.32.78 1.1 2.7 1.2 2.9s.16.44.02.7c-.14.28-.2.44-.4.68-.2.24-.42.54-.6.72-.2.2-.4.42-.18.82.24.4.84 1.38 1.8 2.24 1.22 1.1 2.26 1.44 2.58 1.6.32.16.5.14.7-.08.18-.22.8-.94 1.02-1.26.22-.32.44-.28.74-.16.3.1 1.9.9 2.22 1.06.32.16.54.24.62.38.08.14.08.78-.26 1.54z"/></svg>
+</a>
+
+<div class="mobile-bar">
+  <a href="https://wa.me/923202733546?text=Hi+Seekho%2C+press+inquiry" data-ph-event="mobile_bar_whatsapp" target="_blank" rel="noopener"><span style="color:white;font-size:0.875rem">&#128241; WhatsApp Seekho</span></a>
+  <a href="#press-contact" class="btn-lime" data-ph-event="mobile_bar_press">Press Contact</a>
+</div>
+
+<script>
+window.addEventListener('scroll',function(){document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>10)},{passive:true});
+</script>
+
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seekhopakistan.com.pk/"},{"@type":"ListItem","position":2,"name":"Press","item":"https://seekhopakistan.com.pk/press.html"}]}
+</script>
+
+<!-- Schema: Organization -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","@id":"https://seekhopakistan.com.pk/#business","name":"Seekho","alternateName":["Seekho Pakistan","Seekho Driving School"],"legalName":"Seekho (Pvt.) Ltd.","description":"Karachi's award-winning driving school. 1,000+ drivers trained since 2019. Manual and automatic lessons; theoretical and practical curriculum; completion certificates.","url":"https://seekhopakistan.com.pk","logo":"https://seekhopakistan.com.pk/images/logo.png","image":["https://seekhopakistan.com.pk/images/og-press.jpg"],"telephone":"+923202733546","email":"info@seekhopakistan.com.pk","address":{"@type":"PostalAddress","streetAddress":"67-E/1, 7th Jami Commercial St, Phase 7 Ext","addressLocality":"Karachi","addressRegion":"Sindh","postalCode":"75500","addressCountry":"PK"},"founder":{"@type":"Person","name":"Faryal Farooqui"},"foundingDate":"2019-09","sameAs":["https://www.facebook.com/Seekho.org","https://www.instagram.com/seekho.pk/","https://twitter.com/seekhoorg","https://www.linkedin.com/in/seekho-pakistan-191759191/"]}
+</script>
+
+<!-- Schema: NewsArticle — Aurora / Dawn -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"Seekho the right way","url":"https://aurora.dawn.com/news/1143603/seekho-the-right-way","datePublished":"2019-11-01","author":{"@type":"Person","name":"Anusha Zahid"},"publisher":{"@type":"Organization","name":"Aurora Magazine (Dawn)","url":"https://aurora.dawn.com/"},"about":{"@id":"https://seekhopakistan.com.pk/#business"},"mainEntityOfPage":"https://aurora.dawn.com/news/1143603/seekho-the-right-way"}
+</script>
+
+<!-- Schema: NewsArticle — Biz Today -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"Seekho opens its doors for learners","url":"https://www.biztoday.news/2019/10/02/seekho-opens-its-doors-for-learners/","datePublished":"2019-10-02","publisher":{"@type":"Organization","name":"Biz Today","url":"https://www.biztoday.news/"},"about":{"@id":"https://seekhopakistan.com.pk/#business"},"mainEntityOfPage":"https://www.biztoday.news/2019/10/02/seekho-opens-its-doors-for-learners/"}
+</script>
+
+<!-- Schema: NewsArticle — The Nation -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"Seekho opens its doors for learners","url":"https://www.nation.com.pk/29-Sep-2019/seekho-opens-its-doors-for-learners","datePublished":"2019-09-29","publisher":{"@type":"Organization","name":"The Nation","url":"https://www.nation.com.pk/"},"about":{"@id":"https://seekhopakistan.com.pk/#business"},"mainEntityOfPage":"https://www.nation.com.pk/29-Sep-2019/seekho-opens-its-doors-for-learners"}
+</script>
+
+<script src="prices.js" defer></script>
+</body>
+</html>

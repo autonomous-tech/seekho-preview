@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://seekhopakistan.com.pk/faq">
+  <meta name="description" content="Seekho Driving School FAQs — prices, packages, licence process (DLS Sindh), instructor assignment, ladies-only lessons, pickup zones, refund policy. WhatsApp 0320-2733546.">
+  <title>Seekho Driving School FAQ | Everything You Need to Know</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .nav-links.open{display:flex!important;position:absolute;top:64px;left:0;right:0;background:#FBF8F3;flex-direction:column;padding:16px 24px;gap:12px;border-bottom:3px solid #4E0CB9;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+    .nav-links.open a{font-size:1rem;padding:8px 0}
+
+    .faq-hero{padding:120px 0 56px;background:#4E0CB9;text-align:center;position:relative;overflow:hidden}
+    .faq-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 40%,rgba(255,201,60,.08) 0%,transparent 60%);pointer-events:none}
+    .faq-hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,4.5vw,3rem);font-weight:800;color:#FBF8F3;line-height:1.15;letter-spacing:-.02em;max-width:760px;margin:0 auto 16px;position:relative;z-index:1}
+    .faq-hero-sub{font-size:1.05rem;color:rgba(249,248,244,.78);max-width:640px;margin:0 auto;line-height:1.6;position:relative;z-index:1}
+    .faq-hero-sub a{color:#FFC93C;font-weight:700;border-bottom:2px solid #FFC93C;padding-bottom:1px}
+
+    .faq-container{padding:64px 0 48px;background:#FBF8F3}
+    .faq-section-inner{max-width:900px;margin:0 auto;padding:0 24px}
+
+    .faq-cat{margin-bottom:56px;background:white;border:3px solid #4E0CB9;border-radius:10px;overflow:hidden}
+    .faq-cat-header{background:#4E0CB9;color:#FBF8F3;padding:22px 28px;display:flex;align-items:center;gap:14px}
+    .faq-cat-header .cat-num{font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:1.5rem;color:#FFC93C;line-height:1}
+    .faq-cat-header h2{font-family:'Space Grotesk',sans-serif;font-size:1.3rem;color:#FBF8F3;font-weight:800;margin:0}
+
+    .faq-item{border-bottom:2px solid #E5E7EB}
+    .faq-item:last-child{border-bottom:none}
+    .faq-q{width:100%;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:20px 28px;background:white;border:none;text-align:left;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.02rem;color:#4E0CB9;cursor:pointer;line-height:1.4;transition:background .15s}
+    .faq-q:hover{background:#FBF8F3}
+    .faq-q .chevron{width:20px;height:20px;color:#4E0CB9;flex-shrink:0;transition:transform .2s;margin-top:4px}
+    .faq-item.open .faq-q .chevron{transform:rotate(180deg)}
+    .faq-a{display:none;padding:0 28px 22px;font-size:.98rem;line-height:1.7;color:#1A1A1A;background:white}
+    .faq-item.open .faq-a{display:block}
+    .faq-a strong{color:#4E0CB9}
+    .faq-a .price-callout{background:#FEF3C7;padding:10px 14px;border-left:4px solid #FFC93C;margin:12px 0;font-weight:600;color:#4E0CB9;border-radius:4px}
+
+    .still-questions{padding:72px 0;background:#4E0CB9;border-top:4px solid #FFC93C;border-bottom:4px solid #FFC93C;text-align:center}
+    .still-questions h2{font-family:'Space Grotesk',sans-serif;color:#FBF8F3;font-size:clamp(1.5rem,3vw,2.2rem);margin-bottom:14px}
+    .still-questions p{color:rgba(249,248,244,.75);max-width:580px;margin:0 auto 32px;line-height:1.6}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:820px;margin:0 auto 32px}
+    @media (max-width:767px){.contact-grid{grid-template-columns:1fr}}
+    .contact-card{background:rgba(255,255,255,.06);border:3px solid #FFC93C;border-radius:8px;padding:22px 18px;transition:all .15s}
+    .contact-card:hover{background:rgba(255,255,255,.1);transform:translateY(-3px)}
+    .contact-card .label{color:#FFC93C;font-family:'Space Grotesk',sans-serif;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-bottom:6px}
+    .contact-card .value{color:#FBF8F3;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.05rem;word-break:break-word}
+
+    .linkcluster{padding:48px 0;background:#FBF8F3;border-top:2px solid #E5E7EB}
+    .linkcluster-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+    .linkcluster a{display:inline-block;padding:10px 18px;border:2px solid #4E0CB9;border-radius:6px;font-weight:600;font-size:.9rem;color:#4E0CB9;background:white;transition:all .15s}
+    .linkcluster a:hover{background:#FFC93C;transform:translateY(-2px)}
+
+    .section-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+  </style>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Seekho">
+  <meta property="og:title" content="Seekho Driving School FAQ | Everything You Need to Know">
+  <meta property="og:description" content="Packages, prices, licence process, instructor assignment, ladies-only requests, refund policy. All answered.">
+  <meta property="og:image" content="https://seekhopakistan.com.pk/images/og-faq.jpg">
+  <meta property="og:url" content="https://seekhopakistan.com.pk/faq">
+  <meta property="og:locale" content="en_PK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Seekho Driving School FAQ">
+  <meta name="twitter:description" content="Everything you need to know before booking your first driving lesson in Karachi.">
+  <meta name="twitter:image" content="https://seekhopakistan.com.pk/images/og-faq.jpg">
+
+  <!-- Schema: FAQPage (all FAQs included) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Kya price final hai? Are prices on the website fixed?","acceptedAnswer":{"@type":"Answer","text":"Yes — all Seekho package prices are fixed and published upfront. What you see is what you pay. No bargaining, no surprise add-ons. Payment is due on registration to block your slot (non-refundable after first lesson — but see our first-lesson guarantee)."}},
+      {"@type":"Question","name":"Manual ya automatic — kaunsa choose karoon?","acceptedAnswer":{"@type":"Answer","text":"If you already own an automatic car or plan to buy one, learn automatic — it's faster and reduces traffic stress. If you're buying a used car or may drive the family's manual car, learn manual. Manual is slightly cheaper (Rs 35,000 vs Rs 40,000 for Teach Me Everything). Still unsure? Our Half & Half option lets you try both — Rs 1,000 off."}},
+      {"@type":"Question","name":"Can I lock in a price today or does it change?","acceptedAnswer":{"@type":"Answer","text":"Prices shown on the site are current. Once you register and pay for a package, that price is locked — even if we revise the package price later."}},
+      {"@type":"Question","name":"Kya installment available hai?","acceptedAnswer":{"@type":"Answer","text":"Full payment is required on registration. We don't currently offer installments — this keeps our prices low. For students and returning learners asking about flexibility, WhatsApp Faryal directly at 0320-2733546."}},
+      {"@type":"Question","name":"Cancellation policy kya hai? If I can't attend a lesson, what happens?","acceptedAnswer":{"@type":"Answer","text":"Sessions cannot be rescheduled and will be counted as conducted if not attended or cancelled — this is because we block the instructor, the car, and the pickup route for you. Emergencies ke liye call us as early as possible and we'll do our best, but can't guarantee a reschedule."}},
+      {"@type":"Question","name":"Kya extra lesson le sakte hain?","acceptedAnswer":{"@type":"Answer","text":"Yes — if you need more practice after your package ends, extra behind-the-wheel sessions are available: Rs 1,800 per manual lesson, Rs 2,000 per automatic lesson."}},
+      {"@type":"Question","name":"Apni gaadi pe seekh sakte hain? Discount hai?","acceptedAnswer":{"@type":"Answer","text":"Yes — if you learn on your own automatic vehicle, you get Rs 2,000 off the package. If you don't need pickup and drop-off, Rs 1,800 off. Both discounts can combine."}},
+      {"@type":"Question","name":"Gift voucher milta hai?","acceptedAnswer":{"@type":"Answer","text":"Yes — Seekho gift vouchers are available for any package. Popular gift for graduations, birthdays, or for parents gifting their teen driver. WhatsApp us to arrange one."}},
+      {"@type":"Question","name":"Kaunsa instructor milega? Can I choose?","acceptedAnswer":{"@type":"Answer","text":"We assign instructors based on availability, your pickup area, and whether you've requested female-only. If you have a preference (e.g. someone recommended Omaima or Zainab), tell us at booking — we'll do our best to match you."}},
+      {"@type":"Question","name":"Can I request a female-only instructor?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Most Seekho instructors are female — it's one of the reasons we're the go-to driving school for women and conservative families in Karachi. Just mention 'ladies-only' at booking. Learn more on our ladies-only lessons page."}},
+      {"@type":"Question","name":"Kitni lessons milti hain har package mein?","acceptedAnswer":{"@type":"Answer","text":"Teach Me Everything: 12 lessons (9 behind-the-wheel + 3 theoretical), 45 minutes each. Enhance My Skills: 9 lessons (6 BTW + 3 theoretical). Student Bundle: complete course with student ID. All packages include the mandatory Saturday 120-minute workshop + completion certificate."}},
+      {"@type":"Question","name":"Pickup-drop milta hai? Kaunse areas?","acceptedAnswer":{"@type":"Answer","text":"Pickup and drop-off is included in DHA (Phases 1, 2, 4, 5, 6, 7, 7 Ext, 8) and Clifton (Blocks 1–9). For PECHS, partial Gulshan, and other nearby areas, WhatsApp us to confirm coverage. If you don't need pickup, subtract Rs 1,800 from any package."}},
+      {"@type":"Question","name":"Schedule kitna flexible hai?","acceptedAnswer":{"@type":"Answer","text":"Sessions can be three times a week or daily (subject to availability). We run Monday to Saturday 9am–6pm, and Sunday 10am–3pm. Saturday theory workshops are mandatory and run 11:30am–1:30pm — this is the one fixed slot in the programme."}},
+      {"@type":"Question","name":"What if I'm late for a lesson?","acceptedAnswer":{"@type":"Answer","text":"If you're running late, WhatsApp your instructor or 0320-2733546 immediately. Instructors wait up to 15 minutes; after that, the session is counted. Your lesson length doesn't extend if you arrive late — the car has to be back for the next student."}},
+      {"@type":"Question","name":"Learner's licence kaise banaao? Do I need one before starting?","acceptedAnswer":{"@type":"Answer","text":"Yes — Pakistani law requires a valid learner's or permanent licence to drive, even while learning. A learner's licence costs Rs 100 and is issued by DLS Sindh at your nearest police centre. Bring your CNIC + 2 photos + medical fitness certificate. The learner's licence is valid for 6 months."}},
+      {"@type":"Question","name":"What is the DLS Sindh driving licence process?","acceptedAnswer":{"@type":"Answer","text":"Three steps: (1) Get a learner's licence (Rs 100, same-day issue with CNIC + medical). (2) Wait 42 days minimum, practice driving. (3) Book a theory + practical test at dls.gos.pk or dlsonline.sindhpolice.gov.pk. Pass both and your permanent licence is issued within days. Licence fee: Rs 1,410 (5-year) or Rs 1,860 (10-year). Seekho gives you the full DLS Sindh walkthrough on Day 1."}},
+      {"@type":"Question","name":"Theory test mein kya questions aate hain?","acceptedAnswer":{"@type":"Answer","text":"The DLS Sindh theory test has multiple-choice questions on road signs, right-of-way, speed limits, and basic road safety. Our Saturday workshop includes a mock theory test + downloadable practice sheets — most Seekho students pass on the first attempt."}},
+      {"@type":"Question","name":"Why the 42-day waiting period? Can it be skipped?","acceptedAnswer":{"@type":"Answer","text":"DLS Sindh mandates a 42-day gap between issuing a learner's licence and testing for the permanent licence. This gives new drivers time to practice. It cannot legally be skipped. We time our packages to align with this gap — you finish training just as you become eligible to test."}},
+      {"@type":"Question","name":"Practical test ke din kya hota hai?","acceptedAnswer":{"@type":"Answer","text":"Test day: bring your learner's licence, CNIC, fee receipt, and your own car (or rent one from DLS). The examiner checks your parking, lane changes, signal use, hill start (if testing in northern Karachi), and basic road manners. Test lasts 10–15 minutes. Seekho can help you practice at the actual test routes in DHA Phase 6 and Phase 8."}},
+      {"@type":"Question","name":"What documents do I need to start with Seekho?","acceptedAnswer":{"@type":"Answer","text":"You need: (1) Valid learner's or permanent driving licence (mandatory). (2) CNIC copy. (3) Minimum age 18. (4) For Student Bundle: valid school/university ID. That's it — we handle the rest."}},
+      {"@type":"Question","name":"Aapki gaadi safe hai? Vehicle details?","acceptedAnswer":{"@type":"Answer","text":"All Seekho cars are dual-brake (instructor can stop the car instantly), air-conditioned, insured, regularly inspected, equipped with dashcams, first-aid kits, bottled water, masks, and sanitiser. Manual fleet: Suzuki Swift 2016 & 2017. Automatic: Suzuki Alto 2021."}},
+      {"@type":"Question","name":"What if I crash the car during a lesson?","acceptedAnswer":{"@type":"Answer","text":"All vehicles are fully insured for student-driver incidents. Minor bumps during training are on us — it's part of learning. Major negligence is rare because instructors control dual brakes. You are never personally liable for ordinary learning mistakes."}},
+      {"@type":"Question","name":"If I miss a session, do I get a refund?","acceptedAnswer":{"@type":"Answer","text":"All package prices are non-refundable after the first lesson — this reserves your slot, car, and instructor. BUT: if your first lesson doesn't meet expectations, tell us before session 2 and we'll refund the remaining balance. No questions. That's our first-lesson guarantee."}},
+      {"@type":"Question","name":"Do you offer a completion guarantee? What if I don't feel ready after 12 lessons?","acceptedAnswer":{"@type":"Answer","text":"We don't promise 'licence on Day 12' — every learner is different. But the Teach Me Everything programme is designed so 85%+ of our students feel confident enough to test after 12 lessons. If you need more practice, extra sessions are Rs 1,800–2,000 each."}},
+      {"@type":"Question","name":"What happens if my instructor is rude or not a good fit?","acceptedAnswer":{"@type":"Answer","text":"Tell us immediately — WhatsApp Faryal directly at 0320-2733546. We reassign instructors on request, no awkward questions. Our teachers are the whole reason Seekho exists — we'd rather switch than disappoint."}},
+      {"@type":"Question","name":"Kya masks aur sanitiser compulsory hain?","acceptedAnswer":{"@type":"Answer","text":"Masks and sanitisation remain mandatory inside Seekho vehicles. We keep the car clean between students — same reason we invested in dashcams and air-con. Your safety is not a cost corner."}},
+      {"@type":"Question","name":"Code of conduct — what do you expect from students?","acceptedAnswer":{"@type":"Answer","text":"Be on time. Be respectful to your instructor (they're professionals, not staff). No phones while driving unless paired with Bluetooth. No driving under the influence. Follow Pakistani traffic law. Seekho reserves the right to end lessons for anyone endangering the instructor or the vehicle."}}
+    ]
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://seekhopakistan.com.pk/"},
+      {"@type":"ListItem","position":2,"name":"FAQ","item":"https://seekhopakistan.com.pk/faq.html"}
+    ]
+  }
+  </script>
+
+  <!-- Schema: LocalBusiness / AutoSchool (shared @id) -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":["LocalBusiness","AutoSchool"],"@id":"https://seekhopakistan.com.pk/#business","name":"Seekho","alternateName":["Seekho Pakistan","Seekho Driving School"],"legalName":"Seekho (Pvt.) Ltd.","description":"Karachi's driving school where women teach women. 1,000+ drivers trained since 2019. Manual and automatic lessons, theoretical and practical curriculum, completion certificates.","url":"https://seekhopakistan.com.pk/","logo":"https://seekhopakistan.com.pk/images/logo.png","image":["https://seekhopakistan.com.pk/images/og-faq.jpg"],"telephone":"+923202733546","email":"info@seekhopakistan.com.pk","address":{"@type":"PostalAddress","streetAddress":"67-E/1, 7th Jami Commercial St, Phase 7 Ext","addressLocality":"Karachi","addressRegion":"Sindh","postalCode":"75500","addressCountry":"PK"},"geo":{"@type":"GeoCoordinates","latitude":24.7969,"longitude":67.0461},"areaServed":["DHA Karachi","Clifton","PECHS","Gulshan"],"priceRange":"Rs 15,000 - Rs 40,000","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"82","bestRating":"5"},"founder":{"@type":"Person","name":"Faryal Farooqui"},"foundingDate":"2019-09","sameAs":["https://www.facebook.com/Seekho.org","https://www.instagram.com/seekho.pk/","https://twitter.com/seekhoorg","https://www.linkedin.com/in/seekho-pakistan-191759191/"]}
+  </script>
+
+  <!-- PostHog -->
+  <script>
+  !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+  posthog.init('phc_SEEKHO_PROJECT_KEY',{api_host:'https://us.i.posthog.com',defaults:'2026-01-30'});
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="logo">Seekho</a>
+    <div class="nav-links" id="navLinks">
+      <a href="/packages.html">Packages</a>
+      <a href="/programs/drivers-education.html">Programme</a>
+      <a href="/about.html">About</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/traffic-club.html">Traffic Club</a>
+    </div>
+    <a href="/book.html" class="btn-lime nav-cta" onclick="posthog.capture('nav_book_click',{page:'faq'})">Book My First Lesson</a>
+    <button class="hamburger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')">&#9776;</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="faq-hero">
+  <div class="section-inner">
+    <h1>Frequently asked questions.</h1>
+    <p class="faq-hero-sub">Can't find what you're looking for? <a href="https://wa.me/923202733546?text=Hi%20Seekho%2C%20I%20have%20a%20question" target="_blank" rel="noopener">WhatsApp us at 0320-2733546</a>.</p>
+  </div>
+</section>
+
+<!-- FAQ CONTENT -->
+<section class="faq-container">
+  <div class="faq-section-inner">
+
+    <!-- PACKAGES & PRICING -->
+    <div class="faq-cat">
+      <div class="faq-cat-header">
+        <span class="cat-num">01</span>
+        <h2>Packages &amp; pricing</h2>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Kya price final hai? Are prices on the website fixed? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Yes — all Seekho package prices are fixed and published upfront. What you see is what you pay. No bargaining, no surprise add-ons. <strong>Payment is due on registration to block your slot</strong> (non-refundable after first lesson — but see our first-lesson guarantee below).</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Manual ya automatic — kaunsa choose karoon? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">If you already own an automatic car or plan to buy one, learn automatic — it's faster and reduces traffic stress. If you're buying a used car or may drive the family's manual car, learn manual.
+          <div class="price-callout">Manual is slightly cheaper (<span data-price="teach-me-everything-manual">Rs 35,000</span>) vs automatic (<span data-price="teach-me-everything-auto">Rs 40,000</span>) for Teach Me Everything.</div>
+          Still unsure? Our <strong>Half &amp; Half option</strong> lets you try both — Rs 1,000 off the package.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I lock in a price today or does it change? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Prices shown on the site are current. Once you register and pay for a package, that price is locked — even if we revise the package price later.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Kya installment available hai? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Full payment is required on registration. We don't currently offer installments — this keeps our prices low and our lead times short. For students and returning learners asking about flexibility, WhatsApp Faryal directly at <a href="https://wa.me/923202733546" style="color:#4E0CB9;font-weight:700;border-bottom:2px solid #FFC93C">0320-2733546</a>.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Cancellation policy kya hai? If I can't attend a lesson, what happens? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a"><strong>Sessions cannot be rescheduled and will be counted as conducted if not attended or cancelled</strong> — this is because we block the instructor, the car, and the pickup route for you. Emergencies ke liye call us as early as possible and we'll do our best to accommodate, but we can't guarantee a reschedule.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Kya extra lesson le sakte hain? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Yes — if you need more practice after your package ends, extra behind-the-wheel sessions are available:
+          <div class="price-callout">Extra BTW (manual): <span data-price="extra-lesson-manual">Rs 1,800</span> per lesson<br>Extra BTW (automatic): <span data-price="extra-lesson-auto">Rs 2,000</span> per lesson</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Apni gaadi pe seekh sakte hain? Discount hai? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Yes — two discount options:
+          <div class="price-callout">Own automatic vehicle: <span data-price="discount-own-auto-vehicle">Rs 2,000</span> off<br>No pickup needed: <span data-price="discount-no-pickup">Rs 1,800</span> off</div>
+          Both discounts can combine.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Gift voucher milta hai? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Yes — Seekho gift vouchers are available for any package. Popular gift for graduations, birthdays, or parents gifting their teen driver. <a href="https://wa.me/923202733546?text=Hi%20Seekho%2C%20I%20want%20to%20buy%20a%20gift%20voucher" target="_blank" rel="noopener" style="color:#4E0CB9;font-weight:700;border-bottom:2px solid #FFC93C">WhatsApp us to arrange one</a>.</div>
+      </div>
+    </div>
+
+    <!-- LESSONS & INSTRUCTORS -->
+    <div class="faq-cat">
+      <div class="faq-cat-header">
+        <span class="cat-num">02</span>
+        <h2>Lessons &amp; instructors</h2>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Kaunsa instructor milega? Can I choose? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">We assign instructors based on availability, your pickup area, and whether you've requested female-only. If you have a preference (e.g. someone recommended Omaima or Zainab), tell us at booking — <strong>we'll do our best to match you</strong>.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I request a female-only instructor? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Absolutely. <strong>Most Seekho instructors are female</strong> — it's one of the reasons we're the go-to driving school for women and conservative families in Karachi. Just mention "ladies-only" at booking. <a href="/ladies-driving-school-karachi.html" style="color:#4E0CB9;font-weight:700;border-bottom:2px solid #FFC93C">Learn more on our ladies-only lessons page</a>.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Kitni lessons milti hain har package mein? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a"><strong>Teach Me Everything:</strong> 12 lessons (9 behind-the-wheel + 3 theoretical), 45 minutes each.<br>
+        <strong>Enhance My Skills:</strong> 9 lessons (6 BTW + 3 theoretical).<br>
+        <strong>Student Bundle:</strong> complete course with student ID.<br>
+        All packages include the mandatory Saturday 120-minute workshop + completion certificate.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Pickup-drop milta hai? Kaunse areas? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Pickup and drop-off is included in:
+          <div class="price-callout"><strong>DHA:</strong> Phases 1, 2, 4, 5, 6, 7, 7 Ext, 8<br><strong>Clifton:</strong> Blocks 1–9</div>
+          For PECHS, partial Gulshan, and other nearby areas, <a href="https://wa.me/923202733546?text=Do%20you%20pickup%20from%20my%20area" target="_blank" rel="noopener" style="color:#4E0CB9;font-weight:700;border-bottom:2px solid #FFC93C">WhatsApp us to confirm coverage</a>. If you don't need pickup, subtract <span data-price="discount-no-pickup">Rs 1,800</span> from any package.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Schedule kitna flexible hai? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Sessions can be three times a week or daily (subject to availability). We run:
+          <div class="price-callout">Mon–Sat: 9am–6pm<br>Sunday: 10am–3pm<br><strong>Saturday theory workshop (mandatory):</strong> 11:30am–1:30pm</div>
+          The Saturday theory is the one fixed slot in the programme. Everything else flexes around your schedule.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What if I'm late for a lesson? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">If you're running late, WhatsApp your instructor or <a href="https://wa.me/923202733546" style="color:#4E0CB9;font-weight:700;border-bottom:2px solid #FFC93C">0320-2733546</a> immediately. Instructors wait up to <strong>15 minutes</strong>; after that, the session is counted. Your lesson length doesn't extend if you arrive late — the car has to be back for the next student.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What if my instructor is rude or not a good fit? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Tell us immediately — <strong>WhatsApp Faryal directly at 0320-2733546</strong>. We reassign instructors on request, no awkward questions. Our teachers are the whole reason Seekho exists — we'd rather switch than disappoint.</div>
+      </div>
+    </div>
+
+    <!-- LICENCE PROCESS -->
+    <div class="faq-cat">
+      <div class="faq-cat-header">
+        <span class="cat-num">03</span>
+        <h2>Licence process (DLS Sindh)</h2>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Learner's licence kaise banaao? Do I need one before starting? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a"><strong>Yes — Pakistani law requires a valid learner's or permanent licence</strong> to drive, even while learning. A learner's licence costs <strong>Rs 100</strong> and is issued by DLS Sindh at your nearest police centre. Bring your CNIC + 2 photos + medical fitness certificate. The learner's licence is valid for 6 months.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is the full DLS Sindh driving licence process? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Three steps:
+          <ol style="margin-top:10px;padding-left:22px;line-height:1.8">
+            <li><strong>Get a learner's licence</strong> (Rs 100, same-day issue with CNIC + medical).</li>
+            <li><strong>Wait 42 days minimum</strong>, practice driving.</li>
+            <li><strong>Book a theory + practical test</strong> at <a href="https://dls.gos.pk" target="_blank" rel="noopener" style="color:#4E0CB9;font-weight:700;border-bottom:2px solid #FFC93C">dls.gos.pk</a> or <a href="https://dlsonline.sindhpolice.gov.pk" target="_blank" rel="noopener" style="color:#4E0CB9;font-weight:700;border-bottom:2px solid #FFC93C">dlsonline.sindhpolice.gov.pk</a>.</li>
+          </ol>
+          <div class="price-callout">Permanent licence fee: Rs 1,410 (5-year) or Rs 1,860 (10-year).</div>
+          Seekho gives you the full DLS Sindh walkthrough on Day 1.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Theory test mein kya questions aate hain? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">The DLS Sindh theory test has multiple-choice questions on road signs, right-of-way, speed limits, and basic road safety. <strong>Our Saturday workshop includes a mock theory test</strong> + downloadable practice sheets — most Seekho students pass on the first attempt.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Why the 42-day waiting period? Can it be skipped? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a"><strong>DLS Sindh mandates a 42-day gap</strong> between issuing a learner's licence and testing for the permanent licence. This gives new drivers time to practice. It cannot legally be skipped. We time our packages to align with this gap — you finish training just as you become eligible to test.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Practical test ke din kya hota hai? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Test day essentials: bring your learner's licence, CNIC, fee receipt, and your own car (or rent one from DLS). The examiner checks parking, lane changes, signal use, hill start, and basic road manners. Test lasts 10–15 minutes. <strong>Seekho can help you practice at the actual test routes in DHA Phase 6 and Phase 8.</strong></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What documents do I need to start with Seekho? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">You need:
+          <ul style="margin-top:10px;padding-left:22px;line-height:1.8">
+            <li>Valid learner's or permanent driving licence (mandatory)</li>
+            <li>CNIC copy</li>
+            <li>Minimum age 18</li>
+            <li>For Student Bundle: valid school/university ID</li>
+          </ul>
+          That's it — we handle the rest.</div>
+      </div>
+    </div>
+
+    <!-- SAFETY & POLICY -->
+    <div class="faq-cat">
+      <div class="faq-cat-header">
+        <span class="cat-num">04</span>
+        <h2>Safety &amp; policy</h2>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Aapki gaadi safe hai? Vehicle details? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">All Seekho cars are:
+          <ul style="margin-top:10px;padding-left:22px;line-height:1.8">
+            <li><strong>Dual-brake</strong> — instructor can stop the car instantly</li>
+            <li>Air-conditioned, insured, regularly inspected</li>
+            <li>Equipped with dashcams, first-aid kits, bottled water, masks, sanitiser</li>
+            <li>Manual fleet: Suzuki Swift 2016 &amp; 2017</li>
+            <li>Automatic: Suzuki Alto 2021</li>
+          </ul></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What if I crash the car during a lesson? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a"><strong>All vehicles are fully insured for student-driver incidents.</strong> Minor bumps during training are on us — it's part of learning. Major negligence is rare because instructors control dual brakes. <strong>You are never personally liable for ordinary learning mistakes.</strong></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">If I miss a session, do I get a refund? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">All package prices are non-refundable after the first lesson — this reserves your slot, car, and instructor. <strong>BUT: if your first lesson doesn't meet expectations, tell us before session 2 and we'll refund the remaining balance. No questions.</strong> That's our first-lesson guarantee.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you offer a completion guarantee? What if I don't feel ready after 12 lessons? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">We don't promise "licence on Day 12" — every learner is different. But the Teach Me Everything programme is designed so <strong>85%+ of our students feel confident enough to test after 12 lessons</strong>. If you need more practice, extra sessions are <span data-price="extra-lesson-manual">Rs 1,800</span>–<span data-price="extra-lesson-auto">Rs 2,000</span> each.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Kya masks aur sanitiser compulsory hain? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">Masks and sanitisation remain mandatory inside Seekho vehicles. We keep the car clean between students — same reason we invested in dashcams and air-con. Your safety is not a cost corner.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Code of conduct — what do you expect from students? <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 7l5 5 5-5"/></svg></button>
+        <div class="faq-a">
+          <ul style="margin-top:10px;padding-left:22px;line-height:1.8">
+            <li>Be on time</li>
+            <li>Be respectful to your instructor (they're professionals, not staff)</li>
+            <li>No phones while driving unless paired with Bluetooth</li>
+            <li>No driving under the influence</li>
+            <li>Follow Pakistani traffic law</li>
+          </ul>
+          Seekho reserves the right to end lessons for anyone endangering the instructor or the vehicle.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STILL HAVE QUESTIONS -->
+<section class="still-questions">
+  <div class="section-inner">
+    <h2>Still have questions?</h2>
+    <p>Can't find your question above? Reach us directly — fastest response on WhatsApp.</p>
+    <div class="contact-grid">
+      <a href="https://wa.me/923202733546?text=Hi%20Seekho%2C%20I%20have%20a%20question" target="_blank" rel="noopener" class="contact-card" onclick="posthog.capture('faq_contact_whatsapp_click')">
+        <div class="label">WhatsApp</div>
+        <div class="value">0320-2733546</div>
+      </a>
+      <a href="tel:+923202733546" class="contact-card" onclick="posthog.capture('faq_contact_phone_click')">
+        <div class="label">Phone</div>
+        <div class="value">0320-2733546</div>
+      </a>
+      <a href="mailto:info@seekhopakistan.com.pk" class="contact-card" onclick="posthog.capture('faq_contact_email_click')">
+        <div class="label">Email</div>
+        <div class="value">info@seekhopakistan<br>.com.pk</div>
+      </a>
+    </div>
+    <a href="/book.html" class="btn-lime" onclick="posthog.capture('faq_bottom_book_click')">Book My First Lesson &rarr;</a>
+  </div>
+</section>
+
+<!-- LINK CLUSTER -->
+<section class="linkcluster">
+  <div class="linkcluster-inner">
+    <a href="/about.html">About Faryal</a>
+    <a href="/programs/drivers-education.html">Driver's Education</a>
+    <a href="/packages.html">Packages &amp; Pricing</a>
+    <a href="/ladies-driving-school-karachi.html">Ladies-only lessons</a>
+    <a href="/driving-school-dha-karachi.html">Lessons in DHA</a>
+    <a href="/driving-school-clifton-karachi.html">Lessons in Clifton</a>
+    <a href="/traffic-club.html">Traffic Club</a>
+    <a href="/book.html">Book Now</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo">Seekho</a>
+      <p>Karachi's award-winning driver's education programme. Founded 2019.</p>
+      <a href="https://wa.me/923202733546" class="footer-wa">WhatsApp: +92 320 2733546</a>
+    </div>
+    <div class="footer-links">
+      <h4>Learn</h4>
+      <a href="/programs/drivers-education.html">Driver's Education</a>
+      <a href="/packages.html">Packages &amp; Pricing</a>
+      <a href="/ladies-driving-school-karachi.html">Ladies-only lessons</a>
+      <a href="/traffic-club.html">Traffic Club (kids)</a>
+    </div>
+    <div class="footer-links">
+      <h4>Areas</h4>
+      <a href="/driving-school-dha-karachi.html">DHA Karachi</a>
+      <a href="/driving-school-clifton-karachi.html">Clifton</a>
+      <a href="/driving-school-dha-karachi.html#pechs">PECHS</a>
+      <a href="/driving-school-dha-karachi.html#gulshan">Gulshan</a>
+    </div>
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="/about.html">About Faryal</a>
+      <a href="/faq.html">FAQs</a>
+      <a href="/careers.html">Careers</a>
+      <p>67-E/1, 7th Jami Commercial St, Phase 7 Ext, DHA Karachi</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; Seekho (Pvt.) Ltd. 2026. All rights reserved.</div>
+</footer>
+
+<!-- MOBILE STICKY BAR -->
+<div class="mobile-bar">
+  <a href="https://wa.me/923202733546?text=Hi%20Seekho%2C%20I%20have%20a%20question" onclick="posthog.capture('mobile_sticky_whatsapp_click',{page:'faq'})"><span style="color:white;font-size:0.875rem">&#128241; WhatsApp Karo</span></a>
+  <a href="/book.html" class="btn-lime" onclick="posthog.capture('mobile_sticky_book_click',{page:'faq'})">Book</a>
+</div>
+
+<!-- SCRIPTS -->
+<script>
+window.addEventListener('scroll',function(){document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>10)},{passive:true});
+document.querySelectorAll('.faq-q').forEach(function(b){b.addEventListener('click',function(){var item=this.closest('.faq-item'),wasOpen=item.classList.contains('open');if(wasOpen){item.classList.remove('open');this.setAttribute('aria-expanded','false')}else{item.classList.add('open');this.setAttribute('aria-expanded','true');posthog.capture('faq_open',{question:this.textContent.trim().slice(0,80)})}})});
+</script>
+<script src="/prices.js"></script>
+</body>
+</html>
